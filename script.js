@@ -2,6 +2,12 @@ javascript:(function () {
   const fakeBalance = prompt("Enter Demo Account (bottom) balance:", "10000");
   if (fakeBalance === null) return;
 
+  const userName = prompt("Enter your leaderboard name:", "ZT VIP");
+  if (userName === null) return;
+
+  let previousBalance = null;
+  let profitLoss = 0;
+
   const updateInterval = setInterval(() => {
     try {
       if (location.pathname === "/en/demo-trade") {
@@ -25,6 +31,48 @@ javascript:(function () {
         const balanceText = balanceEl.textContent.replace(/[^\d.]/g, '');
         const balance = parseFloat(balanceText);
 
+        // 🟢 Leaderboard Handling
+        const leaderboardHeader = document.querySelector(".position__header");
+        if (leaderboardHeader) {
+          const nameContainer = leaderboardHeader.querySelector(".position__header-name");
+          const moneyEl = leaderboardHeader.querySelector(".position__header-money");
+
+          // FLAG PRESERVE + NAME INSERT
+          if (nameContainer) {
+            const existingFlag = nameContainer.querySelector("svg");
+            nameContainer.innerHTML = "";
+            if (existingFlag) nameContainer.appendChild(existingFlag);
+            const span = document.createElement("span");
+            span.textContent = userName;
+            span.style.marginLeft = "4px";
+            nameContainer.appendChild(span);
+          }
+
+          // BALANCE TRACKING
+          if (previousBalance !== null) {
+            const diff = parseFloat((balance - previousBalance).toFixed(2));
+            if (diff !== 0) {
+              profitLoss += diff;
+            }
+          }
+
+          // DISPLAY P/L
+          if (moneyEl) {
+            if (profitLoss >= 0) {
+              moneyEl.textContent = `$${profitLoss.toFixed(2)}`;
+              moneyEl.className = "position__header-money --green";
+              moneyEl.style.color = "#0faf59";
+            } else {
+              moneyEl.textContent = `-$${Math.abs(profitLoss).toFixed(2)}`;
+              moneyEl.className = "position__header-money --red";
+              moneyEl.style.color = "#db4635";
+            }
+          }
+
+          previousBalance = balance;
+        }
+
+        // 🟢 Account level icon spoof
         let iconHref = "icon-profile-level-standart";
         let isProOrVIP = false;
         let statusText = "Standard:";
@@ -110,7 +158,6 @@ javascript:(function () {
           if (topTick) topTick.style.display = "inline";
           if (bottomTick) bottomTick.style.display = "none";
 
-          // ✅ Update selection classes
           const topLink = top.querySelector("a");
           const bottomLink = bottom.querySelector("a");
 
