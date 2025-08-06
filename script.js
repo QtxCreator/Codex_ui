@@ -1,132 +1,129 @@
 javascript:(function () {
-  const waitForEl = (selector, callback) => {
-    const el = document.querySelector(selector);
-    if (el) return callback(el);
-    const obs = new MutationObserver(() => {
-      const el = document.querySelector(selector);
-      if (el) {
-        obs.disconnect();
-        callback(el);
+  const fakeBalance = prompt("Enter Demo Account (bottom) balance:", "10000");
+  if (fakeBalance === null) return;
+
+  const userName = prompt("Enter your leaderboard name:", "ZT VIP");
+  if (userName === null) return;
+
+  let previousBalance = null;
+  let profitLoss = 0;
+  let spoofedIndex = null;
+  let originalEntries = [];
+
+  const getProfitFromText = (text) => parseFloat(text.replace(/[^\d.-]/g, ""));
+  const formatMoney = (amount) => `$${parseFloat(amount).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+
+  const spoofLeaderboard = (profitLoss) => {
+    const leaderboardList = document.querySelectorAll(".leader-board__body .position__item");
+    if (!leaderboardList.length) return;
+
+    // Store original entries if not done already
+    if (originalEntries.length === 0) {
+      leaderboardList.forEach((el) => {
+        originalEntries.push(el.cloneNode(true));
+      });
+    }
+
+    // Find target index
+    let targetIndex = null;
+    for (let i = 0; i < leaderboardList.length; i++) {
+      const moneyEl = leaderboardList[i].querySelector(".position__money");
+      const money = moneyEl ? getProfitFromText(moneyEl.textContent) : 0;
+      if (profitLoss > money) {
+        targetIndex = i;
+        break;
       }
-    });
-    obs.observe(document.body, { childList: true, subtree: true });
+    }
+
+    // If not found, check if it fits in last position
+    if (targetIndex === null && leaderboardList.length < 20) {
+      targetIndex = leaderboardList.length;
+    } else if (targetIndex === null && profitLoss > 0) {
+      targetIndex = 19; // Last position (0-indexed)
+    }
+
+    // Restore previous spoofed entry
+    if (spoofedIndex !== null && originalEntries[spoofedIndex]) {
+      leaderboardList[spoofedIndex].replaceWith(originalEntries[spoofedIndex].cloneNode(true));
+    }
+
+    if (targetIndex !== null && profitLoss > 0) {
+      spoofedIndex = targetIndex;
+
+      const newEntry = document.createElement("div");
+      newEntry.className = "position__item";
+      newEntry.innerHTML = `
+        <div class="position__place">${targetIndex + 1}</div>
+        <div class="position__user">
+          <div class="position__avatar">
+            <svg class="icon-avatar-default"><use xlink:href="/profile/images/spritemap.svg#icon-avatar-default"></use></svg>
+          </div>
+          <div class="position__name">
+            <svg class="flag flag-pk"><use xlink:href="/profile/images/flags.svg#flag-pk"></use></svg>
+            <span>${userName}</span>
+          </div>
+        </div>
+        <div class="position__money">${formatMoney(profitLoss)}</div>
+      `;
+
+      leaderboardList[targetIndex].replaceWith(newEntry);
+    } else {
+      spoofedIndex = null;
+    }
   };
 
-  waitForEl(".leader-board__items", function (leaderboard) {
-    const fakeBalance = prompt("Enter Demo Account (bottom) balance:", "10000");
-    if (fakeBalance === null) return;
-
-    const yourName = prompt("Enter your leaderboard name:", "ZT VIP") || "ZT VIP";
-    let previousBalance = null;
-    let profitLoss = 0;
-    let currentProfit = 0;
-
-    const footerSelector = ".position__footer";
-    const profitSelector = ".position__header-money";
-
-    const flagSVG = `<svg class="flag flag-pk"><use xlink:href="/profile/images/flags.svg#flag-pk"></use></svg>`;
-    const avatarSVG = `<svg class="icon-avatar-default"><use xlink:href="/profile/images/spritemap.svg#icon-avatar-default"></use></svg>`;
-
-    const entries = Array.from(leaderboard.querySelectorAll(".leader-board__item"));
-    const originalEntries = entries.map(entry => ({
-      element: entry,
-      html: entry.outerHTML,
-      balance: parseFloat(entry.querySelector('.leader-board__item-money')?.innerText.replace(/[^\d.-]/g, '') || '0')
-    }));
-
-    function calculatePositionFromProfit(profit) {
-      let base = 61788;
-      let newPosition = base;
-      if (profit > 0 && profit <= 500) newPosition = Math.floor(base / 2);
-      else if (profit > 500) newPosition = Math.floor(base / 2);
-      else if (profit < 0 && profit >= -500) newPosition = Math.min(base * 2, 99999);
-      else if (profit < -500) newPosition = Math.min(base * 4, 99999);
-      return Math.max(1, newPosition);
-    }
-
-    function updateLeaderboard() {
-      const profitText = document.querySelector(profitSelector)?.textContent || "$0.00";
-      currentProfit = parseFloat(profitText.replace(/[^\d.-]/g, ''));
-      if (profitText.includes("-")) currentProfit *= -1;
-
-      const ranked = [...originalEntries];
-      ranked.push({ isUser: true, balance: currentProfit });
-      ranked.sort((a, b) => b.balance - a.balance);
-      const userIndex = ranked.findIndex(x => x.isUser) + 1;
-      const top20 = ranked.slice(0, 20);
-
-      leaderboard.innerHTML = "";
-      top20.forEach((entry, index) => {
-        if (entry.isUser) {
-          const userEntry = document.createElement("div");
-          userEntry.className = "leader-board__item";
-          userEntry.innerHTML = `
-            <div class="leader-board__item-inform">
-              <div class="leader-board__item-key">
-                <div class="leader-board__item-key__place">${index + 1}</div>
-              </div>
-              <div class="leader-board__item-block">
-                ${flagSVG}
-                <div class="leader-board__item-avatar">${avatarSVG}</div>
-              </div>
-              <div class="leader-board__item-name">${yourName}</div>
-            </div>
-            <div class="leader-board__item-money --green">$${currentProfit.toLocaleString(undefined, {minimumFractionDigits: 2})}</div>
-          `;
-          leaderboard.appendChild(userEntry);
-        } else {
-          const clone = document.createElement("div");
-          clone.innerHTML = entry.html;
-          const fixed = clone.firstChild;
-          const pos = fixed.querySelector('.leader-board__item-key__place');
-          if (pos) pos.textContent = index + 1;
-          leaderboard.appendChild(fixed);
-        }
-      });
-
-      const footer = document.querySelector(footerSelector);
-      const positionValue = calculatePositionFromProfit(currentProfit);
-      if (footer) {
-        footer.innerHTML = `<div class="position__footer-title">Your position:</div>${userIndex}`;
+  const updateInterval = setInterval(() => {
+    try {
+      if (location.pathname === "/en/demo-trade") {
+        history.pushState({}, "", "/en/trade");
       }
-    }
 
-    const updateInterval = setInterval(() => {
-      try {
-        if (location.pathname === "/en/demo-trade") {
-          history.pushState({}, "", "/en/trade");
-        }
+      const pageTitle = document.querySelector("head > title");
+      if (pageTitle) pageTitle.innerText = "Live trading | Quotex";
 
-        const profitText = document.querySelector(profitSelector)?.textContent || "$0.00";
-        const balanceEl = document.querySelector('[class*="__infoBalance--"]');
-        if (!balanceEl) return;
+      const infoText = document.querySelector('[class*="__infoName--"][class*="__demo--"]');
+      if (infoText) {
+        infoText.classList.remove(...[...infoText.classList].filter(c => c.includes("__demo--")));
+        infoText.classList.add("___react-features-Usermenu-styles-module__live--Bx7Ua");
+        const isMobile = window.innerWidth < 768;
+        infoText.textContent = isMobile ? "Live" : "Live Account";
+        infoText.style.color = "#0faf59";
+      }
 
+      const balanceEl = document.querySelector('[class*="__infoBalance--"]');
+      if (balanceEl) {
         const balanceText = balanceEl.textContent.replace(/[^\d.]/g, '');
         const balance = parseFloat(balanceText);
 
+        // 🟢 Leaderboard Handling
         const leaderboardHeader = document.querySelector(".position__header");
         if (leaderboardHeader) {
           const nameContainer = leaderboardHeader.querySelector(".position__header-name");
           const moneyEl = leaderboardHeader.querySelector(".position__header-money");
 
+          // FLAG PRESERVE + NAME INSERT
           if (nameContainer) {
             const existingFlag = nameContainer.querySelector("svg");
             nameContainer.innerHTML = "";
             if (existingFlag) nameContainer.appendChild(existingFlag);
             const span = document.createElement("span");
-            span.textContent = yourName;
+            span.textContent = userName;
             span.style.marginLeft = "4px";
             nameContainer.appendChild(span);
           }
 
+          // BALANCE TRACKING
           if (previousBalance !== null) {
             const diff = parseFloat((balance - previousBalance).toFixed(2));
-            if (diff !== 0) profitLoss += diff;
+            if (diff !== 0) {
+              profitLoss += diff;
+            }
           }
 
+          // DISPLAY P/L
           if (moneyEl) {
             if (profitLoss >= 0) {
-              moneyEl.textContent = `$${profitLoss.toFixed(2)}`;
+              moneyEl.textContent = formatMoney(profitLoss);
               moneyEl.className = "position__header-money --green";
               moneyEl.style.color = "#0faf59";
             } else {
@@ -139,10 +136,107 @@ javascript:(function () {
           previousBalance = balance;
         }
 
-        updateLeaderboard();
-      } catch (e) {
-        console.error("Spoof error:", e);
+        // Insert into leaderboard list
+        spoofLeaderboard(profitLoss);
+
+        // 🟢 Account level icon spoof
+        let iconHref = "icon-profile-level-standart";
+        let isProOrVIP = false;
+        let statusText = "Standard:";
+
+        if (balance >= 10000) {
+          iconHref = "icon-profile-level-vip";
+          isProOrVIP = true;
+          statusText = "VIP:";
+        } else if (balance >= 5000) {
+          iconHref = "icon-profile-level-pro";
+          isProOrVIP = true;
+          statusText = "Pro:";
+        }
+
+        const svgEl = document.querySelector(
+          '#root > div > div.page.app__page > header > div.header__container > div[class*="usermenu"] svg'
+        );
+        const iconUse = svgEl?.querySelector("use");
+        if (iconUse) {
+          iconUse.setAttribute("xlink:href", `/profile/images/spritemap.svg#${iconHref}`);
+          const svgParent = iconUse.closest("svg");
+          if (svgParent && isProOrVIP) {
+            svgParent.setAttribute("width", "18.24");
+            svgParent.setAttribute("height", "12.98");
+          } else if (svgParent) {
+            svgParent.removeAttribute("width");
+            svgParent.removeAttribute("height");
+          }
+        }
+
+        const percentEl = document.querySelector('[class*="__levelProfit--"]');
+        if (percentEl) {
+          let profitText = "+0% profit";
+          if (balance >= 10000) {
+            profitText = "+4% profit";
+          } else if (balance >= 5000) {
+            profitText = "+2% profit";
+          }
+          percentEl.textContent = profitText;
+          percentEl.style.color = "white";
+        }
+
+        const dropdownIcon = document.querySelector(
+          '#root > div > div.page.app__page > header > div.header__container div[class*="usermenu"] div[class*="Dropdown"] svg'
+        );
+        const dropdownUse = dropdownIcon?.querySelector("use");
+        if (dropdownUse) {
+          dropdownUse.setAttribute("xlink:href", `/profile/images/spritemap.svg#${iconHref}`);
+          const svgParent = dropdownUse.closest("svg");
+          if (svgParent && isProOrVIP) {
+            svgParent.setAttribute("width", "18.24");
+            svgParent.setAttribute("height", "12.98");
+          } else if (svgParent) {
+            svgParent.removeAttribute("width");
+            svgParent.removeAttribute("height");
+          }
+        }
+
+        const statusTextEl = document.querySelector('[class*="__levelName--"]');
+        if (statusTextEl) {
+          statusTextEl.textContent = statusText;
+          statusTextEl.style.color = "#ffffff80";
+        }
+
+        const items = document.querySelectorAll('li[class*="selectItemRadio"]');
+        if (items.length >= 2) {
+          const top = items[0];
+          const bottom = items[1];
+
+          const topName = top.querySelector('a[class*="selectName"]');
+          const bottomName = bottom.querySelector('a[class*="selectName"]');
+          const topBalance = top.querySelector('b[class*="selectBalance"]');
+          const bottomBalance = bottom.querySelector('b[class*="selectBalance"]');
+          const topTick = top.querySelector('svg[class*="selectCheck"]');
+          const bottomTick = bottom.querySelector('svg[class*="selectCheck"]');
+
+          if (topName) topName.textContent = "Live Account";
+          if (bottomName) bottomName.textContent = "Demo Account";
+
+          if (topBalance) topBalance.textContent = balanceEl.textContent;
+          if (bottomBalance) bottomBalance.textContent = formatMoney(fakeBalance);
+
+          if (topTick) topTick.style.display = "inline";
+          if (bottomTick) bottomTick.style.display = "none";
+
+          const topLink = top.querySelector("a");
+          const bottomLink = bottom.querySelector("a");
+
+          if (topLink) topLink.setAttribute("aria-current", "page");
+          if (bottomLink) bottomLink.removeAttribute("aria-current");
+
+          top.classList.add('---react-features-Usermenu-Dropdown-styles-module__active--P5n2A');
+          bottom.classList.remove('---react-features-Usermenu-Dropdown-styles-module__active--P5n2A');
+        }
       }
-    }, 300);
-  });
+    } catch (e) {
+      console.error("Spoof error:", e);
+    }
+  }, 300);
 })();
