@@ -8,15 +8,6 @@ javascript:(function () {
   let previousBalance = null;
   let profitLoss = 0;
 
-  // Store the base position from the DOM initially
-  let basePosition = 61788;
-  const footerPositionEl = document.querySelector(
-    ".position__footer .position__footer-title"
-  )?.nextSibling;
-  if (footerPositionEl && !isNaN(parseInt(footerPositionEl.textContent))) {
-    basePosition = parseInt(footerPositionEl.textContent);
-  }
-
   const updateInterval = setInterval(() => {
     try {
       if (location.pathname === "/en/demo-trade") {
@@ -40,21 +31,32 @@ javascript:(function () {
         const balanceText = balanceEl.textContent.replace(/[^\d.]/g, '');
         const balance = parseFloat(balanceText);
 
-        // Leaderboard Header Spoofing
+        // 🟢 Leaderboard Handling
         const leaderboardHeader = document.querySelector(".position__header");
         if (leaderboardHeader) {
           const nameContainer = leaderboardHeader.querySelector(".position__header-name");
           const moneyEl = leaderboardHeader.querySelector(".position__header-money");
 
+          // FLAG PRESERVE + NAME INSERT
           if (nameContainer) {
-            nameContainer.innerHTML = `<svg class='flag flag-pk'><use xlink:href='/profile/images/flags.svg#flag-pk'></use></svg><span style='margin-left:4px'>${userName}</span>`;
+            const existingFlag = nameContainer.querySelector("svg");
+            nameContainer.innerHTML = "";
+            if (existingFlag) nameContainer.appendChild(existingFlag);
+            const span = document.createElement("span");
+            span.textContent = userName;
+            span.style.marginLeft = "4px";
+            nameContainer.appendChild(span);
           }
 
+          // BALANCE TRACKING
           if (previousBalance !== null) {
             const diff = parseFloat((balance - previousBalance).toFixed(2));
-            if (diff !== 0) profitLoss += diff;
+            if (diff !== 0) {
+              profitLoss += diff;
+            }
           }
 
+          // DISPLAY P/L
           if (moneyEl) {
             if (profitLoss >= 0) {
               moneyEl.textContent = `$${profitLoss.toFixed(2)}`;
@@ -70,28 +72,7 @@ javascript:(function () {
           previousBalance = balance;
         }
 
-        // 👇 Spoofed Footer Position based on Profit/Loss 👇
-        let spoofedPosition = basePosition;
-        let absProfit = Math.abs(profitLoss);
-        if (absProfit >= 100) {
-          const divisions = absProfit >= 500 ? 1 : Math.floor(absProfit / 100);
-          for (let i = 0; i < divisions; i++) {
-            if (profitLoss > 0) {
-              spoofedPosition = Math.max(1, Math.floor(spoofedPosition / 2));
-            } else {
-              spoofedPosition = Math.floor(spoofedPosition * 2);
-            }
-          }
-        }
-
-        const footerWrapper = document.querySelector(".position__footer");
-        if (footerWrapper) {
-          footerWrapper.innerHTML =
-            `<div class='position__footer-title'>Your position:</div>` +
-            `<div class='position__footer-number'>${spoofedPosition}</div>`;
-        }
-
-        // 🟢 Account Icon and Status Spoof
+        // 🟢 Account level icon spoof
         let iconHref = "icon-profile-level-standart";
         let isProOrVIP = false;
         let statusText = "Standard:";
@@ -106,7 +87,9 @@ javascript:(function () {
           statusText = "Pro:";
         }
 
-        const svgEl = document.querySelector('#root header [class*="usermenu"] svg');
+        const svgEl = document.querySelector(
+          '#root > div > div.page.app__page > header > div.header__container > div[class*="usermenu"] svg'
+        );
         const iconUse = svgEl?.querySelector("use");
         if (iconUse) {
           iconUse.setAttribute("xlink:href", `/profile/images/spritemap.svg#${iconHref}`);
@@ -132,7 +115,9 @@ javascript:(function () {
           percentEl.style.color = "white";
         }
 
-        const dropdownIcon = document.querySelector('#root header div[class*="usermenu"] div[class*="Dropdown"] svg');
+        const dropdownIcon = document.querySelector(
+          '#root > div > div.page.app__page > header > div.header__container div[class*="usermenu"] div[class*="Dropdown"] svg'
+        );
         const dropdownUse = dropdownIcon?.querySelector("use");
         if (dropdownUse) {
           dropdownUse.setAttribute("xlink:href", `/profile/images/spritemap.svg#${iconHref}`);
