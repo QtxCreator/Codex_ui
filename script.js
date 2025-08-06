@@ -7,6 +7,62 @@ javascript:(function () {
 
   let previousBalance = null;
   let profitLoss = 0;
+  let originalEntries = [];
+
+  const leaderboardSelector = ".leader-board__items";
+  const avatarSVG = `<svg class="icon-avatar-default"><use xlink:href="/profile/images/spritemap.svg#icon-avatar-default"></use></svg>`;
+  const flagSVG = `<svg class="flag flag-pk"><use xlink:href="/profile/images/flags.svg#flag-pk"></use></svg>`;
+
+  function formatMoney(amount) {
+    const abs = Math.abs(amount);
+    const formatted = abs.toLocaleString(undefined, {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    });
+    return amount < 0 ? `-$${formatted}` : `$${formatted}`;
+  }
+
+  function updateLeaderboard() {
+    const leaderboard = document.querySelector(leaderboardSelector);
+    if (!leaderboard) return;
+
+    const entries = Array.from(leaderboard.querySelectorAll(".leader-board__item"));
+    if (originalEntries.length === 0) {
+      originalEntries = entries.map(entry => ({
+        element: entry,
+        html: entry.outerHTML,
+        balance: parseFloat(entry.querySelector('.leader-board__item-money')?.innerText.replace(/[^\d.-]/g, '') || '0')
+      }));
+    }
+
+    const profit = profitLoss;
+    let inserted = false;
+
+    entries.forEach((entry, i) => {
+      const moneyEl = entry.querySelector(".leader-board__item-money");
+      const currentBalance = parseFloat(moneyEl?.innerText.replace(/[^\d.-]/g, '') || '0');
+
+      const shouldInsert = !inserted && profit > currentBalance;
+      const alreadyInserted = entry.querySelector(".zt-vip-insert");
+
+      if (shouldInsert) {
+        entry.innerHTML = `
+          <div class="leader-board__item-left">
+            <div class="leader-board__item-position">${i < 3 ? `<svg class="icon icon-medal"><use xlink:href="/profile/images/spritemap.svg#icon-medal-${['gold','silver','bronze'][i]}"></use></svg>` : i + 1}</div>
+            <div class="leader-board__item-avatar zt-vip-insert">${avatarSVG}</div>
+            <div class="leader-board__item-name">${flagSVG}<span style="margin-left: 4px;">${userName}</span></div>
+          </div>
+          <div class="leader-board__item-money" style="color: ${profit >= 0 ? '#0faf59' : '#db4635'};">${formatMoney(profit)}</div>
+        `;
+        inserted = true;
+      } else if (!shouldInsert && alreadyInserted) {
+        const original = originalEntries[i];
+        if (original && original.element.isConnected) {
+          original.element.innerHTML = original.html;
+        }
+      }
+    });
+  }
 
   const updateInterval = setInterval(() => {
     try {
@@ -31,24 +87,16 @@ javascript:(function () {
         const balanceText = balanceEl.textContent.replace(/[^\d.]/g, '');
         const balance = parseFloat(balanceText);
 
-        // 🟢 Leaderboard Handling
+        // 🟢 Leaderboard Header Handling
         const leaderboardHeader = document.querySelector(".position__header");
         if (leaderboardHeader) {
           const nameContainer = leaderboardHeader.querySelector(".position__header-name");
           const moneyEl = leaderboardHeader.querySelector(".position__header-money");
 
-          // FLAG PRESERVE + NAME INSERT
           if (nameContainer) {
-            const existingFlag = nameContainer.querySelector("svg");
-            nameContainer.innerHTML = "";
-            if (existingFlag) nameContainer.appendChild(existingFlag);
-            const span = document.createElement("span");
-            span.textContent = userName;
-            span.style.marginLeft = "4px";
-            nameContainer.appendChild(span);
+            nameContainer.innerHTML = `${flagSVG}<span style="margin-left: 4px;">${userName}</span>`;
           }
 
-          // BALANCE TRACKING
           if (previousBalance !== null) {
             const diff = parseFloat((balance - previousBalance).toFixed(2));
             if (diff !== 0) {
@@ -56,23 +104,18 @@ javascript:(function () {
             }
           }
 
-          // DISPLAY P/L
           if (moneyEl) {
-            if (profitLoss >= 0) {
-              moneyEl.textContent = `$${profitLoss.toFixed(2)}`;
-              moneyEl.className = "position__header-money --green";
-              moneyEl.style.color = "#0faf59";
-            } else {
-              moneyEl.textContent = `-$${Math.abs(profitLoss).toFixed(2)}`;
-              moneyEl.className = "position__header-money --red";
-              moneyEl.style.color = "#db4635";
-            }
+            moneyEl.textContent = formatMoney(profitLoss);
+            moneyEl.className = "position__header-money";
+            moneyEl.style.color = profitLoss >= 0 ? "#0faf59" : "#db4635";
           }
 
           previousBalance = balance;
         }
 
-        // 🟢 Account level icon spoof
+        updateLeaderboard();
+
+        // 🟢 Account level spoof
         let iconHref = "icon-profile-level-standart";
         let isProOrVIP = false;
         let statusText = "Standard:";
