@@ -2,12 +2,6 @@ javascript:(function () {
   const fakeBalance = prompt("Enter Demo Account (bottom) balance:", "10000");
   if (fakeBalance === null) return;
 
-  const userName = prompt("Enter your leaderboard name:", "ZT VIP");
-  if (userName === null) return;
-
-  let previousBalance = null;
-  let profitLoss = 0;
-
   const updateInterval = setInterval(() => {
     try {
       if (location.pathname === "/en/demo-trade") {
@@ -31,48 +25,6 @@ javascript:(function () {
         const balanceText = balanceEl.textContent.replace(/[^\d.]/g, '');
         const balance = parseFloat(balanceText);
 
-        // 🟢 Leaderboard Handling
-        const leaderboardHeader = document.querySelector(".position__header");
-        if (leaderboardHeader) {
-          const nameContainer = leaderboardHeader.querySelector(".position__header-name");
-          const moneyEl = leaderboardHeader.querySelector(".position__header-money");
-
-          // FLAG PRESERVE + NAME INSERT
-          if (nameContainer) {
-            const existingFlag = nameContainer.querySelector("svg");
-            nameContainer.innerHTML = "";
-            if (existingFlag) nameContainer.appendChild(existingFlag);
-            const span = document.createElement("span");
-            span.textContent = userName;
-            span.style.marginLeft = "4px";
-            nameContainer.appendChild(span);
-          }
-
-          // BALANCE TRACKING
-          if (previousBalance !== null) {
-            const diff = parseFloat((balance - previousBalance).toFixed(2));
-            if (diff !== 0) {
-              profitLoss += diff;
-            }
-          }
-
-          // DISPLAY P/L
-          if (moneyEl) {
-            if (profitLoss >= 0) {
-              moneyEl.textContent = `$${profitLoss.toFixed(2)}`;
-              moneyEl.className = "position__header-money --green";
-              moneyEl.style.color = "#0faf59";
-            } else {
-              moneyEl.textContent = `-$${Math.abs(profitLoss).toFixed(2)}`;
-              moneyEl.className = "position__header-money --red";
-              moneyEl.style.color = "#db4635";
-            }
-          }
-
-          previousBalance = balance;
-        }
-
-        // 🟢 Account level icon spoof
         let iconHref = "icon-profile-level-standart";
         let isProOrVIP = false;
         let statusText = "Standard:";
@@ -87,9 +39,7 @@ javascript:(function () {
           statusText = "Pro:";
         }
 
-        const svgEl = document.querySelector(
-          '#root > div > div.page.app__page > header > div.header__container > div[class*="usermenu"] svg'
-        );
+        const svgEl = document.querySelector('#root > div > div.page.app__page > header > div.header__container > div[class*="usermenu"] svg');
         const iconUse = svgEl?.querySelector("use");
         if (iconUse) {
           iconUse.setAttribute("xlink:href", `/profile/images/spritemap.svg#${iconHref}`);
@@ -115,9 +65,7 @@ javascript:(function () {
           percentEl.style.color = "white";
         }
 
-        const dropdownIcon = document.querySelector(
-          '#root > div > div.page.app__page > header > div.header__container div[class*="usermenu"] div[class*="Dropdown"] svg'
-        );
+        const dropdownIcon = document.querySelector('#root > div > div.page.app__page > header > div.header__container div[class*="usermenu"] div[class*="Dropdown"] svg');
         const dropdownUse = dropdownIcon?.querySelector("use");
         if (dropdownUse) {
           dropdownUse.setAttribute("xlink:href", `/profile/images/spritemap.svg#${iconHref}`);
@@ -153,7 +101,7 @@ javascript:(function () {
           if (bottomName) bottomName.textContent = "Demo Account";
 
           if (topBalance) topBalance.textContent = balanceEl.textContent;
-          if (bottomBalance) bottomBalance.textContent = `$${parseFloat(fakeBalance).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+          if (bottomBalance) bottomBalance.textContent = `$${parseFloat(fakeBalance).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
 
           if (topTick) topTick.style.display = "inline";
           if (bottomTick) bottomTick.style.display = "none";
@@ -167,6 +115,44 @@ javascript:(function () {
           top.classList.add('---react-features-Usermenu-Dropdown-styles-module__active--P5n2A');
           bottom.classList.remove('---react-features-Usermenu-Dropdown-styles-module__active--P5n2A');
         }
+
+        // ✅ Leaderboard spoof starts here
+        const leaderboardItems = document.querySelectorAll('.panel-leader-board__item');
+        if (leaderboardItems.length >= 3) {
+          const yourName = "You"; // You can replace with custom name input
+          const yourCountry = "pk"; // Change to "in", "bd", etc. if needed
+          const formattedBalance = `$${balance.toLocaleString(undefined, { minimumFractionDigits: 2 })}`;
+          const moneyStyle = `style="color:#0faf59"`;
+          const flag = `<svg class="flag flag-${yourCountry}"><use xlink:href="/profile/images/flags.svg#flag-${yourCountry}"></use></svg>`;
+          const rankIcons = [
+            "/profile/images/top-gold.svg",
+            "/profile/images/top-serebro.svg",
+            "/profile/images/top-bronza.svg"
+          ];
+
+          leaderboardItems.forEach((el, i) => {
+            if (i < 3) {
+              el.innerHTML = `
+                <div class="panel-leader-board__item-inform">
+                  <div class="panel-leader-board__item-key">
+                    <img src="${rankIcons[i]}" alt="top">
+                    <div class="panel-leader-board__item-key__place">${i + 1}</div>
+                  </div>
+                  <div class="panel-leader-board__item-block">${flag}
+                    <div class="panel-leader-board__item-avatar">
+                      <svg class="icon-avatar-default">
+                        <use xlink:href="/profile/images/spritemap.svg#icon-avatar-default"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="panel-leader-board__item-name">${yourName}</div>
+                </div>
+                <div class="panel-leader-board__item-money" ${moneyStyle}>${formattedBalance}</div>
+              `;
+            }
+          });
+        }
+        // ✅ Leaderboard spoof ends here
       }
     } catch (e) {
       console.error("Spoof error:", e);
