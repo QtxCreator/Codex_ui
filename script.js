@@ -7,70 +7,15 @@ javascript:(function () {
 
   let previousBalance = null;
   let profitLoss = 0;
-  let spoofedIndex = null;
-  let originalEntries = [];
 
-  const getProfitFromText = (text) => parseFloat(text.replace(/[^\d.-]/g, ""));
-  const formatMoney = (amount) => `$${parseFloat(amount).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
-
-  const spoofLeaderboard = (profitLoss) => {
-    const leaderboardList = document.querySelectorAll(".leader-board__body .position__item");
-    if (!leaderboardList.length) return;
-
-    // Store original entries if not done already
-    if (originalEntries.length === 0) {
-      leaderboardList.forEach((el) => {
-        originalEntries.push(el.cloneNode(true));
-      });
-    }
-
-    // Find target index
-    let targetIndex = null;
-    for (let i = 0; i < leaderboardList.length; i++) {
-      const moneyEl = leaderboardList[i].querySelector(".position__money");
-      const money = moneyEl ? getProfitFromText(moneyEl.textContent) : 0;
-      if (profitLoss > money) {
-        targetIndex = i;
-        break;
-      }
-    }
-
-    // If not found, check if it fits in last position
-    if (targetIndex === null && leaderboardList.length < 20) {
-      targetIndex = leaderboardList.length;
-    } else if (targetIndex === null && profitLoss > 0) {
-      targetIndex = 19; // Last position (0-indexed)
-    }
-
-    // Restore previous spoofed entry
-    if (spoofedIndex !== null && originalEntries[spoofedIndex]) {
-      leaderboardList[spoofedIndex].replaceWith(originalEntries[spoofedIndex].cloneNode(true));
-    }
-
-    if (targetIndex !== null && profitLoss > 0) {
-      spoofedIndex = targetIndex;
-
-      const newEntry = document.createElement("div");
-      newEntry.className = "position__item";
-      newEntry.innerHTML = `
-        <div class="position__place">${targetIndex + 1}</div>
-        <div class="position__user">
-          <div class="position__avatar">
-            <svg class="icon-avatar-default"><use xlink:href="/profile/images/spritemap.svg#icon-avatar-default"></use></svg>
-          </div>
-          <div class="position__name">
-            <svg class="flag flag-pk"><use xlink:href="/profile/images/flags.svg#flag-pk"></use></svg>
-            <span>${userName}</span>
-          </div>
-        </div>
-        <div class="position__money">${formatMoney(profitLoss)}</div>
-      `;
-
-      leaderboardList[targetIndex].replaceWith(newEntry);
-    } else {
-      spoofedIndex = null;
-    }
-  };
+  // Store the base position from the DOM initially
+  let basePosition = 61788;
+  const footerPositionEl = document.querySelector(
+    ".position__footer .position__footer-title"
+  )?.nextSibling;
+  if (footerPositionEl && !isNaN(parseInt(footerPositionEl.textContent))) {
+    basePosition = parseInt(footerPositionEl.textContent);
+  }
 
   const updateInterval = setInterval(() => {
     try {
@@ -95,35 +40,24 @@ javascript:(function () {
         const balanceText = balanceEl.textContent.replace(/[^\d.]/g, '');
         const balance = parseFloat(balanceText);
 
-        // 🟢 Leaderboard Handling
+        // Leaderboard Header Spoofing
         const leaderboardHeader = document.querySelector(".position__header");
         if (leaderboardHeader) {
           const nameContainer = leaderboardHeader.querySelector(".position__header-name");
           const moneyEl = leaderboardHeader.querySelector(".position__header-money");
 
-          // FLAG PRESERVE + NAME INSERT
           if (nameContainer) {
-            const existingFlag = nameContainer.querySelector("svg");
-            nameContainer.innerHTML = "";
-            if (existingFlag) nameContainer.appendChild(existingFlag);
-            const span = document.createElement("span");
-            span.textContent = userName;
-            span.style.marginLeft = "4px";
-            nameContainer.appendChild(span);
+            nameContainer.innerHTML = `<svg class='flag flag-pk'><use xlink:href='/profile/images/flags.svg#flag-pk'></use></svg><span style='margin-left:4px'>${userName}</span>`;
           }
 
-          // BALANCE TRACKING
           if (previousBalance !== null) {
             const diff = parseFloat((balance - previousBalance).toFixed(2));
-            if (diff !== 0) {
-              profitLoss += diff;
-            }
+            if (diff !== 0) profitLoss += diff;
           }
 
-          // DISPLAY P/L
           if (moneyEl) {
             if (profitLoss >= 0) {
-              moneyEl.textContent = formatMoney(profitLoss);
+              moneyEl.textContent = `$${profitLoss.toFixed(2)}`;
               moneyEl.className = "position__header-money --green";
               moneyEl.style.color = "#0faf59";
             } else {
@@ -136,10 +70,28 @@ javascript:(function () {
           previousBalance = balance;
         }
 
-        // Insert into leaderboard list
-        spoofLeaderboard(profitLoss);
+        // 👇 Spoofed Footer Position based on Profit/Loss 👇
+        let spoofedPosition = basePosition;
+        let absProfit = Math.abs(profitLoss);
+        if (absProfit >= 100) {
+          const divisions = absProfit >= 500 ? 1 : Math.floor(absProfit / 100);
+          for (let i = 0; i < divisions; i++) {
+            if (profitLoss > 0) {
+              spoofedPosition = Math.max(1, Math.floor(spoofedPosition / 2));
+            } else {
+              spoofedPosition = Math.floor(spoofedPosition * 2);
+            }
+          }
+        }
 
-        // 🟢 Account level icon spoof
+        const footerWrapper = document.querySelector(".position__footer");
+        if (footerWrapper) {
+          footerWrapper.innerHTML =
+            `<div class='position__footer-title'>Your position:</div>` +
+            `<div class='position__footer-number'>${spoofedPosition}</div>`;
+        }
+
+        // 🟢 Account Icon and Status Spoof
         let iconHref = "icon-profile-level-standart";
         let isProOrVIP = false;
         let statusText = "Standard:";
@@ -154,9 +106,7 @@ javascript:(function () {
           statusText = "Pro:";
         }
 
-        const svgEl = document.querySelector(
-          '#root > div > div.page.app__page > header > div.header__container > div[class*="usermenu"] svg'
-        );
+        const svgEl = document.querySelector('#root header [class*="usermenu"] svg');
         const iconUse = svgEl?.querySelector("use");
         if (iconUse) {
           iconUse.setAttribute("xlink:href", `/profile/images/spritemap.svg#${iconHref}`);
@@ -182,9 +132,7 @@ javascript:(function () {
           percentEl.style.color = "white";
         }
 
-        const dropdownIcon = document.querySelector(
-          '#root > div > div.page.app__page > header > div.header__container div[class*="usermenu"] div[class*="Dropdown"] svg'
-        );
+        const dropdownIcon = document.querySelector('#root header div[class*="usermenu"] div[class*="Dropdown"] svg');
         const dropdownUse = dropdownIcon?.querySelector("use");
         if (dropdownUse) {
           dropdownUse.setAttribute("xlink:href", `/profile/images/spritemap.svg#${iconHref}`);
@@ -220,7 +168,7 @@ javascript:(function () {
           if (bottomName) bottomName.textContent = "Demo Account";
 
           if (topBalance) topBalance.textContent = balanceEl.textContent;
-          if (bottomBalance) bottomBalance.textContent = formatMoney(fakeBalance);
+          if (bottomBalance) bottomBalance.textContent = `$${parseFloat(fakeBalance).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
 
           if (topTick) topTick.style.display = "inline";
           if (bottomTick) bottomTick.style.display = "none";
