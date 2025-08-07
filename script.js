@@ -15,16 +15,16 @@ javascript:(function () {
   if (userName === null) return;
   userName = userName.trim();
 
-  // Flag popup on start
+  // Flag popup on start (black text)
   let flagOptions = flagList.map(f => `<option value="${f.code}">${f.name} (${f.code.toUpperCase()})</option>`).join("");
   let flagDiv = document.createElement("div");
   flagDiv.innerHTML = `
-    <div id="flag-popup" style="position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:#222;padding:20px;border-radius:8px;z-index:9999;color:#fff;">
-      <label style="font-size:16px;">Country:</label><br>
-      <select id="flag-select" style="margin-top:10px;font-size:16px;">
+    <div id="flag-popup" style="position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:#222;padding:20px;border-radius:8px;z-index:9999;color:#000;">
+      <label style="font-size:16px;color:#000;">Country:</label><br>
+      <select id="flag-select" style="margin-top:10px;font-size:16px;color:#000;">
         ${flagOptions}
       </select>
-      <button id="flag-ok" style="margin-left:10px;font-size:16px;">OK</button>
+      <button id="flag-ok" style="margin-left:10px;font-size:16px;color:#000;">OK</button>
     </div>
   `;
   document.body.appendChild(flagDiv);
@@ -40,18 +40,17 @@ javascript:(function () {
   function startSpoof() {
     let previousBalance = null;
     let profitLoss = 0;
-    let customPosition = 2393; // Default start position
+    let customPosition = 3264; // Default start position
 
-    // Custom flag popup (dropdown style)
     function askCustomFlag() {
       let flagOptions = flagList.map(f => `<option value="${f.code}">${f.name} (${f.code.toUpperCase()})</option>`).join("");
       let html = `
-        <div id="flag-popup" style="position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:#222;padding:20px;border-radius:8px;z-index:9999;color:#fff;">
-          <label style="font-size:16px;">Country:</label><br>
-          <select id="flag-select" style="margin-top:10px;font-size:16px;">
+        <div id="flag-popup" style="position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:#222;padding:20px;border-radius:8px;z-index:9999;color:#000;">
+          <label style="font-size:16px;color:#000;">Country:</label><br>
+          <select id="flag-select" style="margin-top:10px;font-size:16px;color:#000;">
             ${flagOptions}
           </select>
-          <button id="flag-ok" style="margin-left:10px;font-size:16px;">OK</button>
+          <button id="flag-ok" style="margin-left:10px;font-size:16px;color:#000;">OK</button>
         </div>
       `;
       let div = document.createElement("div");
@@ -65,7 +64,6 @@ javascript:(function () {
       };
     }
 
-    // Custom position popup
     function askCustomPosition() {
       const pos = prompt("Enter your custom position (number):", customPosition);
       if (pos !== null && !isNaN(pos) && Number(pos) > 0) {
@@ -73,7 +71,6 @@ javascript:(function () {
       }
     }
 
-    // Custom name popup
     function askCustomName() {
       const name = prompt("Enter your leaderboard name:", userName);
       if (name !== null && name.trim() !== "") {
@@ -81,16 +78,20 @@ javascript:(function () {
       }
     }
 
-    // Format balance with comma and $30,000+ for top 3 (row only)
     function formatLeaderboardBalance(amount, idx, yourPosition) {
       if (idx <= 2 && idx === yourPosition && amount >= 30000) {
         return "$30,000+";
       }
+      if (amount < 0) {
+        return `-$${Math.abs(amount).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+      }
       return `$${parseFloat(amount).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
     }
 
-    // Format header balance (always comma, no $30,000+)
     function formatHeaderBalance(amount) {
+      if (amount < 0) {
+        return `-$${Math.abs(amount).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+      }
       return `$${parseFloat(amount).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
     }
 
@@ -147,7 +148,7 @@ javascript:(function () {
         }
         previousBalance = balance;
 
-        // --- FIXED HEADER FLAG ---
+        // --- HEADER FLAG & BALANCE ---
         const leaderboardHeader = document.querySelector(".position__header");
         if (leaderboardHeader) {
           const nameContainer = leaderboardHeader.querySelector(".position__header-name");
@@ -202,38 +203,71 @@ javascript:(function () {
           }
         }
 
-        // ✅ Your position number spoof
+        // ✅ Leaderboard spoof: show your name/profit/flag/avatar at correct position
+        const leaderboardItems = document.querySelectorAll(".leader-board__items .leader-board__item");
+        let profits = [];
+        let avatars = [];
+        let flags = [];
+        let names = [];
+
+        leaderboardItems.forEach(item => {
+          const profitEl = item.querySelector(".leader-board__item-money");
+          const profit = profitEl ? parseFloat(profitEl.textContent.replace(/[^\d.-]/g, '')) : 0;
+          profits.push(profit);
+
+          const avatarEl = item.querySelector(".leader-board__item-avatar");
+          avatars.push(avatarEl ? avatarEl.innerHTML : "");
+
+          const flagEl = item.querySelector(".flag");
+          flags.push(flagEl ? flagEl.outerHTML : "");
+
+          const nameEl = item.querySelector(".leader-board__item-name");
+          names.push(nameEl ? nameEl.textContent : "");
+        });
+
+        function getCustomFlagHTML() {
+          return `<svg class="flag flag-${customFlag}" width="16" height="16"><use xlink:href="/profile/images/flags.svg#flag-${customFlag}"></use></svg>`;
+        }
+        function getDefaultAvatarHTML() {
+          return `<svg class="icon-avatar-default" width="32" height="32"><use xlink:href="/profile/images/spritemap.svg#icon-avatar-default"></use></svg>`;
+        }
+
+        // Add your profit to array and sort descending
+        const allProfits = [...profits, profitLoss].sort((a, b) => b - a);
+        let yourPosition = allProfits.indexOf(profitLoss);
+        if (customPosition && customPosition > 0 && customPosition <= leaderboardItems.length) {
+          yourPosition = customPosition - 1;
+        }
+
+        leaderboardItems.forEach((item, idx) => {
+          const profitEl = item.querySelector(".leader-board__item-money");
+          const nameEl = item.querySelector(".leader-board__item-name");
+          const avatarEl = item.querySelector(".leader-board__item-avatar");
+          const flagEl = item.querySelector(".flag");
+
+          if (idx === yourPosition && yourPosition < leaderboardItems.length) {
+            if (nameEl) nameEl.textContent = userName;
+            if (profitEl) profitEl.textContent = formatLeaderboardBalance(profitLoss, idx, yourPosition);
+            if (avatarEl) avatarEl.innerHTML = getDefaultAvatarHTML();
+            if (flagEl) flagEl.outerHTML = getCustomFlagHTML();
+          } else {
+            if (nameEl) nameEl.textContent = names[idx];
+            if (profitEl) profitEl.textContent = formatLeaderboardBalance(profits[idx], idx, yourPosition);
+            if (avatarEl && avatars[idx]) avatarEl.innerHTML = avatars[idx]; // restore original avatar
+            if (flagEl && flags[idx]) flagEl.outerHTML = flags[idx]; // restore original flag
+          }
+        });
+
+        // ✅ Show your position in header/footer
         const footerWrapper = document.querySelector(".position__footer");
         if (footerWrapper) {
           const title = footerWrapper.querySelector(".position__footer-title");
           if (title) title.textContent = "Your position:";
-
           const textNodes = Array.from(footerWrapper.childNodes).filter(n => n.nodeType === Node.TEXT_NODE);
           const numNode = textNodes.find(n => n.textContent.trim().match(/^\d+$/));
           if (numNode) {
-            numNode.textContent = "1"; // Always show rank 1 since we're replacing it
+            numNode.textContent = (yourPosition + 1).toString();
             numNode.parentElement.style.color = "#f4f4f4";
-          }
-        }
-
-        // ✅ Leaderboard spoof entry (replace #1 if profit is higher)
-        const leaderboardItems = document.querySelectorAll(".leader-board__items .leader-board__item");
-        if (leaderboardItems.length > 0) {
-          const firstItem = leaderboardItems[0];
-          const profitEl = firstItem.querySelector(".leader-board__item-money");
-          const currentProfit = profitEl ? parseFloat(profitEl.textContent.replace(/[^\d.-]/g, '')) : 0;
-
-          if (profitLoss > currentProfit) {
-            const nameEl = firstItem.querySelector(".leader-board__item-name");
-            const moneyEl = firstItem.querySelector(".leader-board__item-money");
-            const flagEl = firstItem.querySelector(".flag");
-
-            if (nameEl) nameEl.textContent = userName;
-            if (moneyEl) moneyEl.textContent = `$${profitLoss.toFixed(2)}`;
-            // Always show flag 16x16
-            if (flagEl) {
-              flagEl.outerHTML = `<svg class="flag flag-${customFlag}" width="16" height="16"><use xlink:href="/profile/images/flags.svg#flag-${customFlag}"></use></svg>`;
-            }
           }
         }
 
