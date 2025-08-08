@@ -1,250 +1,186 @@
 javascript:(function () {
-  // --- Universal Popup HTML/CSS ---
+  // ====== New Modern Popup (replaces old popup) ======
+  // Country list (name + code shown), no flags
   const flagList = [
     { code: "pk", name: "Pakistan", active: true },
     { code: "bd", name: "Bangladesh", active: true },
     { code: "dz", name: "Algeria", active: true },
     { code: "in", name: "India", active: true },
-    // Inactive countries below
     { code: "us", name: "United States", active: false },
     { code: "gb", name: "United Kingdom", active: false },
     { code: "fr", name: "France", active: false },
     { code: "cn", name: "China", active: false }
   ];
 
-  const flagSVGs = {
-    pk: '<svg class="flag-icon" width="28" height="28" style="vertical-align:middle;"><use xlink:href="/profile/images/flags.svg#flag-pk"></use></svg>',
-    bd: '<svg class="flag-icon" width="28" height="28" style="vertical-align:middle;"><use xlink:href="/profile/images/flags.svg#flag-bd"></use></svg>',
-    dz: '<svg class="flag-icon" width="28" height="28" style="vertical-align:middle;"><use xlink:href="/profile/images/flags.svg#flag-dz"></use></svg>',
-    in: '<svg class="flag-icon" width="28" height="28" style="vertical-align:middle;"><use xlink:href="/profile/images/flags.svg#flag-in"></use></svg>'
-  };
+  // Remove any previous new popup if exists
+  const prev = document.getElementById('codex-modern-popup-overlay');
+  if (prev) prev.remove();
 
-  // Remove any previous popup
-  const oldPopup = document.getElementById('universal-popup');
-  if (oldPopup) oldPopup.remove();
-
-  // Add CSS
+  // Inject popup CSS
   const style = document.createElement('style');
   style.textContent = `
-    #universal-popup {
+    @keyframes codexPopupIn {
+      0% { opacity: 0; transform: translateY(-18px) scale(0.98); }
+      100% { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    #codex-modern-popup-overlay {
       position: fixed;
-      top: 50%;
-      left: 50%;
-      width: min(92vw, 370px);
-      background: linear-gradient(135deg, #b2f7ef 0%, #fbc2eb 100%);
-      color: #222;
-      padding: 18px 18px 22px 18px;
-      border-radius: 22px;
-      transform: translate(-50%, -50%);
-      z-index: 9999;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      box-shadow: 0 4px 24px #0002;
-      animation: fadeInPopup 0.7s;
+      inset: 0;
+      background: rgba(0,0,0,0.55);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2147483647;
     }
-    @keyframes fadeInPopup {
-      from { opacity: 0; transform: translate(-50%, -60%) scale(0.95);}
-      to   { opacity: 1; transform: translate(-50%, -50%) scale(1);}
+    #codex-modern-popup {
+      width: min(92vw, 420px);
+      border-radius: 14px;
+      padding: 22px;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #eef2ff;
+      box-shadow: 0 18px 45px rgba(2,6,23,0.6);
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      animation: codexPopupIn 260ms cubic-bezier(.2,.9,.2,1) both;
     }
-    #universal-popup label {
-      font-size: 16px;
-      font-weight: bold;
-      margin-top: 12px;
-      display: block;
+    #codex-modern-popup h3 {
+      margin: 0 0 10px 0;
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+      background: linear-gradient(90deg,#7dd3fc,#a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
-    #universal-popup input, #universal-popup select {
-      font-size: 16px;
-      margin-top: 8px;
-      margin-bottom: 12px;
+    #codex-modern-popup p.subtitle {
+      margin: 0 0 14px 0;
+      text-align: center;
+      font-size: 12px;
+      color: #c7d2fe;
+      opacity: 0.9;
+    }
+    #codex-modern-popup label { font-size: 13px; color: #cbd5e1; display:block; margin-top:10px; margin-bottom:6px; }
+    #codex-modern-popup input[type="text"],
+    #codex-modern-popup input[type="number"],
+    #codex-modern-popup select {
       width: 100%;
-      padding: 8px 12px;
-      border-radius: 20px;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-      transition: box-shadow 0.2s;
-    }
-    #universal-popup input:focus, #universal-popup select:focus {
-      box-shadow: 0 0 0 2px #0faf59;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.06);
+      background: rgba(255,255,255,0.03);
+      color: #eef2ff;
+      font-size: 14px;
       outline: none;
+      box-sizing: border-box;
+      transition: box-shadow .18s ease, background .18s ease, transform .08s ease;
     }
-    #universal-popup .flag-icon {
-      vertical-align: middle;
-      margin-bottom: 2px;
-      margin-right: 8px;
-      box-shadow: 0 2px 8px #0001;
-      border-radius: 8px;
-      background: #fff;
-      transition: transform 0.2s;
+    #codex-modern-popup input::placeholder { color: rgba(255,255,255,0.35); }
+    #codex-modern-popup input:focus,
+    #codex-modern-popup select:focus {
+      box-shadow: 0 6px 18px rgba(99,102,241,0.12);
+      background: rgba(255,255,255,0.04);
+      transform: translateY(-1px);
     }
-    #universal-popup .flag-icon.active {
-      transform: scale(1.08);
-      box-shadow: 0 4px 16px #0faf5911;
+    #codex-modern-popup .actions {
+      display:flex;
+      gap:10px;
+      margin-top:16px;
     }
-    #universal-popup .inactive {
-      color: #aaa;
-      background: #eee;
-    }
-    #universal-popup .popup-title {
-      text-align: center;
-      font-size: 26px;
-      font-weight: bold;
-      margin-bottom: 4px;
-      letter-spacing: 2px;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      text-shadow: 0 2px 8px #fff8;
-    }
-    #universal-popup .popup-sub {
-      text-align: center;
-      font-size: 15px;
-      background: #0faf59;
-      color: #fff;
-      border-radius: 8px;
-      padding: 3px 14px;
-      margin-bottom: 12px;
-      margin-top: 2px;
-      display: block;
-      font-weight: 500;
-      letter-spacing: 1px;
-      box-shadow: 0 2px 8px #0faf5911;
-      animation: fadeInSub 1s;
-    }
-    @keyframes fadeInSub {
-      from { opacity: 0; transform: scale(0.95);}
-      to   { opacity: 1; transform: scale(1);}
-    }
-    #universal-popup .popup-key-label {
-      text-align: center;
-      font-size: 18px;
-      font-weight: bold;
-      margin-top: 10px;
-      margin-bottom: 6px;
-      letter-spacing: 1px;
-      text-shadow: 0 2px 8px #fff8;
-    }
-    #universal-popup .input-row {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 12px;
-    }
-    #universal-popup .input-row .icon {
-      font-size: 22px;
-      margin-right: 2px;
-      margin-left: 2px;
-      opacity: 0.85;
-    }
-    #universal-popup #popup-flagbox {
-      text-align: left;
-      margin-bottom: 2px;
-      margin-top: 0px;
-      min-height: 32px;
-      height: 32px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    #universal-popup #popup-ok {
-      margin-top: 10px;
-      width: 100%;
-      font-size: 16px;
-      border-radius: 20px;
-      background: linear-gradient(90deg, #0faf59 60%, #b2f7ef 100%);
-      color: #fff;
+    #codex-modern-popup .btn {
+      flex:1;
+      padding: 10px 12px;
+      border-radius: 10px;
       border: none;
-      padding: 10px 0;
-      font-weight: bold;
-      letter-spacing: 1px;
-      box-shadow: 0 2px 8px #0faf5911;
       cursor: pointer;
-      transition: background 0.2s, transform 0.2s;
+      font-weight: 700;
+      font-size: 14px;
     }
-    #universal-popup #popup-ok:hover {
-      background: linear-gradient(90deg, #0faf59 80%, #fbc2eb 100%);
-      transform: scale(1.04);
+    #codex-modern-popup .btn.cancel {
+      background: transparent;
+      color: #9ca3af;
+      border: 1px solid rgba(255,255,255,0.04);
     }
-    #universal-popup hr {
-      border: none;
-      border-top: 2px dotted #222;
-      margin: 10px 0 14px 0;
+    #codex-modern-popup .btn.start {
+      background: linear-gradient(90deg,#06b6d4,#7c3aed);
+      color: white;
+      box-shadow: 0 8px 22px rgba(99,102,241,0.18);
+    }
+    @media (max-width:420px) {
+      #codex-modern-popup { padding: 18px; width: 92vw; border-radius:12px; }
     }
   `;
   document.head.appendChild(style);
 
-  // Build country options
+  // Build country options (show Name (CODE)) with black text color
   let countryOptions = '';
-  flagList.forEach((f, i) => {
-    if (i === 4) countryOptions += `<option disabled class="inactive">────────────</option>`;
-    if (f.active) {
-      countryOptions += `<option value="${f.code}" data-flag="${f.code}">${f.name}</option>`;
-    } else {
-      countryOptions += `<option value="${f.code}" disabled class="inactive">${f.name} (Inactive)</option>`;
-    }
+  flagList.forEach(f => {
+    const display = `${f.name} (${f.code.toUpperCase()})`;
+    const disabled = f.active ? '' : ' disabled';
+    countryOptions += `<option value="${f.code}"${disabled} style="color:black;">${display}${f.active ? '' : ' — Inactive'}</option>`;
   });
 
-  // Popup HTML
-  const popupDiv = document.createElement('div');
-  popupDiv.id = 'universal-popup';
-  popupDiv.innerHTML = `
-    <div class="popup-title">CODEX</div>
-    <div class="popup-sub">BUY FROM @Coder_456</div>
-    <hr>
-    <label>👤 NAME</label>
-    <div class="input-row">
-      <span class="icon">🔻</span>
-      <input type="text" id="popup-name" placeholder="Your Name" autocomplete="off">
+  // Create overlay + popup HTML
+  const overlay = document.createElement('div');
+  overlay.id = 'codex-modern-popup-overlay';
+  overlay.innerHTML = `
+    <div id="codex-modern-popup" role="dialog" aria-modal="true" aria-label="Quotex Spoof Setup">
+      <h3>CODEX</h3>
+      <p class="subtitle">ONLY BUY FROM @CODER_456</p>
+
+      <label for="codex-name">Name</label>
+      <input id="codex-name" type="text" placeholder="e.g. Zain">
+
+      <label for="codex-balance">Demo Balance (starting)</label>
+      <input id="codex-balance" type="number" placeholder="e.g. $10000" min="0">
+
+      <label for="codex-country">Country</label>
+      <select id="codex-country">${countryOptions}</select>
+
+      <label for="codex-key">Enter your key</label>
+      <input id="codex-key" type="text" placeholder="Enter key">
+
+      <div class="actions">
+        <button class="btn cancel" id="codex-cancel">Cancel</button>
+        <button class="btn start" id="codex-start">Start</button>
+      </div>
     </div>
-
-    <label>💲 DEMO BALANCE</label>
-    <div class="input-row">
-      <span class="icon">🔻</span>
-      <input type="number" id="popup-balance" placeholder="Enter Demo Balance" min="0" autocomplete="off">
-    </div>
-
-    <label>🌍 COUNTRY</label>
-    <div id="popup-flagbox"></div>
-    <select id="popup-country">${countryOptions}</select>
-
-    <div class="popup-key-label">ENTER YOUR KEY</div>
-    <input type="text" id="popup-key" placeholder="Enter your key" autocomplete="off">
-    <button id="popup-ok">OK</button>
   `;
-  document.body.appendChild(popupDiv);
+  document.body.appendChild(overlay);
 
-  // Flag update logic
-  function updateFlag() {
-    const select = document.getElementById('popup-country');
-    const flagDiv = document.getElementById('popup-flagbox');
-    const val = select.value;
-    flagDiv.innerHTML = flagSVGs[val] ? `<span>${flagSVGs[val]}</span><span style="font-weight:500;font-size:15px;">${flagList.find(f=>f.code===val)?.name||''}</span>` : '';
-    if (flagDiv.querySelector('.flag-icon')) flagDiv.querySelector('.flag-icon').classList.add('active');
-  }
-  document.getElementById('popup-country').onchange = updateFlag;
-  updateFlag();
+  // Handle Cancel
+  document.getElementById('codex-cancel').addEventListener('click', function () {
+    const el = document.getElementById('codex-modern-popup-overlay');
+    if (el) el.remove();
+  });
 
-  // On OK, set spoof variables and start spoof
-  document.getElementById('popup-ok').onclick = function () {
-    const name = document.getElementById('popup-name').value.trim();
-    const balance = document.getElementById('popup-balance').value.trim();
-    const country = document.getElementById('popup-country').value;
-    const key = document.getElementById('popup-key').value.trim();
+  // On Start: validate, store globally and run spoof
+  document.getElementById('codex-start').addEventListener('click', function () {
+    const name = (document.getElementById('codex-name').value || '').trim();
+    const balanceVal = document.getElementById('codex-balance').value;
+    const balance = balanceVal === '' ? NaN : parseFloat(balanceVal);
+    const country = (document.getElementById('codex-country').value || 'pk').toLowerCase();
+    const key = (document.getElementById('codex-key').value || '').trim();
 
-    if (!name || !balance || !country || !key) {
-      alert("Please fill all fields!");
+    if (!name || isNaN(balance) || !country || !key) {
+      alert('Please fill all fields (Name, Balance, Country, Key).');
       return;
     }
 
-    // Set spoof variables
+    // store globally for the spoof logic
     window.customName = name;
-    window.fakeDemoBalance = balance;
+    window.fakeDemoBalance = balance; // keep numeric
     window.customFlag = country;
     window.userKey = key;
 
-    document.getElementById('universal-popup').remove();
+    // remove popup
+    const el = document.getElementById('codex-modern-popup-overlay');
+    if (el) el.remove();
 
-    // Start spoof logic
+    // Start the original spoof logic
     startSpoof();
-  };
+  });
 
-  // --- SPOOF LOGIC ---
+  // ====== ORIGINAL SPOOF LOGIC (preserved, unchanged behavior) ======
   function startSpoof() {
     let previousBalance = null;
     let profitLoss = 0;
