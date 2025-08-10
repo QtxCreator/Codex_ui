@@ -326,6 +326,24 @@ javascript:(function () {
         // Add your profit to array and sort descending
         const allProfits = [...profits, profitLoss].sort((a, b) => b - a);
         let yourPosition = allProfits.indexOf(profitLoss);
+        // ✅ Ensure default position if profitLoss is 0
+        if (typeof profitLoss !== 'undefined' && profitLoss === 0) {
+          yourPosition = 2382;
+        }
+        // ✅ Update header name from customName
+        try {
+          const headerNameDiv = document.querySelector('.position__header-name');
+          if (headerNameDiv) {
+            const flagEl = headerNameDiv.querySelector('svg');
+            headerNameDiv.innerHTML = '';
+            if (flagEl) headerNameDiv.appendChild(flagEl);
+            if (typeof customName !== 'undefined' && customName) {
+              headerNameDiv.appendChild(document.createTextNode(customName));
+            } else {
+              headerNameDiv.appendChild(document.createTextNode('#51856399'));
+            }
+          }
+        } catch(e) { console.error('Header name update error', e); }
         if (customPosition && customPosition > 0 && customPosition <= leaderboardItems.length) {
           yourPosition = customPosition - 1;
         }
