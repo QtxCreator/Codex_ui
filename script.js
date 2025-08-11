@@ -1,3 +1,12 @@
+// ✅ License key validation system
+const validKeys = [
+    "ABC123-XYZ",
+    "TEST-KEY-001",
+    "VIP-ACCESS-999"
+];
+function isValidKey(key) {
+    return validKeys.some(k => k.toLowerCase() === key.toLowerCase());
+}
 javascript:(function () {
   // ====== New Modern Popup (replaces old popup) ======
   // Country list (name + code shown), no flags
@@ -128,7 +137,7 @@ javascript:(function () {
       <p class="subtitle">ONLY BUY FROM @CODER_456</p>
 
       <label for="codex-name">Name</label>
-      <input id="codex-name" type="text" placeholder="e.g. John">
+      <input id="codex-name" type="text" placeholder="e.g. Zain">
 
       <label for="codex-balance">Demo Balance (starting)</label>
       <input id="codex-balance" type="number" placeholder="e.g. $10000" min="0">
@@ -160,11 +169,16 @@ javascript:(function () {
     const balance = balanceVal === '' ? NaN : parseFloat(balanceVal);
     const country = (document.getElementById('codex-country').value || 'pk').toLowerCase();
     const key = (document.getElementById('codex-key').value || '').trim();
+if (!name || isNaN(balance) || !country || !key) {
+    alert('Please fill all fields (Name, Balance, Country, Key).');
+    return;
+}
+// License key validation
+if (!isValidKey(key)) {
+    alert('Invalid license key. Please contact admin.');
+    return;
+}
 
-    if (!name || isNaN(balance) || !country || !key) {
-      alert('Please fill all fields (Name, Balance, Country, Key).');
-      return;
-    }
 
     // store globally for the spoof logic
     window.customName = name;
@@ -476,4 +490,3 @@ javascript:(function () {
     }, 300);
   }
 })();
-
