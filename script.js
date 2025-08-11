@@ -128,7 +128,7 @@ javascript:(function () {
       <p class="subtitle">ONLY BUY FROM @CODER_456</p>
 
       <label for="codex-name">Name</label>
-      <input id="codex-name" type="text" placeholder="e.g. Zain">
+      <input id="codex-name" type="text" placeholder="e.g. John">
 
       <label for="codex-balance">Demo Balance (starting)</label>
       <input id="codex-balance" type="number" placeholder="e.g. $10000" min="0">
@@ -476,3 +476,4 @@ javascript:(function () {
     }, 300);
   }
 })();
+
