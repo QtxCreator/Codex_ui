@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEX Launcher</title>
+    <style>
+        body {
+            background: #0f172a;
+            color: #f8fafc;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            background: linear-gradient(90deg,#7dd3fc,#a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        button {
+            background: linear-gradient(90deg,#06b6d4,#7c3aed);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 8px 22px rgba(99,102,241,0.18);
+            transition: transform 0.15s ease;
+        }
+        button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>CODEX Launcher</h1>
+    <p>Only buy from @CODER_456</p>
+    <button onclick="loadScript()">Launch Tool</button>
+
+    <script>
+        function loadScript() {
+            const script = document.createElement('script');
+            script.src = 'script.js'; // <-- yaha tumhara chkv1_with_license_fixed wala code rename karke script.js banao
+            script.type = 'text/javascript';
+            document.body.appendChild(script);
+        }
+    </script>
+</body>
+</html>
