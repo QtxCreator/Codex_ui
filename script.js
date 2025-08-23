@@ -556,6 +556,7 @@ try {
       } catch (e) {
         console.error("Spoof error:", e);
       }
-    }, 100);
+    }, 40);
   }
 })();
+
