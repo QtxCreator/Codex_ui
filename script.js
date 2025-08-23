@@ -1,1 +1,561 @@
-const _0xe21f69=_0x7ac1;function _0x7ac1(x,$){let e=_0x3253();return(_0x7ac1=function(x,$){return e[x-=170]})(x,$)}!function(x,$){let e=_0x7ac1,a=x();for(;;)try{let t=-parseInt(e(344))/1+-parseInt(e(209))/2*(-parseInt(e(249))/3)+parseInt(e(265))/4*(-parseInt(e(277))/5)+-parseInt(e(183))/6+-parseInt(e(173))/7*(parseInt(e(202))/8)+-parseInt(e(252))/9*(parseInt(e(314))/10)+parseInt(e(178))/11*(parseInt(e(221))/12);if(462598===t)break;a.push(a.shift())}catch(o){a.push(a.shift())}}(_0x3253,462598);const validKeys=[_0xe21f69(279),_0xe21f69(278),_0xe21f69(204),_0xe21f69(288),_0xe21f69(242),_0xe21f69(269),_0xe21f69(345),_0xe21f69(266),"M8T3X-L1V7P-R5K9N",_0xe21f69(298),_0xe21f69(307),_0xe21f69(341),_0xe21f69(211),_0xe21f69(216),_0xe21f69(273),_0xe21f69(327),_0xe21f69(346),_0xe21f69(334),_0xe21f69(192),_0xe21f69(348),"X1M6P-L9V8T-Q4R7N",_0xe21f69(170),_0xe21f69(214),_0xe21f69(295),_0xe21f69(206),_0xe21f69(185),"L8V2M-Q9T4X-P5R7H",_0xe21f69(294),"X9M8P-L4V7T-Q1R2H",_0xe21f69(234),_0xe21f69(311),_0xe21f69(328)];function isValidKey(x){let $=_0xe21f69;return validKeys[$(247)](e=>e[$(184)]()===x[$(184)]())}function _0x3253(){let x=['#root > div > div.page.app__page > header > div.header__container > div[class*="usermenu"]',"aria-current","J2L5N-V7Q1H-M6T8C","United States",'<svg class="flag flag-',"--green","pushState","some","Spoof error:","45183GDvqhi",".leader-board__item-name","style","2480526jZWOcY",'[class*="__levelProfit--"]',"cursor",'#root > div > div.page.app__page > header div[class*="Usermenu-Dropdown"] div[class*="levelIcon"]',"dropdown",".position__header","toUpperCase","className","codex-key",'#root > div > div.page.app__page > header div[class*="Usermenu-Dropdown"] div[class*="levelIcon"] svg use',"find","header","Algeria","4PzDsCT","P6M1J-V3L8Q-Z4R7B","xlink:href","round","R4B6Y-8Z1WQ-P3K9S","setAttribute",".position__footer-title","body","T6M2X-P9L1V-Q8R5N","Invalid license key. Please contact admin.",'li[class*="selectItemRadio"]',"max","1998985cCLufn","TEST-KEY-1","ABC123-XHJ",'#root > div > div.page.app__page > header div[class*="Usermenu-styles-module__infoLevels"]',"includes","#ffffff80","toLocaleString","closest","push","display","$30,000+","K9X3P-7F2MZ-L8B4J","onclick",".position__header-name","addEventListener","remove","France","P4X9L-M1Q7V-T8R5N","V4Q7M-T8K4X-P2T2H","name","match","L2H9M-P8Q5T-V7X3G","head > title","findIndex","codex-name","innerText","--red",'b[class*="selectBalance"]',"add",'" width="16" height="16"><use xlink:href="/profile/images/flags.svg#flag-',"C4X1N-M7Z5R-L9V8Q","none",'a[class*="selectName"]',"innerHTML","M5L9Q-P8T7X-V2R1H"," — Inactive","trim","20QKFOSY","/en/demo-trade",".leader-board__item-avatar","Pro:","Demo Account",'#root > div > div.page.app__page > header > div.header__container > div[class*="usermenu"] svg use',"India","appendChild",".flag","querySelectorAll","fakeDemoBalance",'<option value="',".leader-board__item-money","V9Q3M-L7T5X-P1R8H","V3Q1M-L8T9X-P4R7H","sort","codex-modern-popup-overlay","parentElement","head","__demo--","R3P8V-M2L7X-Q5T9H",'svg[class*="selectCheck"]',"span",'\n    <div id="codex-modern-popup" role="dialog" aria-modal="true" aria-label="Quotex Spoof Setup">\n      <h3>CODEX</h3>\n      <p class="subtitle">ONLY BUY FROM @CODER_456</p>\n\n      <label for="codex-name">Name</label>\n      <input id="codex-name" type="text" placeholder="e.g. John">\n\n      <label for="codex-balance">Demo Balance (starting)</label>\n      <input id="codex-balance" type="number" placeholder="e.g. $10000" min="0">\n\n      <label for="codex-country">Country</label>\n      <select id="codex-country">',"createElementNS","page","length","B5T8M-Q3P9L-V6X1R","nodeType","code","769963Kitmgq","H7T2M-X5D9E-C1V4G","Q8M4P-L6T9V-X3R1N","toString","P7X2L-M8Q5V-T9R1H","Please fill all fields (Name, Balance, Country, Key).",".position__footer","#db4635","removeAttribute","+4% profit","width",'"></use></svg>',"N8P3M-V7T9X-L1R5Q","Bangladesh","codex-start","11151QbEIHL","undefined","TEXT_NODE",'[class*="__levelName--"]','</select>\n\n      <label for="codex-key">Enter your key</label>\n      <input id="codex-key" type="text" placeholder="Enter key">\n\n      <div class="actions">\n        <button class="btn cancel" id="codex-cancel">Cancel</button>\n        <button class="btn start" id="codex-start">Start</button>\n      </div>\n    </div>\n  ',"1200463mQoatA","filter","getElementById","width 0.3s ease-in-out","Live Account","4937022sldQzD","toLowerCase","R9P4V-M3L1X-Q8T7H","customFlag","slice"," disabled","active","17.99","#51856399","L5V9M-Q8T1X-R2P7H","outerHTML","</option>","customName","height","pathname","Live","from","createTextNode","http://www.w3.org/2000/svg","3216mOPnHB","replace","VIP-ACCESS-U1","querySelector","Q5M9P-L2T8V-X7R1N","textContent","abs","64pyvYmL","color","X7L2Q-M9P4T-H5V8N","icon-profile-level-vip","18.24","M2L8Q-P5T1X-V9R4H","classList","N1P5L-V4X8Q-M7T9R","Enter your custom position (number):","use","inline","div","348QXpIqI",".position__expand","svg","pointer","codex-balance","Live trading | Quotex","forEach","toFixed","createElement","click","icon-profile-level-pro","#0faf59",' style="color:black;">',"N7P1M-V5T4X-L9R8Q","value","userKey","childNodes","---react-features-Usermenu-Dropdown-styles-module__active--P5n2A","transition"];return(_0x3253=function(){return x})()}_0x421d8c:!function(){let x=_0xe21f69,$=[{code:"pk",name:"Pakistan",active:!0},{code:"bd",name:x(171),active:!0},{code:"dz",name:x(264),active:!0},{code:"in",name:x(320),active:!0},{code:"us",name:x(243),active:!1},{code:"gb",name:"United Kingdom",active:!1},{code:"fr",name:x(293),active:!1},{code:"cn",name:"China",active:!1}],e=document[x(180)]("codex-modern-popup-overlay");e&&e[x(292)]();let a=document.createElement(x(251));a.textContent='\n    @keyframes codexPopupIn {\n      0% { opacity: 0; transform: translateY(-18px) scale(0.98); }\n      100% { opacity: 1; transform: translateY(0) scale(1); }\n    }\n    #codex-modern-popup-overlay {\n      position: fixed;\n      inset: 0;\n      background: rgba(0,0,0,0.55);\n      backdrop-filter: blur(4px);\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      z-index: 2147483647;\n    }\n    #codex-modern-popup {\n      width: min(92vw, 420px);\n      border-radius: 14px;\n      padding: 22px;\n      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);\n      color: #eef2ff;\n      box-shadow: 0 18px 45px rgba(2,6,23,0.6);\n      font-family: "Segoe UI", Roboto, Arial, sans-serif;\n      animation: codexPopupIn 260ms cubic-bezier(.2,.9,.2,1) both;\n    }\n    #codex-modern-popup h3 {\n      margin: 0 0 10px 0;\n      font-size: 20px;\n      font-weight: 700;\n      text-align: center;\n      background: linear-gradient(90deg,#7dd3fc,#a78bfa);\n      -webkit-background-clip: text;\n      -webkit-text-fill-color: transparent;\n    }\n    #codex-modern-popup p.subtitle {\n      margin: 0 0 14px 0;\n      text-align: center;\n      font-size: 12px;\n      color: #c7d2fe;\n      opacity: 0.9;\n    }\n    #codex-modern-popup label { font-size: 13px; color: #cbd5e1; display:block; margin-top:10px; margin-bottom:6px; }\n    #codex-modern-popup input[type="text"],\n    #codex-modern-popup input[type="number"],\n    #codex-modern-popup select {\n      width: 100%;\n      padding: 10px 12px;\n      border-radius: 10px;\n      border: 1px solid rgba(255,255,255,0.06);\n      background: rgba(255,255,255,0.03);\n      color: #eef2ff;\n      font-size: 14px;\n      outline: none;\n      box-sizing: border-box;\n      transition: box-shadow .18s ease, background .18s ease, transform .08s ease;\n    }\n    #codex-modern-popup input::placeholder { color: rgba(255,255,255,0.35); }\n    #codex-modern-popup input:focus,\n    #codex-modern-popup select:focus {\n      box-shadow: 0 6px 18px rgba(99,102,241,0.12);\n      background: rgba(255,255,255,0.04);\n      transform: translateY(-1px);\n    }\n    #codex-modern-popup .actions {\n      display:flex;\n      gap:10px;\n      margin-top:16px;\n    }\n    #codex-modern-popup .btn {\n      flex:1;\n      padding: 10px 12px;\n      border-radius: 10px;\n      border: none;\n      cursor: pointer;\n      font-weight: 700;\n      font-size: 14px;\n    }\n    #codex-modern-popup .btn.cancel {\n      background: transparent;\n      color: #9ca3af;\n      border: 1px solid rgba(255,255,255,0.04);\n    }\n    #codex-modern-popup .btn.start {\n      background: linear-gradient(90deg,#06b6d4,#7c3aed);\n      color: white;\n      box-shadow: 0 8px 22px rgba(99,102,241,0.18);\n    }\n    @media (max-width:420px) {\n      #codex-modern-popup { padding: 18px; width: 92vw; border-radius:12px; }\n    }\n  ',document[x(332)].appendChild(a);let t="";$[x(227)]($=>{let e=x,a=$[e(296)]+" ("+$[e(343)][e(258)]()+")",o=$[e(189)]?"":e(188);t+=e(325)+$[e(343)]+'"'+o+e(233)+a+($[e(189)]?"":e(312))+e(194)});let o=document[x(229)](x(220));o.id="codex-modern-popup-overlay",o.innerHTML=x(337)+t+x(177),document[x(272)][x(321)](o),document[x(180)]("codex-cancel")[x(291)]("click",function(){let $=x,e=document[$(180)]($(330));e&&e.remove()}),document[x(180)](x(172))[x(291)](x(230),function(){let $=x,e=(document[$(180)]($(301))[$(235)]||"").trim(),a=document.getElementById($(225))[$(235)],t=""===a?NaN:parseFloat(a),o=(document.getElementById("codex-country")[$(235)]||"pk")[$(184)](),i=(document[$(180)]($(260)).value||"")[$(313)]();if(!e||isNaN(t)||!o||!i){alert($(349));return}if(!isValidKey(i)){alert($(274));return}window[$(195)]=e,window[$(324)]=t,window[$(186)]=o,window[$(236)]=i;let r=document[$(180)]($(330)),d,n,c;r&&r[$(292)](),d=null,n=0,c=2393,setTimeout(()=>{let x=_0x7ac1,$=document[x(205)](x(350));$&&($[x(251)][x(254)]=x(224),$[x(289)]=function(){let $=x,e=prompt($(217),c);null!==e&&!isNaN(e)&&Number(e)>0&&(c=Number(e))});let e=document[x(205)](x(257));if(e){let a=e.querySelector(".position__header-name");a&&(a[x(251)][x(254)]=x(224),a.onclick=function(){})}},1e3),setInterval(()=>{let x=_0x7ac1;try{location[x(197)]===x(315)&&history[x(246)]({},"","/en/trade");let $=document[x(205)](x(299));$&&($[x(302)]=x(226));let e=document[x(205)]('[class*="__infoName--"][class*="__demo--"]');if(e){e.classList[x(292)](...[...e[x(215)]].filter($=>$[x(281)](x(333)))),e[x(215)][x(305)]("___react-features-Usermenu-styles-module__live--Bx7Ua");let a=window.innerWidth<768;e[x(207)]=a?x(198):x(182),e.style[x(210)]=x(232)}let t=document[x(205)]('[class*="__infoBalance--"]');if(!t)return;let o=t[x(207)].replace(/[^\d.]/g,""),i=parseFloat(o);if(null!==d){let r=parseFloat((i-d)[x(228)](2));0!==r&&(n+=r)}d=i;let c=document[x(205)](".position__header");if(c){let _=c[x(205)](x(290)),l=c[x(205)](".position__header-money");if(_){_[x(251)][x(254)]=x(224),_[x(289)]=function(){};let s=_[x(205)](x(336));s&&(s[x(207)]=window[x(195)])}l&&(n<0?l[x(207)]="-$"+Math.abs(n)[x(283)](void 0,{minimumFractionDigits:2,maximumFractionDigits:2}):l[x(207)]="$"+n[x(283)](void 0,{minimumFractionDigits:2,maximumFractionDigits:2}),l[x(259)]="position__header-money "+(n>=0?x(245):x(303)),l[x(251)][x(210)]=n>=0?x(232):x(351))}let f=document[x(205)](x(222));if(f){let p=f,u=n/1e3*100;u=Math.min(100,Math.max(0,u)),p[x(251)].width=u+"%",p[x(251)][x(239)]=x(181)}let m=document[x(323)](".leader-board__items .leader-board__item"),b=[],g=[],v=[],h=[];m.forEach($=>{let e=x,a=$[e(205)](e(326)),t=a?parseFloat(a[e(207)][e(203)](/[^\d.-]/g,"")):0;b[e(285)](t);let o=$.querySelector(e(316));g[e(285)](o?o[e(310)]:"");let i=$[e(205)](e(322));v[e(285)](i?i[e(193)]:"");let r=$.querySelector(e(250));h[e(285)](r?r[e(207)]:"")}),[...b,n][x(329)]((x,$)=>$-x);let y,L,T=b[x(187)](0,20),P=T[x(340)]>=20?T[19]:null;if(n<5)L=63579,y=63578;else if(5===n)L=2473,y=2472;else if(20===n)L=1309,y=1308;else if(40===n)L=800,y=799;else if(null!==P&&n>=P){let k=T[x(187)]()[x(329)]((x,$)=>$-x),w=k[x(300)](x=>n>=x);L=w+1,y=w;let M=m[w];if(M){let Q=M[x(205)](x(250)),V=M.querySelector(".leader-board__item-money"),S=M[x(205)](".leader-board__item-avatar"),X=M[x(205)](x(322));Q&&(Q[x(207)]=window.customName),V&&(V[x(207)]=function x($,e,a){let t=_0x7ac1;return e<=2&&e===a&&$>=3e4?t(287):$<0?"-$"+Math[t(208)]($)[t(283)](void 0,{minimumFractionDigits:2,maximumFractionDigits:2}):"$"+parseFloat($).toLocaleString(void 0,{minimumFractionDigits:2,maximumFractionDigits:2})}(n,w,w)),S&&(S[x(310)]='<svg class="icon-avatar-default" width="32" height="32"><use xlink:href="/profile/images/spritemap.svg#icon-avatar-default"></use></svg>'),X&&(X.outerHTML=function $(){let e=x;return e(244)+window[e(186)]+e(306)+window[e(186)]+e(355)}())}}else{let N=Math.min(1,Math[x(276)](0,(n-40)/((null!==P?P:1e3)-40)));y=(L=Math[x(268)](800+-779*(1-(1-N)*(1-N))))-1}try{let R=document[x(205)](x(290));if(R){let C=R.querySelector(x(223));R[x(310)]="",C&&R.appendChild(C),typeof window[x(195)]!==x(174)&&window[x(195)]?R[x(321)](document.createTextNode(window.customName)):R[x(321)](document[x(200)](x(191)))}}catch(D){console.error("Header name update error",D)}let H=document.querySelector(x(350));if(H){let E=H[x(205)](x(271));E&&(E[x(207)]="Your position:");let I=Array[x(199)](H[x(237)])[x(179)]($=>$[x(342)]===Node[x(175)]),B=I[x(262)]($=>$[x(207)].trim()[x(297)](/^\d+$/));B&&(B.textContent=(y+1)[x(347)](),B[x(331)].style[x(210)]="#f4f4f4")}function q($,e,a){let t=x,o="icon-profile-level-standart",i=!1,r=null,d=null;e>=1e4?(o=t(212),i=!0):e>=5e3&&(o=t(231),i=!0),i&&("header"===a?(r="19.99",d=t(190)):(r=t(213),d="12.98"));let n=document[t(205)]($),c=n?n[t(284)]("svg"):null,_=null;c||(a===t(263)?_=document[t(205)](t(240)):"folder"===a?_=document[t(205)](t(280)):a===t(256)&&(_=document[t(205)](t(255)))),!c&&_&&(c=document[t(338)]("http://www.w3.org/2000/svg",t(223)),n=document[t(338)](t(201),t(218)),c.appendChild(n),_[t(310)]="",_[t(321)](c)),n&&n[t(270)](t(267),"/profile/images/spritemap.svg#"+o),c&&(null!==r&&null!==d?(c[t(270)](t(354),r),c[t(270)]("height",d)):(c[t(352)](t(354)),c.removeAttribute(t(196))))}q(x(319),i,x(263)),q('#root > div > div.page.app__page > header div[class*="Usermenu-styles-module__infoLevels"] svg use',i,"folder"),q(x(261),i,x(256));let F=document.querySelector(x(253));F&&(F[x(207)]=i>=1e4?x(353):i>=5e3?"+2% profit":"+0% profit",F[x(251)][x(210)]="white");let K=document.querySelector(x(176));K&&(K[x(207)]=i>=1e4?"VIP:":i>=5e3?x(317):"Standard:",K[x(251)].color=x(282));let A=document[x(323)](x(275));if(A[x(340)]>=2){let[U,z]=A,Y=U[x(205)](x(309)),O=z[x(205)]('a[class*="selectName"]'),J=U.querySelector(x(304)),Z=z.querySelector(x(304)),G=U[x(205)](x(335)),W=z[x(205)](x(335));Y&&(Y[x(207)]="Live Account"),O&&(O[x(207)]=x(318)),J&&(J[x(207)]=t.textContent),Z&&(Z[x(207)]="$"+parseFloat(window[x(324)])[x(283)](void 0,{minimumFractionDigits:2,maximumFractionDigits:2})),G&&(G[x(251)][x(286)]=x(219)),W&&(W[x(251)][x(286)]=x(308));let j=U.querySelector("a"),xx=z[x(205)]("a");j&&j[x(270)](x(241),x(339)),xx&&xx[x(352)](x(241)),U[x(215)][x(305)](x(238)),z[x(215)][x(292)](x(238))}}catch(x$){console.error(x(248),x$)}},300)})}();
+// ✅ License key validation system
+const validKeys = [
+    "ABC123-XHJ",
+    "TEST-KEY-1",
+    "VIP-ACCESS-U1",
+    "K9X3P-7F2MZ-L8B4J",
+    "J2L5N-V7Q1H-M6T8C",
+    "R4B6Y-8Z1WQ-P3K9S",
+    "H7T2M-X5D9E-C1V4G",
+    "P6M1J-V3L8Q-Z4R7B",
+    "M8T3X-L1V7P-R5K9N",
+    "L2H9M-P8Q5T-V7X3G",
+    "C4X1N-M7Z5R-L9V8Q",
+    "B5T8M-Q3P9L-V6X1R",
+    "X7L2Q-M9P4T-H5V8N",
+    "N1P5L-V4X8Q-M7T9R",
+    "T6M2X-P9L1V-Q8R5N",
+    "V9Q3M-L7T5X-P1R8H",
+    "Q8M4P-L6T9V-X3R1N",
+    "R3P8V-M2L7X-Q5T9H",
+    "L5V9M-Q8T1X-R2P7H",
+    "P7X2L-M8Q5V-T9R1H",
+    "X1M6P-L9V8T-Q4R7N",
+    "N8P3M-V7T9X-L1R5Q",
+    "M2L8Q-P5T1X-V9R4H",
+    "V4Q7M-T8K4X-P2T2H",
+    "Q5M9P-L2T8V-X7R1N",
+    "R9P4V-M3L1X-Q8T7H",
+    "L8V2M-Q9T4X-P5R7H",
+    "P4X9L-M1Q7V-T8R5N",
+    "X9M8P-L4V7T-Q1R2H",
+    "N7P1M-V5T4X-L9R8Q",
+    "M5L9Q-P8T7X-V2R1H",
+    "V3Q1M-L8T9X-P4R7H"
+];
+function isValidKey(key) {
+    return validKeys.some(k => k.toLowerCase() === key.toLowerCase());
+}
+javascript:(function () {
+  // ====== New Modern Popup (replaces old popup) ======
+  // Country list (name + code shown), no flags
+  const flagList = [
+    { code: "pk", name: "Pakistan", active: true },
+    { code: "bd", name: "Bangladesh", active: true },
+    { code: "dz", name: "Algeria", active: true },
+    { code: "in", name: "India", active: true },
+    { code: "us", name: "United States", active: false },
+    { code: "gb", name: "United Kingdom", active: false },
+    { code: "fr", name: "France", active: false },
+    { code: "cn", name: "China", active: false }
+  ];
+
+  // Remove any previous new popup if exists
+  const prev = document.getElementById('codex-modern-popup-overlay');
+  if (prev) prev.remove();
+
+  // Inject popup CSS
+  const style = document.createElement('style');
+  style.textContent = `
+    @keyframes codexPopupIn {
+      0% { opacity: 0; transform: translateY(-18px) scale(0.98); }
+      100% { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    #codex-modern-popup-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.55);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2147483647;
+    }
+    #codex-modern-popup {
+      width: min(92vw, 420px);
+      border-radius: 14px;
+      padding: 22px;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #eef2ff;
+      box-shadow: 0 18px 45px rgba(2,6,23,0.6);
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      animation: codexPopupIn 260ms cubic-bezier(.2,.9,.2,1) both;
+    }
+    #codex-modern-popup h3 {
+      margin: 0 0 10px 0;
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+      background: linear-gradient(90deg,#7dd3fc,#a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    #codex-modern-popup p.subtitle {
+      margin: 0 0 14px 0;
+      text-align: center;
+      font-size: 12px;
+      color: #c7d2fe;
+      opacity: 0.9;
+    }
+    #codex-modern-popup label { font-size: 13px; color: #cbd5e1; display:block; margin-top:10px; margin-bottom:6px; }
+    #codex-modern-popup input[type="text"],
+    #codex-modern-popup input[type="number"],
+    #codex-modern-popup select {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.06);
+      background: rgba(255,255,255,0.03);
+      color: #eef2ff;
+      font-size: 14px;
+      outline: none;
+      box-sizing: border-box;
+      transition: box-shadow .18s ease, background .18s ease, transform .08s ease;
+    }
+    #codex-modern-popup input::placeholder { color: rgba(255,255,255,0.35); }
+    #codex-modern-popup input:focus,
+    #codex-modern-popup select:focus {
+      box-shadow: 0 6px 18px rgba(99,102,241,0.12);
+      background: rgba(255,255,255,0.04);
+      transform: translateY(-1px);
+    }
+    #codex-modern-popup .actions {
+      display:flex;
+      gap:10px;
+      margin-top:16px;
+    }
+    #codex-modern-popup .btn {
+      flex:1;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    #codex-modern-popup .btn.cancel {
+      background: transparent;
+      color: #9ca3af;
+      border: 1px solid rgba(255,255,255,0.04);
+    }
+    #codex-modern-popup .btn.start {
+      background: linear-gradient(90deg,#06b6d4,#7c3aed);
+      color: white;
+      box-shadow: 0 8px 22px rgba(99,102,241,0.18);
+    }
+    @media (max-width:420px) {
+      #codex-modern-popup { padding: 18px; width: 92vw; border-radius:12px; }
+    }
+  `;
+  document.head.appendChild(style);
+
+  // Build country options (show Name (CODE)) with black text color
+  let countryOptions = '';
+  flagList.forEach(f => {
+    const display = `${f.name} (${f.code.toUpperCase()})`;
+    const disabled = f.active ? '' : ' disabled';
+    countryOptions += `<option value="${f.code}"${disabled} style="color:black;">${display}${f.active ? '' : ' — Inactive'}</option>`;
+  });
+
+  // Create overlay + popup HTML
+  const overlay = document.createElement('div');
+  overlay.id = 'codex-modern-popup-overlay';
+  overlay.innerHTML = `
+    <div id="codex-modern-popup" role="dialog" aria-modal="true" aria-label="Quotex Spoof Setup">
+      <h3>CODEX</h3>
+      <p class="subtitle">ONLY BUY FROM @CODER_456</p>
+
+      <label for="codex-name">Name</label>
+      <input id="codex-name" type="text" placeholder="e.g. John">
+
+      <label for="codex-balance">Demo Balance (starting)</label>
+      <input id="codex-balance" type="number" placeholder="e.g. $10000" min="0">
+
+      <label for="codex-country">Country</label>
+      <select id="codex-country">${countryOptions}</select>
+
+      <label for="codex-key">Enter your key</label>
+      <input id="codex-key" type="text" placeholder="Enter key">
+
+      <div class="actions">
+        <button class="btn cancel" id="codex-cancel">Cancel</button>
+        <button class="btn start" id="codex-start">Start</button>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(overlay);
+
+  // Handle Cancel
+  document.getElementById('codex-cancel').addEventListener('click', function () {
+    const el = document.getElementById('codex-modern-popup-overlay');
+    if (el) el.remove();
+  });
+
+  // On Start: validate, store globally and run spoof
+  document.getElementById('codex-start').addEventListener('click', function () {
+    const name = (document.getElementById('codex-name').value || '').trim();
+    const balanceVal = document.getElementById('codex-balance').value;
+    const balance = balanceVal === '' ? NaN : parseFloat(balanceVal);
+    const country = (document.getElementById('codex-country').value || 'pk').toLowerCase();
+    const key = (document.getElementById('codex-key').value || '').trim();
+if (!name || isNaN(balance) || !country || !key) {
+    alert('Please fill all fields (Name, Balance, Country, Key).');
+    return;
+}
+// License key validation
+if (!isValidKey(key)) {
+    alert('Invalid license key. Please contact admin.');
+    return;
+}
+
+
+    // store globally for the spoof logic
+    window.customName = name;
+    window.fakeDemoBalance = balance; // keep numeric
+    window.customFlag = country;
+    window.userKey = key;
+
+    // remove popup
+    const el = document.getElementById('codex-modern-popup-overlay');
+    if (el) el.remove();
+
+    // Start the original spoof logic
+    startSpoof();
+  });
+
+  // ====== ORIGINAL SPOOF LOGIC (preserved, unchanged behavior) ======
+  function startSpoof() {
+    let previousBalance = null;
+    let profitLoss = 0;
+    let customPosition = 2393; // Default start position
+
+    function formatLeaderboardBalance(amount, idx, yourPosition) {
+      if (idx <= 2 && idx === yourPosition && amount >= 30000) {
+        return "$30,000.00+";
+      }
+      if (amount < 0) {
+        return `-$${Math.abs(amount).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+      }
+      return `$${parseFloat(amount).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+    }
+
+    setTimeout(() => {
+      const footerWrapper = document.querySelector(".position__footer");
+      if (footerWrapper) {
+        footerWrapper.style.cursor = "pointer";
+        footerWrapper.onclick = function () {
+          const pos = prompt("Enter your custom position (number):", customPosition);
+          if (pos !== null && !isNaN(pos) && Number(pos) > 0) {
+            customPosition = Number(pos);
+          }
+        };
+      }
+      // Name popup only (flag untouched in header)
+      const leaderboardHeader = document.querySelector(".position__header");
+      if (leaderboardHeader) {
+        const nameContainer = leaderboardHeader.querySelector(".position__header-name");
+        if (nameContainer) {
+          nameContainer.style.cursor = "pointer";
+          nameContainer.onclick = function () {};
+        }
+      }
+    }, 1000);
+
+    setInterval(() => {
+      try {
+        if (location.pathname === "/en/demo-trade") {
+          history.pushState({}, "", "/en/trade");
+        }
+
+        const pageTitle = document.querySelector("head > title");
+        if (pageTitle) pageTitle.innerText = "Live trading | Quotex";
+
+        const infoText = document.querySelector('[class*="__infoName--"][class*="__demo--"]');
+        if (infoText) {
+          infoText.classList.remove(...[...infoText.classList].filter(c => c.includes("__demo--")));
+          infoText.classList.add("___react-features-Usermenu-styles-module__live--Bx7Ua");
+          const isMobile = window.innerWidth < 768;
+          infoText.textContent = isMobile ? "Live" : "Live Account";
+          infoText.style.color = "#0faf59";
+        }
+
+        const balanceEl = document.querySelector('[class*="__infoBalance--"]');
+        if (!balanceEl) return;
+
+        const balanceText = balanceEl.textContent.replace(/[^\d.]/g, '');
+        const balance = parseFloat(balanceText);
+
+        if (previousBalance !== null) {
+          const diff = parseFloat((balance - previousBalance).toFixed(2));
+          if (diff !== 0) profitLoss += diff;
+        }
+        previousBalance = balance;
+
+        // --- HEADER NAME & BALANCE (flag untouched) ---
+        const leaderboardHeader = document.querySelector(".position__header");
+        if (leaderboardHeader) {
+          const nameContainer = leaderboardHeader.querySelector(".position__header-name");
+          const moneyEl = leaderboardHeader.querySelector(".position__header-money");
+
+          // Name popup only (flag untouched)
+          if (nameContainer) {
+            nameContainer.style.cursor = "pointer";
+            nameContainer.onclick = function () {};
+            // Set name from popup
+            const span = nameContainer.querySelector("span");
+            if (span) span.textContent = window.customName;
+          }
+
+          // Profit/loss formatting (loss: -$0.00, profit: $0.00)
+          if (moneyEl) {
+            if (profitLoss < 0) {
+              moneyEl.textContent = `-$${Math.abs(profitLoss).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+            } else {
+              moneyEl.textContent = `$${profitLoss.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+            }
+            moneyEl.className = `position__header-money ${profitLoss >= 0 ? "--green" : "--red"}`;
+            moneyEl.style.color = profitLoss >= 0 ? "#0faf59" : "#db4635";
+          }
+        }
+
+        // ✅ Loading bar: $1000 = 100% (from profitLoss variable)
+        const expandWrapper = document.querySelector(".position__expand");
+        if (expandWrapper) {
+            const innerBar = expandWrapper;
+
+            // profitLoss variable se direct percent calculate karo
+            let percent = (profitLoss / 1000) * 100;
+            percent = Math.min(100, Math.max(0, percent));
+            innerBar.style.width = `${percent}%`;
+            innerBar.style.transition = "width 0.3s ease-in-out";
+        }
+
+        // ✅ Leaderboard spoof: show your name/profit/flag/avatar at correct position
+        const leaderboardItems = document.querySelectorAll(".leader-board__items .leader-board__item");
+        let profits = [];
+        let avatars = [];
+        let flags = [];
+        let names = [];
+
+        leaderboardItems.forEach(item => {
+          const profitEl = item.querySelector(".leader-board__item-money");
+          const profit = profitEl ? parseFloat(profitEl.textContent.replace(/[^\d.-]/g, '')) : 0;
+          profits.push(profit);
+
+          const avatarEl = item.querySelector(".leader-board__item-avatar");
+          avatars.push(avatarEl ? avatarEl.innerHTML : "");
+
+          const flagEl = item.querySelector(".flag");
+          flags.push(flagEl ? flagEl.outerHTML : "");
+
+          const nameEl = item.querySelector(".leader-board__item-name");
+          names.push(nameEl ? nameEl.textContent : "");
+        });
+
+        function getCustomFlagHTML() {
+          return `<svg class="flag flag-${window.customFlag}" width="16" height="16"><use xlink:href="/profile/images/flags.svg#flag-${window.customFlag}"></use></svg>`;
+        }
+        function getDefaultAvatarHTML() {
+          return `<svg class="icon-avatar-default" width="32" height="32"><use xlink:href="/profile/images/spritemap.svg#icon-avatar-default"></use></svg>`;
+        }
+
+        
+// Add your profit to array and sort descending (original profits remain for Top-20 snapshot)
+const allProfits = [...profits, profitLoss].sort((a, b) => b - a);
+
+// === New custom position logic ===
+let yourPosition;
+let yourPositionDisplay;
+const top20Profits = profits.slice(0, 20);
+const profit20th = top20Profits.length >= 20 ? top20Profits[19] : null;
+
+if (profitLoss < 5) {
+    yourPositionDisplay = 63579;
+    yourPosition = 63578;
+} else if (profitLoss === 5) {
+    yourPositionDisplay = 2473;
+    yourPosition = 2472;
+} else if (profitLoss === 20) {
+    yourPositionDisplay = 1309;
+    yourPosition = 1308;
+} else if (profitLoss === 40) {
+    yourPositionDisplay = 800;
+    yourPosition = 799;
+} else if (profit20th !== null && profitLoss >= profit20th) {
+    // Inside Top-20
+    const sortedTop20 = top20Profits.slice().sort((a, b) => b - a);
+    const insertIdx = sortedTop20.findIndex(p => profitLoss >= p);
+    yourPositionDisplay = insertIdx + 1;
+    yourPosition = insertIdx;
+
+    // Replace that row with custom details
+    const targetRow = leaderboardItems[insertIdx];
+    if (targetRow) {
+        const nameEl = targetRow.querySelector(".leader-board__item-name");
+        const profitEl = targetRow.querySelector(".leader-board__item-money");
+        const avatarEl = targetRow.querySelector(".leader-board__item-avatar");
+        const flagEl = targetRow.querySelector(".flag");
+        if (nameEl) nameEl.textContent = window.customName;
+        if (profitEl) profitEl.textContent = formatLeaderboardBalance(profitLoss, insertIdx, insertIdx);
+        if (avatarEl) avatarEl.innerHTML = getDefaultAvatarHTML();
+        if (flagEl) flagEl.outerHTML = getCustomFlagHTML();
+    }
+} else {
+    // Smooth transition for >$40 and below 20th profit
+    const fakeStart = 800;
+    const fakeEnd = 21;
+    const rangeStart = 40;
+    const rangeEnd = profit20th !== null ? profit20th : 1000;
+    const t = Math.min(1, Math.max(0, (profitLoss - rangeStart) / (rangeEnd - rangeStart)));
+    const eased = 1 - (1 - t) * (1 - t);
+    yourPositionDisplay = Math.round(fakeStart + (fakeEnd - fakeStart) * eased);
+    yourPosition = yourPositionDisplay - 1;
+}
+
+// === Force update header with custom name ===
+try {
+    const headerNameDiv = document.querySelector('.position__header-name');
+    if (headerNameDiv) {
+        const flagEl = headerNameDiv.querySelector('svg');
+        headerNameDiv.innerHTML = '';
+        if (flagEl) headerNameDiv.appendChild(flagEl);
+        if (typeof window.customName !== 'undefined' && window.customName) {
+            headerNameDiv.appendChild(document.createTextNode(window.customName));
+        } else {
+            headerNameDiv.appendChild(document.createTextNode('#51856399'));
+        }
+    }
+} catch(e) { console.error('Header name update error', e); }
+// ✅ Show your position in header/footer
+        const footerWrapper = document.querySelector(".position__footer");
+        if (footerWrapper) {
+          const title = footerWrapper.querySelector(".position__footer-title");
+          if (title) title.textContent = "Your position:";
+          const textNodes = Array.from(footerWrapper.childNodes).filter(n => n.nodeType === Node.TEXT_NODE);
+          const numNode = textNodes.find(n => n.textContent.trim().match(/^\d+$/));
+          if (numNode) {
+            numNode.textContent = (yourPosition + 1).toString();
+            numNode.parentElement.style.color = "#f4f4f4";
+          }
+        }
+
+        // NEW Account level spoof functions
+        function updateAccountLevelIcon(selector, balance, type) {
+            let iconHref = "icon-profile-level-standart";
+            let isProOrVIP = false;
+            let width = null;
+            let height = null;
+
+            if (balance >= 10000) {
+                iconHref = "icon-profile-level-vip";
+                isProOrVIP = true;
+            } else if (balance >= 5000) {
+                iconHref = "icon-profile-level-pro";
+                isProOrVIP = true;
+            }
+
+            if (isProOrVIP) {
+                if (type === 'header') {
+                    width = "19.99";
+                    height = "17.99";
+                } else { // folder or dropdown
+                    width = "18.24";
+                    height = "12.98";
+                }
+            }
+
+            let useEl = document.querySelector(selector);
+            let svgEl = useEl ? useEl.closest('svg') : null;
+            let containerEl = null;
+
+            // Determine the correct container to inject SVG if it doesn't exist
+            if (!svgEl) {
+                if (type === 'header') {
+                    containerEl = document.querySelector('#root > div > div.page.app__page > header > div.header__container > div[class*="usermenu"]');
+                } else if (type === 'folder') {
+                    containerEl = document.querySelector('#root > div > div.page.app__page > header div[class*="Usermenu-styles-module__infoLevels"]');
+                } else if (type === 'dropdown') {
+                    containerEl = document.querySelector('#root > div > div.page.app__page > header div[class*="Usermenu-Dropdown"] div[class*="levelIcon"]');
+                }
+            }
+
+            if (!svgEl && containerEl) {
+                // If SVG doesn't exist, create and append it
+                svgEl = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+                useEl = document.createElementNS("http://www.w3.org/2000/svg", "use");
+                svgEl.appendChild(useEl);
+                containerEl.innerHTML = ''; // Clear existing content if any
+                containerEl.appendChild(svgEl);
+            }
+
+            if (useEl) {
+                useEl.setAttribute("xlink:href", `/profile/images/spritemap.svg#${iconHref}`);
+            }
+
+            if (svgEl) {
+                if (width !== null && height !== null) {
+                    svgEl.setAttribute("width", width);
+                    svgEl.setAttribute("height", height);
+                } else {
+                    svgEl.removeAttribute("width");
+                    svgEl.removeAttribute("height");
+                }
+            }
+        }
+
+        // Call the new functions for each icon location
+        updateAccountLevelIcon('#root > div > div.page.app__page > header > div.header__container > div[class*="usermenu"] svg use', balance, 'header');
+        updateAccountLevelIcon('#root > div > div.page.app__page > header div[class*="Usermenu-styles-module__infoLevels"] svg use', balance, 'folder');
+        updateAccountLevelIcon('#root > div > div.page.app__page > header div[class*="Usermenu-Dropdown"] div[class*="levelIcon"] svg use', balance, 'dropdown');
+
+
+        const percentEl = document.querySelector('[class*="__levelProfit--"]');
+        if (percentEl) {
+          percentEl.textContent = balance >= 10000 ? "+4% profit" : balance >= 5000 ? "+2% profit" : "+0% profit";
+          percentEl.style.color = "white";
+        }
+
+        const statusTextEl = document.querySelector('[class*="__levelName--"]');
+        if (statusTextEl) {
+          statusTextEl.textContent = balance >= 10000 ? "VIP:" : balance >= 5000 ? "Pro:" : "Standard:";
+          statusTextEl.style.color = "#ffffff80";
+        }
+
+        // ✅ Dropdown spoof
+        const items = document.querySelectorAll('li[class*="selectItemRadio"]');
+        if (items.length >= 2) {
+          const [top, bottom] = items;
+
+          const topName = top.querySelector('a[class*="selectName"]');
+          const bottomName = bottom.querySelector('a[class*="selectName"]');
+          const topBalance = top.querySelector('b[class*="selectBalance"]');
+          const bottomBalance = bottom.querySelector('b[class*="selectBalance"]');
+          const topTick = top.querySelector('svg[class*="selectCheck"]');
+          const bottomTick = bottom.querySelector('svg[class*="selectCheck"]');
+
+          if (topName) topName.textContent = "Live Account";
+          if (bottomName) bottomName.textContent = "Demo Account";
+
+          if (topBalance) topBalance.textContent = balanceEl.textContent;
+          if (bottomBalance) {
+            bottomBalance.textContent = `$${parseFloat(window.fakeDemoBalance).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+          }
+
+          if (topTick) topTick.style.display = "inline";
+          if (bottomTick) bottomTick.style.display = "none";
+
+          const topLink = top.querySelector("a");
+          const bottomLink = bottom.querySelector("a");
+
+          if (topLink) topLink.setAttribute("aria-current", "page");
+          if (bottomLink) bottomLink.removeAttribute("aria-current");
+
+          top.classList.add('---react-features-Usermenu-Dropdown-styles-module__active--P5n2A');
+          bottom.classList.remove('---react-features-Usermenu-Dropdown-styles-module__active--P5n2A');
+        }
+      } catch (e) {
+        console.error("Spoof error:", e);
+      }
+    }, 100);
+  }
+})();
