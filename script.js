@@ -1,1 +1,1044 @@
-let D="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof window?window:global,R_217eba=D.R_217eba||(D.R_217eba={});const I_8f4f0c=function(){let $=[{i:[213,0,210,0,0,0,75,1,4,null,70,2,0,3,55,1,70,4,52,null,0,5,211,6,70,7,4,null,70,8,0,3,55,1,3,null,0,5,211,9,70,7,4,null,70,10,0,3,55,1,3,null,211,11,70,12,0,13,71,14,3,null,50,null,0,5,211,6,70,7,4,null,70,10,0,3,55,1,3,null,0,5,211,9,70,7,4,null,70,8,0,3,55,1,3,null,211,11,70,12,0,15,71,14,3,null,211,16,0,17,54,0,3,null],c:["mode-add","document","getElementById",1,"checked","active","addLabel","classList","add","editLabel","remove","editSection","style","none","display","block","populateOrderList",0,"updateMode"],p:0,l:0,j:{9:32,31:57},ni:18},{i:[213,0,210,0,0,0,0,1,75,2,4,null,70,3,0,4,55,0,0,5,12,null,10,null,75,2,4,null,70,6,0,7,55,1,10,null,56,null],c:["9",1e6,"Math","random",0,9e6,"floor",1,"generateOrder"],p:0,l:0,ni:8},{i:[213,0,210,0,0,0,8,0,4,null,70,1,0,2,55,1,78,3,7,1,6,1,52,null,211,4,4,null,70,5,0,6,6,1,10,null,0,7,10,null,6,1,10,null,0,8,10,null,10,null,71,5,3,null],c:[".---react-ui-TransactionsScreenItem-styles-module__transactions-item__id--Ttk2j","querySelector",1,"innerText","orderSelect","innerHTML",'<option value="','">',"</option>"],p:1,l:1,j:{11:27},a:1},{i:[213,0,210,0,211,0,0,1,71,2,3,null,0,3,100,null,0,4,75,5,4,null,70,6,0,7,55,1,4,null,70,8,0,7,55,1,3,null],c:["orderSelect",'<option value="">Select Order</option>',"innerHTML",2,".---react-ui-TransactionsScreenItem-styles-module__transactions-item--imQKR","document","querySelectorAll",1,"forEach","populateOrderList"],p:0,l:0,ni:9},{i:[213,0,210,0,0,0,75,1,4,null,70,2,0,3,55,1,0,4,71,5,3,null,211,6,0,7,54,0,3,null],c:["mode-add","document","getElementById",1,!0,"checked","updateMode",0],p:0,l:0,a:1},{i:[213,0,210,0,0,0,75,1,4,null,70,2,0,3,55,1,0,4,71,5,3,null,211,6,0,7,54,0,3,null],c:["mode-edit","document","getElementById",1,!0,"checked","updateMode",0],p:0,l:0,a:1},{i:[213,0,210,0,211,0,4,null,70,1,0,2,55,0,56,null],c:["overlay","remove",0],p:0,l:0,a:1},{i:[213,0,210,0,0,0,8,0,4,null,70,1,0,2,55,1,70,3,211,4,42,null,56,null],c:[".---react-ui-TransactionsScreenItem-styles-module__transactions-item__id--Ttk2j","querySelector",1,"innerText","selected"],p:1,l:0,a:1},{i:[213,0,210,0,218,0,160,null,70,1,217,0,211,0,32,null,52,null,1,null,56,null,0,2,100,null,0,3,75,4,4,null,70,5,0,6,55,1,75,7,4,null,70,8,0,6,55,1,4,null,70,9,0,6,55,1,7,1,6,1,32,null,52,null,1,null,56,null,0,10,75,4,4,null,70,11,0,6,55,1,0,12,6,1,4,null,70,13,0,6,55,1,78,14,4,null,51,null,3,null,0,15,71,1,3,null,0,16,6,1,4,null,70,13,0,6,55,1,78,14,4,null,51,null,3,null,0,17,7,2,0,18,75,4,4,null,70,11,0,6,55,1,6,2,71,1,3,null,0,19,6,1,4,null,70,13,0,6,55,1,78,14,4,null,51,null,3,null,0,20,7,3,0,21,75,4,4,null,70,11,0,6,55,1,6,3,71,1,3,null,0,22,6,1,4,null,70,13,0,6,55,1,78,14,4,null,51,null,3,null,0,23,7,4,162,1638424,0,15,6,4,4,null,70,26,0,27,55,2,4,null,7,4,3,null,0,28,75,4,4,null,70,11,0,6,55,1,6,4,71,1,3,null,0,29,6,1,4,null,70,13,0,6,55,1,78,14,4,null,51,null,3,null,0,30,7,5,0,31,6,5,4,null,70,32,0,6,55,1,52,null,0,30,4,null,7,5,3,null,50,null,0,30,6,5,4,null,70,32,0,6,55,1,52,null,0,30,4,null,7,5,3,null,50,null,0,33,6,5,4,null,70,32,0,6,55,1,52,null,0,33,4,null,7,5,3,null,50,null,0,34,4,null,7,5,3,null,0,35,75,4,4,null,70,11,0,6,55,1,6,5,71,1,3,null],c:["selected","value",7,".---react-ui-TransactionsScreenItem-styles-module__transactions-item--imQKR","document","querySelectorAll",1,"Array","from","find","tx-date","getElementById",".---react-ui-TransactionsScreenItem-styles-module__transactions-item__date--n6Gnu","querySelector","innerText","",".---react-ui-TransactionsScreenItem-styles-module__transactions-item__type--yRiVa","Deposit","tx-type",".---react-ui-TransactionsScreenItem-styles-module__transactions-item__method--oY8r8","USDT (TRC-20)","tx-method",".---react-ui-TransactionsScreenItem-styles-module__transactions-item__amount--v9Gal","0","[^0-9.-]","g","replace",2,"tx-amount",".---react-ui-TransactionsScreenItem-styles-module__transactions-item__status-text--JmjRX","Processing","Waiting","includes","Failed","Successful","tx-status"],p:0,l:6,j:{8:11,31:34,48:51,61:64,82:85,103:106,134:137,144:150,149:178,156:162,161:178,168:174,173:178}},{i:[213,0,210,0,0,0,8,0,4,null,70,1,0,2,55,1,78,3,211,4,42,null,56,null],c:[".---react-ui-TransactionsScreenItem-styles-module__transactions-item__id--Ttk2j","querySelector",1,"innerText","selectedOrder$$1"],p:1,l:0,a:1},{i:[213,0,210,0,0,0,75,1,4,null,70,2,0,3,55,1,70,4,7,0,211,5,0,6,54,0,7,1,0,7,75,1,4,null,70,2,0,3,55,1,70,8,4,null,51,null,3,null,75,9,0,6,104,0,4,null,70,10,0,6,55,0,7,2,0,11,75,1,4,null,70,2,0,3,55,1,70,8,7,3,0,12,75,1,4,null,70,2,0,3,55,1,70,8,7,4,0,13,75,1,4,null,70,2,0,3,55,1,70,8,4,null,51,null,3,null,0,14,7,5,0,15,75,1,4,null,70,2,0,3,55,1,70,8,4,null,51,null,3,null,0,16,7,6,162,1179665,0,19,6,6,4,null,70,20,0,21,55,2,75,22,0,3,54,1,4,null,70,10,0,6,55,0,4,null,7,6,3,null,0,23,6,6,10,null,4,null,7,6,3,null,6,4,0,24,42,null,52,null,0,25,50,null,0,26,7,7,6,4,0,24,42,null,4,null,52,null,3,null,0,27,6,6,4,null,70,28,0,3,55,1,32,null,52,null,0,27,6,6,10,null,4,null,7,6,3,null,6,4,0,29,42,null,4,null,52,null,3,null,0,30,6,6,4,null,70,28,0,3,55,1,32,null,52,null,0,30,6,6,10,null,4,null,7,6,3,null,0,19,7,8,6,3,0,31,42,null,52,null,6,4,0,24,42,null,52,null,0,32,50,null,0,33,7,9,6,4,0,24,42,null,52,null,0,34,50,null,0,35,7,10,0,36,6,9,10,null,0,37,10,null,6,10,10,null,0,38,10,null,4,null,7,8,3,null,50,null,6,3,0,39,42,null,52,null,0,40,4,null,7,8,3,null,50,null,6,3,0,41,42,null,52,null,0,42,4,null,7,8,3,null,6,0,52,null,213,0,210,0,218,43,218,44,211,45,70,8,217,46,211,46,32,null,52,null,0,47,75,48,0,3,54,1,56,null,0,49,100,null,0,50,75,1,4,null,70,51,0,3,55,1,75,52,4,null,70,53,0,3,55,1,4,null,70,54,0,3,55,1,217,55,211,55,32,null,52,null,1,null,56,null,0,56,211,55,4,null,70,57,0,3,55,1,6,2,71,58,3,null,0,59,211,55,4,null,70,57,0,3,55,1,6,4,71,58,3,null,0,60,211,55,4,null,70,57,0,3,55,1,6,5,71,58,3,null,0,61,211,55,4,null,70,57,0,3,55,1,6,6,71,58,3,null,0,61,211,55,4,null,70,57,0,3,55,1,70,62,6,7,71,63,3,null,0,64,211,55,4,null,70,57,0,3,55,1,6,8,71,65,3,null,214,0,50,null,0,66,75,1,4,null,70,67,0,3,55,1,7,13,6,13,0,68,71,69,3,null,6,13,0,70,6,1,10,null,0,71,10,null,6,2,10,null,0,72,10,null,6,8,10,null,0,73,10,null,6,4,10,null,0,74,10,null,6,5,10,null,0,75,10,null,6,7,10,null,0,76,10,null,6,6,10,null,0,77,10,null,71,65,3,null,6,13,0,78,75,1,4,null,70,57,0,3,55,1,4,null,70,79,0,3,55,1,3,null,211,80,4,null,70,81,0,6,55,0,3,null],c:["mode-edit","document","getElementById",1,"checked","generateOrder",0,"tx-date","value","Date","toLocaleString","tx-status","tx-type","tx-method","USDT (TRC-20)","tx-amount","0","[^\\d.]","g","","replace",2,"Number","$","Withdrawal","#db4635","#0faf59","-","startsWith","Deposit","+","Processing","Waiting confirmation","Processing...","The withdrawal is currently being processed on the side of the financial operator. Please wait - the funds should be received within 48 hours.","Please note that payments with this method could take up to 24 hours to get processed. If it's not on your balance by that time - please submit a support ticket. The status may appear as \xabFailed\xbb until the funds are actually received on our side.",'<div class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__status-block--srWT8">\n          <div class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__status-icon--iGg0J ---react-ui-TransactionsScreenItem-styles-module__muted--FGTfS">\n            <svg class="icon-pending"><use xlink:href="/profile/images/spritemap.svg#icon-pending"></use></svg>\n          </div>\n          <span class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__status-text--JmjRX" style="color:#f4f4f4">','</span>\n        </div>\n        <div class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__status-processed--B3z9o">',"</div>","Successful",'<div class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__status-block--srWT8">\n          <span class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__status-text--JmjRX" style="color:#0faf59">Successed</span>\n        </div>',"Failed",'<div class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__status-block--srWT8">\n          <div class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__status-icon--iGg0J ---react-ui-TransactionsScreenItem-styles-module__danger--YdX2Q">\n            <svg class="icon-close-tiny"><use xlink:href="/profile/images/spritemap.svg#icon-close-tiny"></use></svg>\n          </div>\n          <span class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__status-text--JmjRX ---react-ui-TransactionsScreenItem-styles-module__close-tiny--FF3r3">Failed</span>\n        </div>',"selectedOrder","txDiv","orderSelect","selectedOrder$$1","Select an order to edit","alert",9,".---react-ui-TransactionsScreenItem-styles-module__transactions-item--imQKR","querySelectorAll","Array","from","find","txDiv$$1",".---react-ui-TransactionsScreenItem-styles-module__transactions-item__date--n6Gnu","querySelector","innerText",".---react-ui-TransactionsScreenItem-styles-module__transactions-item__type--yRiVa",".---react-ui-TransactionsScreenItem-styles-module__transactions-item__method--oY8r8",".---react-ui-TransactionsScreenItem-styles-module__transactions-item__amount--v9Gal","style","color",".---react-ui-TransactionsScreenItem-styles-module__transactions-item__status--iqTzO","innerHTML","div","createElement","---react-ui-TransactionsScreenItem-styles-module__transactions-item--imQKR","className",'\n          <div class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__id--Ttk2j">','</div>\n          <div class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__date--n6Gnu">','</div>\n          <div class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__status--iqTzO">','</div>\n          <div class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__type--yRiVa">','</div>\n          <div class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__method--oY8r8">','</div>\n          <b class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__amount--v9Gal" style="color:','">',"</b>",".transactions-list__header","after","overlay","remove"],p:0,l:14,j:{22:31,56:59,68:71,98:101,100:102,107:116,116:123,127:136,136:143,148:178,152:155,154:156,160:163,162:164,177:195,181:187,186:195,190:195,196:292,206:212,232:235,291:347},a:1},{i:[213,0,210,0,0,0,100,null,4,null,7,0,215,1,0,2,100,null,4,null,7,1,215,3,0,4,100,null,4,null,7,2,215,5,218,6,218,7,218,8,218,9,218,10,0,11,75,12,4,null,70,13,0,14,55,1,217,6,211,6,0,15,71,16,3,null,211,6,0,17,71,18,3,null,211,6,75,12,70,19,4,null,70,20,0,14,55,1,3,null,0,21,211,6,4,null,70,22,0,14,55,1,217,7,0,23,211,6,4,null,70,22,0,14,55,1,217,8,0,24,211,6,4,null,70,22,0,14,55,1,217,9,0,25,211,6,4,null,70,22,0,14,55,1,217,10,211,7,0,26,100,null,71,27,3,null,211,8,0,28,100,null,71,27,3,null,0,29,211,6,4,null,70,22,0,14,55,1,0,30,100,null,71,27,3,null,211,10,0,31,100,null,71,32,3,null,0,33,211,6,4,null,70,22,0,14,55,1,0,34,100,null,71,27,3,null,6,0,0,35,54,0,3,null],c:[0,"updateMode",1,"generateOrder",3,"populateOrderList","overlay","addLabel","editLabel","editSection","orderSelect","div","document","createElement",1,"tx-popup-overlay","className",'\n      <div class="tx-popup">\n        <h2>Transaction Manager</h2>\n\n        <div class="mode-select">\n          <input type="radio" name="tx-mode" id="mode-add" checked>\n          <label for="mode-add" class="active">Add New</label>\n          <input type="radio" name="tx-mode" id="mode-edit">\n          <label for="mode-edit">Edit Existing</label>\n        </div>\n\n        <div id="edit-section" style="display:none;">\n          <label>Order Number</label>\n          <select id="tx-existing-order">\n            <option value="">Select Order</option>\n          </select>\n        </div>\n\n        <label>Date & Time</label>\n        <input type="text" id="tx-date" placeholder="22/08/2025, 22:27:52" />\n\n        <label>Status</label>\n        <select id="tx-status">\n          <option value="Processing">Processing</option>\n          <option value="Successful">Successful</option>\n          <option value="Failed">Failed</option>\n        </select>\n\n        <label>Transaction Type</label>\n        <select id="tx-type">\n          <option value="Deposit">Deposit</option>\n          <option value="Withdrawal">Withdrawal</option>\n        </select>\n\n        <label>Payment System</label>\n        <input type="text" id="tx-method" placeholder="USDT (TRC-20)" />\n\n        <label>Amount</label>\n        <input type="text" id="tx-amount" placeholder="100" />\n\n        <div class="btns">\n          <button class="cancel-btn">Cancel</button>\n          <button class="add-btn">Add / Update</button>\n        </div>\n      </div>\n    ',"innerHTML","body","appendChild",'label[for="mode-add"]',"querySelector",'label[for="mode-edit"]',"#edit-section","#tx-existing-order",4,"onclick",5,".cancel-btn",6,8,"onchange",".add-btn",10,0,"openTransactionPopup"],p:0,l:8,ni:36},{i:[213,0,210,0,0,0,75,1,4,null,70,2,0,3,55,1,7,0,6,0,52,null,6,0,70,4,0,5,71,6,3,null,0,7,211,8,6,0,4,null,70,9,0,10,55,2,3,null,0,11,75,12,4,null,70,13,0,3,55,1,3,null,0,14,56,null,0,15,56,null],c:[".transactions-list__header","document","querySelector",1,"style","pointer","cursor","click","openTransactionPopup","addEventListener",2,"Transaction Manager popup trigger attached.","console","log",!0,!1,"attachTransactionPopupListener"],p:0,l:1,j:{10:33},ni:16},{i:[213,0,210,0,8,0,4,null,70,0,0,1,55,0,211,2,4,null,70,0,0,1,55,0,42,null,56,null],c:["toLowerCase",0,"key"],p:1,l:0,a:1},{i:[213,0,210,0,8,0,215,0,3,null,0,1,100,null,211,2,4,null,70,3,0,4,55,1,56,null],c:["key",13,"validKeys","some",1,"isValidKey"],p:1,l:0,ni:5},{i:[213,0,210,0,0,0,75,1,4,null,70,2,0,3,55,1,7,0,6,0,52,null,6,0,4,null,70,4,0,5,55,0,3,null],c:["codex-modern-popup-overlay","document","getElementById",1,"remove",0],p:0,l:1,j:{10:17}},{i:[213,0,210,0,0,0,75,1,4,null,70,2,0,3,55,1,70,4,4,null,51,null,3,null,0,5,4,null,70,6,0,7,55,0,7,0,0,8,75,1,4,null,70,2,0,3,55,1,70,4,7,1,6,1,0,5,42,null,52,null,75,9,50,null,6,1,75,10,0,3,54,1,7,2,0,11,75,1,4,null,70,2,0,3,55,1,70,4,4,null,51,null,3,null,0,12,4,null,70,13,0,7,55,0,7,3,0,14,75,1,4,null,70,2,0,3,55,1,70,4,4,null,51,null,3,null,0,5,4,null,70,6,0,7,55,0,7,4,6,0,32,null,4,null,51,null,3,null,6,2,75,15,0,3,54,1,4,null,51,null,3,null,6,3,32,null,4,null,51,null,3,null,6,4,32,null,52,null,0,16,75,17,0,3,54,1,3,null,1,null,56,null,6,4,211,18,0,3,54,1,32,null,52,null,0,19,75,17,0,3,54,1,3,null,1,null,56,null,0,20,77,null,4,null,6,0,71,21,3,null,4,null,6,2,71,22,3,null,4,null,6,3,71,23,3,null,4,null,6,4,71,24,3,null,75,25,4,null,70,26,0,3,55,1,75,27,4,null,70,28,0,29,55,2,3,null,75,30,6,0,71,31,3,null,75,30,6,2,71,32,3,null,75,30,6,3,71,33,3,null,75,30,6,4,71,34,3,null,0,35,75,1,4,null,70,2,0,3,55,1,7,5,6,5,52,null,6,5,4,null,70,36,0,7,55,0,3,null,211,37,0,7,54,0,3,null],c:["codex-name","document","getElementById",1,"value","","trim",0,"codex-balance","NaN","parseFloat","codex-country","pk","toLowerCase","codex-key","isNaN","Please fill all fields (Name, Balance, Country, Key).","alert","isValidKey","Invalid license key. Please contact admin.","quotexSpoofData","name","balance","country","key","JSON","stringify","localStorage","setItem",2,"window","customName","fakeDemoBalance","customFlag","userKey","codex-modern-popup-overlay","remove","startSpoof"],p:0,l:6,j:{10:13,29:32,31:36,45:48,61:64,72:78,79:83,84:88,88:96,101:109,162:169}},{i:[213,0,210,0,0,0,75,1,4,null,70,2,0,3,55,1,7,0,6,0,0,4,71,5,3,null,6,0,0,6,211,7,10,null,0,8,10,null,71,9,3,null,6,0,75,1,70,10,4,null,70,11,0,3,55,1,3,null,0,12,0,13,100,null,0,14,75,1,4,null,70,15,0,3,55,1,4,null,70,16,0,17,55,2,3,null,0,12,0,18,100,null,0,19,75,1,4,null,70,15,0,3,55,1,4,null,70,16,0,17,55,2,3,null],c:["div","document","createElement",1,"codex-modern-popup-overlay","id",'\n      <div id="codex-modern-popup" role="dialog" aria-modal="true" aria-label="Quotex Spoof Setup">\n        <h3>CODEX</h3>\n        <p class="subtitle">ONLY BUY FROM @CODER_456</p>\n\n        <label for="codex-name">Name</label>\n        <input id="codex-name" type="text" placeholder="e.g. John">\n\n        <label for="codex-balance">Demo Balance (starting)</label>\n        <input id="codex-balance" type="number" placeholder="e.g. $10000" min="0">\n\n        <label for="codex-country">Country</label>\n        <select id="codex-country">',"countryOptions",'</select>\n\n        <label for="codex-key">Enter your key</label>\n        <input id="codex-key" type="text" placeholder="Enter key">\n\n        <div class="actions">\n          <button class="btn cancel" id="codex-cancel">Cancel</button>\n          <button class="btn start" id="codex-start">Start</button>\n        </div>\n      </div>\n    ',"innerHTML","body","appendChild","click",15,"codex-cancel","getElementById","addEventListener",2,16,"codex-start","showSpoofSetupPopup"],p:0,l:1,ni:20},{i:[213,0,210,0,0,0,75,1,4,null,70,2,0,3,55,1,7,0,6,0,52,null,6,0,75,4,4,null,70,5,0,3,55,1,7,1,75,6,6,1,70,7,71,8,3,null,75,6,6,1,70,9,71,10,3,null,75,6,6,1,70,11,71,12,3,null,75,6,6,1,70,13,71,14,3,null,211,15,0,16,54,0,3,null,50,null,211,17,0,16,54,0,3,null],c:["quotexSpoofData","localStorage","getItem",1,"JSON","parse","window","name","customName","balance","fakeDemoBalance","country","customFlag","key","userKey","startSpoof",0,"showSpoofSetupPopup","loadSpoofDataAndStart"],p:0,l:2,j:{10:43,42:47},ni:18},{i:[213,0,210,0,211,0,4,null,70,1,0,2,55,0,56,null],c:["overlay","remove",0],p:0,l:0,a:1},{i:[213,0,210,0,0,0,75,1,4,null,70,2,0,3,55,1,70,4,75,5,0,3,54,1,7,0,6,0,75,6,0,3,54,1,32,null,4,null,52,null,3,null,6,0,0,7,47,null,52,null,75,8,6,0,71,9,3,null,211,10,4,null,70,11,0,7,55,0,3,null,50,null,0,12,75,13,0,3,54,1,3,null],c:["demo-balance-input","document","getElementById",1,"value","parseFloat","isNaN",0,"window","fakeDemoBalance","overlay","remove","Please enter a valid positive number for the demo balance.","alert"],p:0,l:1,j:{19:24,24:36,35:41},a:1},{i:[213,0,210,0,218,0,0,1,75,2,4,null,70,3,0,4,55,1,217,0,211,0,0,5,71,6,3,null,211,0,0,7,75,8,70,9,4,null,51,null,3,null,0,10,10,null,0,11,10,null,71,12,3,null,211,0,75,2,70,13,4,null,70,14,0,4,55,1,3,null,0,15,211,0,4,null,70,16,0,4,55,1,0,17,100,null,71,18,3,null,0,19,211,0,4,null,70,16,0,4,55,1,0,20,100,null,71,18,3,null],c:["overlay","div","document","createElement",1,"demo-balance-popup-overlay","className",'\n      <div class="demo-balance-popup">\n        <h2>Set Demo Balance</h2>\n        <input type="number" id="demo-balance-input" placeholder="e.g. 10000" min="0" value="',"window","fakeDemoBalance",1e4,'" />\n        <div class="btns">\n          <button class="cancel-btn">Cancel</button>\n          <button class="set-btn">Set</button>\n        </div>\n      </div>\n    ',"innerHTML","body","appendChild",".cancel-btn","querySelector",19,"onclick",".set-btn",20,"openDemoBalancePopup"],p:0,l:1,j:{19:22},ni:21},{i:[213,0,210,0,77,null,4,null,211,0,71,0,3,null,4,null,211,1,71,1,3,null,4,null,75,2,0,3,104,0,4,null,70,4,0,3,55,0,71,5,3,null,7,0,0,6,6,0,75,7,4,null,70,8,0,9,55,1,75,10,4,null,70,11,0,12,55,2,3,null],c:["profitLoss","customPosition","Date",0,"getTime","timestamp","quotexSpoofLeaderboardData","JSON","stringify",1,"localStorage","setItem",2,"saveLeaderboardData"],p:0,l:1,ni:13},{i:[213,0,210,0,8,1,0,0,45,null,4,null,52,null,3,null,8,1,8,2,42,null,4,null,52,null,3,null,8,0,0,1,47,null,52,null,0,2,56,null,8,0,0,3,44,null,52,null,0,4,75,5,77,null,4,null,0,0,71,6,3,null,4,null,0,0,71,7,3,null,8,0,75,8,4,null,70,9,0,10,55,1,4,null,70,11,0,0,55,2,10,null,56,null,0,12,75,5,77,null,4,null,0,0,71,6,3,null,4,null,0,0,71,7,3,null,8,0,75,13,0,10,54,1,4,null,70,11,0,0,55,2,10,null,56,null],c:[2,3e4,"$30,000.00+",0,"-$","undefined","minimumFractionDigits","maximumFractionDigits","Math","abs",1,"toLocaleString","$","parseFloat","formatLeaderboardBalance"],p:3,l:0,j:{6:11,12:17,17:20,23:47},ni:14},{i:[213,0,210,0,0,0,211,1,75,2,0,3,54,2,7,0,6,0,2,null,43,null,4,null,52,null,3,null,6,0,75,4,0,5,54,1,32,null,4,null,52,null,3,null,6,0,75,6,0,5,54,1,0,7,46,null,52,null,6,0,75,6,0,5,54,1,4,null,212,1,3,null,211,8,0,7,54,0,3,null],c:["Enter your custom position (number):","customPosition","prompt",2,"isNaN",1,"Number",0,"saveLeaderboardData"],p:0,l:1,j:{12:19,20:28,28:40}},{i:[213,0,210,0],c:[],p:0,l:0},{i:[213,0,210,0,0,0,75,1,4,null,70,2,0,3,55,1,7,0,6,0,52,null,6,0,70,4,0,5,71,6,3,null,6,0,0,7,100,null,71,8,3,null,0,9,75,1,4,null,70,2,0,3,55,1,7,1,6,1,52,null,213,0,210,0,218,10,0,11,6,1,4,null,70,2,0,3,55,1,217,12,211,12,52,null,211,12,70,4,0,5,71,6,3,null,211,12,0,13,100,null,71,8,3,null,214,0],c:[".position__footer","document","querySelector",1,"style","pointer","cursor",24,"onclick",".position__header","nameContainer",".position__header-name","nameContainer$$1",25],p:0,l:3,j:{10:21,29:53,41:52},a:1},{i:[213,0,210,0,0,0,75,1,70,2,10,null,0,3,10,null,75,1,70,2,10,null,0,4,10,null,56,null],c:['<svg class="flag flag-',"window","customFlag",'" width="16" height="16"><use xlink:href="/profile/images/flags.svg#flag-','"></use></svg>',"getCustomFlagHTML"],p:0,l:0,ni:5},{i:[213,0,210,0,0,0,56,null],c:['<svg class="icon-avatar-default" width="32" height="32"><use xlink:href="/profile/images/spritemap.svg#icon-avatar-default"></use></svg>',"getDefaultAvatarHTML"],p:0,l:0,ni:1},{i:[213,0,210,0,0,0,7,3,0,1,7,4,2,null,7,5,2,null,7,6,8,1,0,2,47,null,52,null,0,3,4,null,7,3,3,null,0,4,4,null,7,4,3,null,50,null,8,1,0,5,47,null,52,null,0,6,4,null,7,3,3,null,0,4,4,null,7,4,3,null,6,4,52,null,8,2,0,7,42,null,52,null,0,8,4,null,7,5,3,null,0,9,4,null,7,6,3,null,50,null,0,10,4,null,7,5,3,null,0,11,4,null,7,6,3,null,8,0,75,12,4,null,70,13,0,14,55,1,7,7,6,7,52,null,0,15,6,7,4,null,70,16,0,14,55,1,50,null,2,null,7,8,2,null,7,9,6,8,32,null,52,null,8,2,0,7,42,null,52,null,0,17,75,12,4,null,70,13,0,14,55,1,4,null,7,9,3,null,50,null,8,2,0,18,42,null,52,null,0,19,75,12,4,null,70,13,0,14,55,1,4,null,7,9,3,null,50,null,8,2,0,20,42,null,52,null,0,21,75,12,4,null,70,13,0,14,55,1,4,null,7,9,3,null,6,8,32,null,4,null,52,null,3,null,6,9,52,null,0,22,0,15,75,12,4,null,70,23,0,24,55,2,4,null,7,8,3,null,0,22,0,25,75,12,4,null,70,23,0,24,55,2,4,null,7,7,3,null,6,7,6,8,4,null,70,26,0,14,55,1,3,null,6,9,0,27,71,28,3,null,6,8,6,9,4,null,70,26,0,14,55,1,3,null,6,7,52,null,0,29,0,30,6,3,10,null,6,7,4,null,70,31,0,24,55,2,3,null,6,8,52,null,6,5,2,null,43,null,4,null,52,null,3,null,6,6,2,null,43,null,52,null,0,32,6,5,6,8,4,null,70,31,0,24,55,2,3,null,0,33,6,6,6,8,4,null,70,31,0,24,55,2,3,null,50,null,0,32,6,8,4,null,70,34,0,14,55,1,3,null,0,33,6,8,4,null,70,34,0,14,55,1,3,null],c:["icon-profile-level-standart",!1,1e4,"icon-profile-level-vip",!0,5e3,"icon-profile-level-pro","header","19.99","17.99","18.24","12.98","document","querySelector",1,"svg","closest",'#root > div > div.page.app__page > header > div.header__container > div[class*="usermenu"]',"folder",'#root > div > div.page.app__page > header div[class*="Usermenu-styles-module__infoLevels"]',"dropdown",'#root > div > div.page.app__page > header div[class*="Usermenu-Dropdown"] div[class*="levelIcon"]',"http://www.w3.org/2000/svg","createElementNS",2,"use","appendChild","","innerHTML","xlink:href","/profile/images/spritemap.svg#","setAttribute","width","height","removeAttribute","updateAccountLevelIcon"],p:3,l:7,j:{13:23,22:35,26:35,36:58,40:50,49:58,66:74,73:75,80:122,84:95,94:122,98:109,108:122,112:122,125:128,128:167,168:179,180:222,185:190,190:208,207:222},ni:35},{i:[213,0,210,0,0,0,8,0,4,null,70,1,0,2,55,1,56,null],c:["__demo--","includes",1],p:1,l:0,a:1},{i:[213,0,210,0],c:[],p:0,l:0},{i:[213,0,210,0,0,0,8,0,4,null,70,1,0,2,55,1,7,1,6,1,52,null,162,262147,0,5,6,1,70,6,4,null,70,7,0,8,55,2,75,9,0,2,54,1,50,null,0,10,7,2,6,2,211,11,4,null,70,12,0,2,55,1,3,null,0,13,8,0,4,null,70,1,0,2,55,1,7,3,6,3,52,null,6,3,70,14,50,null,0,5,211,15,4,null,70,12,0,2,55,1,3,null,0,16,8,0,4,null,70,1,0,2,55,1,7,4,6,4,52,null,6,4,70,17,50,null,0,5,211,18,4,null,70,12,0,2,55,1,3,null,0,19,8,0,4,null,70,1,0,2,55,1,7,5,6,5,52,null,6,5,70,6,50,null,0,5,211,20,4,null,70,12,0,2,55,1,3,null],c:[".leader-board__item-money","querySelector",1,"[^\\d.-]","g","","textContent","replace",2,"parseFloat",0,"profits$$1","push",".leader-board__item-avatar","innerHTML","avatars$$1",".flag","outerHTML","flags$$1",".leader-board__item-name","names$$1"],p:1,l:5,j:{10:23,22:24,40:44,43:45,59:63,62:64,78:82,81:83},a:1},{i:[213,0,210,0,8,1,8,0,11,null,56,null],c:[],p:2,l:0,a:1},{i:[213,0,210,0,8,1,8,0,11,null,56,null],c:[],p:2,l:0,a:1},{i:[213,0,210,0,211,0,8,0,47,null,56,null],c:["profitLoss"],p:1,l:0,a:1},{i:[213,0,210,0,8,0,70,0,75,1,70,2,42,null,56,null],c:["nodeType","Node","TEXT_NODE"],p:1,l:0,a:1},{i:[213,0,210,0,162,65536,8,0,70,2,4,null,70,3,0,4,55,0,4,null,70,5,0,6,55,1,56,null],c:["^\\d+$","","textContent","trim",0,"match",1],p:1,l:0,a:1},{i:[213,0,210,0,8,0,4,null,70,0,0,1,55,0,3,null,211,2,0,1,54,0,3,null],c:["preventDefault",0,"openDemoBalancePopup"],p:1,l:0,a:1},{i:[213,0,210,0,58,null,213,0,210,0,218,0,218,1,218,2,218,3,218,4,218,5,218,6,218,7,218,8,218,9,218,10,218,11,218,12,218,13,218,14,218,15,218,16,218,17,218,18,218,19,218,20,0,21,100,null,7,0,0,22,100,null,7,1,0,23,100,null,7,2,75,24,70,25,0,26,42,null,52,null,77,null,0,27,0,28,75,29,4,null,70,30,0,31,55,3,3,null,0,32,75,33,4,null,70,34,0,35,55,1,217,36,211,36,52,null,211,36,0,37,71,38,3,null,0,39,75,33,4,null,70,34,0,35,55,1,217,40,211,40,52,null,213,0,210,0,218,41,0,42,100,null,90,null,211,40,70,43,94,null,4,null,70,44,0,35,55,1,93,null,211,40,70,43,4,null,70,45,0,35,55,1,3,null,0,46,211,40,70,43,4,null,70,47,0,35,55,1,3,null,75,48,70,49,0,50,44,null,217,51,211,40,211,51,52,null,0,52,50,null,0,53,71,54,3,null,211,40,70,55,0,56,71,57,3,null,214,0,0,58,75,33,4,null,70,34,0,35,55,1,217,59,211,59,32,null,52,null,1,null,56,null,162,3997756,0,27,211,59,70,54,4,null,70,62,0,63,55,2,217,64,211,64,75,65,0,35,54,1,217,66,211,67,2,null,43,null,52,null,0,63,211,66,211,67,11,null,4,null,70,68,0,35,55,1,75,65,0,35,54,1,7,9,6,9,0,69,43,null,52,null,211,70,6,9,10,null,4,null,212,70,3,null,211,71,0,69,54,0,3,null,211,66,4,null,212,67,3,null,0,72,75,33,4,null,70,34,0,35,55,1,217,73,211,73,52,null,213,0,210,0,218,74,218,75,0,76,211,73,4,null,70,34,0,35,55,1,217,77,0,78,211,73,4,null,70,34,0,35,55,1,217,79,211,77,52,null,213,0,210,0,218,80,211,77,70,55,0,81,71,82,3,null,211,77,0,83,100,null,71,84,3,null,0,80,211,77,4,null,70,34,0,35,55,1,217,85,211,85,4,null,52,null,3,null,75,48,70,86,52,null,211,85,75,48,70,86,71,54,3,null,214,0,211,79,52,null,211,70,0,69,44,null,52,null,211,79,0,87,75,88,77,null,4,null,0,63,71,89,3,null,4,null,0,63,71,90,3,null,211,70,75,91,4,null,70,92,0,35,55,1,4,null,70,93,0,63,55,2,10,null,71,54,3,null,50,null,211,79,0,94,75,88,77,null,4,null,0,63,71,89,3,null,4,null,0,63,71,90,3,null,211,70,4,null,70,93,0,63,55,2,10,null,71,54,3,null,211,79,0,95,211,70,0,69,47,null,52,null,0,96,50,null,0,97,10,null,71,98,3,null,211,79,70,55,211,70,0,69,47,null,52,null,0,56,50,null,0,99,71,57,3,null,214,0,0,100,75,33,4,null,70,34,0,35,55,1,217,101,211,101,52,null,211,101,7,15,211,70,75,91,4,null,70,92,0,35,55,1,0,102,13,null,0,102,12,null,7,16,6,16,0,102,46,null,52,null,0,102,4,null,7,16,3,null,6,15,70,55,211,70,0,69,47,null,52,null,0,56,50,null,0,99,71,103,3,null,0,102,0,69,6,16,75,91,4,null,70,104,0,63,55,2,75,91,4,null,70,105,0,63,55,2,4,null,7,16,3,null,6,15,70,55,0,27,6,16,10,null,0,106,10,null,71,107,3,null,6,15,70,55,0,108,71,109,3,null,0,110,75,33,4,null,70,111,0,35,55,1,217,112,90,null,215,113,90,null,215,114,90,null,215,115,90,null,215,116,0,117,100,null,211,112,4,null,70,118,0,35,55,1,3,null,0,119,100,null,90,null,211,113,94,null,211,70,91,null,4,null,70,120,0,35,55,1,217,121,1,null,215,122,1,null,215,123,0,69,0,124,211,113,4,null,70,125,0,63,55,2,217,126,211,126,70,127,0,124,47,null,52,null,211,126,0,128,72,null,50,null,2,null,217,129,211,70,0,130,44,null,52,null,0,131,4,null,212,123,3,null,0,132,4,null,212,122,3,null,50,null,211,70,0,130,42,null,52,null,0,133,4,null,212,123,3,null,0,134,4,null,212,122,3,null,50,null,211,70,0,124,42,null,52,null,0,135,4,null,212,123,3,null,0,136,4,null,212,122,3,null,50,null,211,70,0,137,42,null,52,null,0,138,4,null,212,123,3,null,0,139,4,null,212,122,3,null,50,null,211,129,2,null,43,null,4,null,52,null,3,null,211,70,211,129,47,null,52,null,213,0,210,0,218,140,218,141,218,142,0,143,100,null,211,126,4,null,70,125,0,69,55,0,4,null,70,120,0,35,55,1,217,144,0,145,100,null,211,144,4,null,70,146,0,35,55,1,217,147,211,147,0,35,10,null,4,null,212,123,3,null,211,147,4,null,212,122,3,null,211,112,211,147,72,null,217,148,211,148,52,null,0,149,211,148,4,null,70,34,0,35,55,1,7,30,0,150,211,148,4,null,70,34,0,35,55,1,7,31,0,151,211,148,4,null,70,34,0,35,55,1,7,32,0,152,211,148,4,null,70,34,0,35,55,1,7,33,6,30,52,null,6,30,75,48,70,86,71,54,3,null,6,31,52,null,6,31,211,70,211,147,211,147,211,153,0,31,54,3,71,54,3,null,6,32,52,null,6,32,6,1,0,69,54,0,71,154,3,null,6,33,52,null,6,33,6,0,0,69,54,0,71,155,3,null,214,0,50,null,0,138,7,34,0,156,7,35,0,137,7,36,211,129,2,null,43,null,52,null,211,129,50,null,0,157,7,37,0,35,0,69,211,70,6,36,11,null,6,37,6,36,11,null,13,null,75,91,4,null,70,104,0,63,55,2,75,91,4,null,70,105,0,63,55,2,7,38,0,35,0,35,6,38,11,null,0,35,6,38,11,null,12,null,11,null,7,39,6,34,6,35,6,34,11,null,6,39,12,null,10,null,75,91,4,null,70,158,0,35,55,1,4,null,212,123,3,null,211,123,0,35,11,null,4,null,212,122,3,null,58,null,0,76,75,33,4,null,70,34,0,35,55,1,7,40,6,40,52,null,0,159,6,40,4,null,70,34,0,35,55,1,7,41,6,40,0,27,71,154,3,null,6,41,52,null,6,41,6,40,4,null,70,160,0,35,55,1,3,null,75,48,70,86,110,null,0,88,43,null,4,null,52,null,3,null,75,48,70,86,52,null,75,48,70,86,75,33,4,null,70,161,0,35,55,1,6,40,4,null,70,160,0,35,55,1,3,null,50,null,0,162,75,33,4,null,70,161,0,35,55,1,6,40,4,null,70,160,0,35,55,1,3,null,59,null,50,null,60,163,0,164,211,163,75,165,4,null,70,166,0,63,55,2,3,null,50,null,0,167,75,33,4,null,70,34,0,35,55,1,217,168,211,168,52,null,213,0,210,0,218,169,218,170,218,171,0,172,211,168,4,null,70,34,0,35,55,1,217,173,211,173,52,null,211,173,0,174,71,54,3,null,0,175,100,null,211,168,70,176,75,177,4,null,70,178,0,35,55,1,4,null,70,44,0,35,55,1,217,179,0,180,100,null,211,179,4,null,70,181,0,35,55,1,217,182,211,182,52,null,211,182,211,122,0,35,10,null,4,null,70,183,0,69,55,0,71,54,3,null,211,182,70,184,70,55,0,185,71,57,3,null,214,0,0,186,211,66,0,187,6,2,0,31,54,3,3,null,0,188,211,66,0,189,6,2,0,31,54,3,3,null,0,190,211,66,0,191,6,2,0,31,54,3,3,null,0,192,75,33,4,null,70,34,0,35,55,1,217,193,211,193,52,null,211,193,211,66,0,194,47,null,52,null,0,195,50,null,211,66,0,196,47,null,52,null,0,197,50,null,0,198,71,54,3,null,211,193,70,55,0,199,71,57,3,null,0,200,75,33,4,null,70,34,0,35,55,1,217,201,211,201,52,null,211,201,211,66,0,194,47,null,52,null,0,202,50,null,211,66,0,196,47,null,52,null,0,203,50,null,0,204,71,54,3,null,211,201,70,55,0,205,71,57,3,null,0,206,75,33,4,null,70,111,0,35,55,1,217,207,211,207,70,127,0,63,47,null,52,null,213,0,210,0,218,208,218,209,218,210,218,211,218,212,218,213,218,214,218,215,218,216,218,217,218,218,211,207,127,null,7,48,6,48,123,null,70,219,217,208,6,48,123,null,70,219,217,209,0,220,211,208,4,null,70,34,0,35,55,1,217,221,0,220,211,209,4,null,70,34,0,35,55,1,217,222,0,223,211,208,4,null,70,34,0,35,55,1,217,224,0,223,211,209,4,null,70,34,0,35,55,1,217,225,0,226,211,208,4,null,70,34,0,35,55,1,217,227,0,226,211,209,4,null,70,34,0,35,55,1,217,228,211,221,52,null,211,221,0,53,71,54,3,null,211,222,52,null,211,222,0,229,71,54,3,null,211,224,52,null,211,224,211,59,70,54,71,54,3,null,211,225,52,null,211,225,0,94,75,88,77,null,4,null,0,63,71,89,3,null,4,null,0,63,71,90,3,null,75,48,70,230,75,65,0,35,54,1,4,null,70,93,0,63,55,2,10,null,71,54,3,null,211,227,52,null,211,227,70,55,0,231,71,232,3,null,211,228,52,null,211,228,70,55,0,233,71,232,3,null,0,234,211,208,4,null,70,34,0,35,55,1,217,235,0,234,211,209,4,null,70,34,0,35,55,1,217,236,211,235,52,null,0,237,0,238,211,235,4,null,70,239,0,63,55,2,3,null,211,236,52,null,0,237,211,236,4,null,70,240,0,35,55,1,3,null,0,241,211,208,70,43,4,null,70,47,0,35,55,1,3,null,0,241,211,209,70,43,4,null,70,45,0,35,55,1,3,null,0,220,211,209,4,null,70,34,0,35,55,1,217,242,211,242,52,null,211,242,0,243,100,null,71,84,3,null,214,0,214,0,59,null,50,null,213,0,210,0,60,163,0,244,211,163,75,165,4,null,70,166,0,63,55,2,3,null,214,0,50,null],c:["pageTitle","infoText","balanceEl","balanceText","balance","leaderboardHeader","expandWrapper","leaderboardItems","profits","avatars","flags","names","allProfits","yourPosition","yourPositionDisplay","top20Profits","profit20th","footerWrapper","percentEl","statusTextEl","items",27,28,29,"location","pathname","/en/demo-trade","","/en/trade","history","pushState",3,"head > title","document","querySelector",1,"pageTitle$$1","Live trading | Quotex","innerText",'[class*="__infoName--"][class*="__demo--"]',"infoText$$1","isMobile",30,"classList","filter","remove","___react-features-Usermenu-styles-module__live--Bx7Ua","add","window","innerWidth",768,"isMobile$$2","Live","Live Account","textContent","style","#0faf59","color",'[class*="__infoBalance--"]',"balanceEl$$1","[^\\d.]","g","replace",2,"balanceText$$1","parseFloat","balance$$1","previousBalance","toFixed",0,"profitLoss","saveLeaderboardData",".position__header","leaderboardHeader$$1","nameContainer","moneyEl",".position__header-name","nameContainer$$2",".position__header-money","moneyEl$$2","span","pointer","cursor",31,"onclick","span$$3","customName","-$","undefined","minimumFractionDigits","maximumFractionDigits","Math","abs","toLocaleString","$","position__header-money ","--green","--red","className","#db4635",".position__expand","expandWrapper$$1",100,"backgroundColor","max","min","%","width","width 0.3s ease-in-out","transition",".leader-board__items .leader-board__item","querySelectorAll","leaderboardItems$$1","profits$$1","avatars$$1","flags$$1","names$$1",32,"forEach",33,"sort","allProfits$$1","yourPosition$$1","yourPositionDisplay$$1",20,"slice","top20Profits$$1","length",19,"profit20th$$1",5,63579,63578,2473,2472,1309,1308,40,800,799,"sortedTop20","insertIdx","targetRow",34,"sortedTop20$$2",35,"findIndex","insertIdx$$2","targetRow$$2",".leader-board__item-name",".leader-board__item-money",".leader-board__item-avatar",".flag","formatLeaderboardBalance","innerHTML","outerHTML",21,1e3,"round","svg","appendChild","createTextNode","#51856399","e","Header name update error","console","error",".position__footer","footerWrapper$$1","title","textNodes","numNode",".position__footer-title","title$$2","Your position:",36,"childNodes","Array","from","textNodes$$2",37,"find","numNode$$2","toString","parentElement","#f4f4f4",'#root > div > div.page.app__page > header > div.header__container > div[class*="usermenu"] svg use',"header",'#root > div > div.page.app__page > header div[class*="Usermenu-styles-module__infoLevels"] svg use',"folder",'#root > div > div.page.app__page > header div[class*="Usermenu-Dropdown"] div[class*="levelIcon"] svg use',"dropdown",'[class*="__levelProfit--"]',"percentEl$$1",1e4,"+4% profit",5e3,"+2% profit","+0% profit","white",'[class*="__levelName--"]',"statusTextEl$$1","VIP:","Pro:","Standard:","#ffffff80",'li[class*="selectItemRadio"]',"items$$1","top","bottom","topName","bottomName","topBalance","bottomBalance","topTick","bottomTick","topLink","bottomLink","demoLink","value",'a[class*="selectName"]',"topName$$2","bottomName$$2",'b[class*="selectBalance"]',"topBalance$$2","bottomBalance$$2",'svg[class*="selectCheck"]',"topTick$$2","bottomTick$$2","Demo Account","fakeDemoBalance","inline","display","none","a","topLink$$2","bottomLink$$2","aria-current","page","setAttribute","removeAttribute","---react-features-Usermenu-Dropdown-styles-module__active--P5n2A","demoLink$$2",38,"Spoof error:"],p:0,l:60,j:{39:49,57:62,70:119,107:110,109:111,128:131,148:175,164:175,187:317,207:241,230:234,234:240,242:316,246:273,272:293,298:301,300:302,310:313,312:314,325:388,342:347,352:355,354:356,439:444,443:445,449:459,458:678,462:472,471:678,475:485,484:678,488:498,497:678,502:507,507:613,548:611,578:584,585:595,596:603,604:611,612:678,622:625,624:626,687:745,700:708,714:718,718:733,732:745,746:757,756:757,765:825,779:784,807:824,854:876,859:862,861:869,865:868,867:869,884:906,889:892,891:899,895:898,897:899,917:1107,985:990,991:996,997:1003,1004:1029,1030:1036,1037:1043,1058:1067,1068:1076,1100:1106,1109:1123,1122:1123},x:{2:[1110,-1,1123],678:[747,-1,757]},a:1},{i:[213,0,210,0,0,0,100,null,4,null,7,0,215,1,0,2,100,null,4,null,7,1,215,3,218,4,218,5,218,6,2,null,215,4,0,7,215,5,0,8,215,6,0,9,75,10,4,null,70,11,0,12,55,1,7,5,6,5,52,null,6,5,75,13,4,null,70,14,0,12,55,1,7,6,75,15,0,7,104,0,4,null,70,16,0,7,55,0,7,7,6,7,6,6,70,17,11,null,0,18,0,19,12,null,0,19,12,null,0,20,12,null,44,null,52,null,6,6,70,5,4,null,212,5,3,null,6,6,70,6,4,null,212,6,3,null,0,21,77,null,4,null,211,5,71,5,3,null,4,null,211,6,71,6,3,null,75,22,4,null,70,23,0,24,55,2,3,null,50,null,0,25,75,22,4,null,70,23,0,12,55,1,3,null,0,9,75,10,4,null,70,26,0,12,55,1,3,null,0,27,100,null,0,20,75,28,0,24,54,2,3,null,0,29,100,null,0,30,75,31,0,24,54,2,3,null],c:[22,"saveLeaderboardData",23,"formatLeaderboardBalance","previousBalance","profitLoss","customPosition",0,2393,"quotexSpoofLeaderboardData","localStorage","getItem",1,"JSON","parse","Date","getTime","timestamp",24,60,1e3,"Loaded persisted leaderboard data:","console","log",2,"Persisted leaderboard data expired (older than 24 hours). Resetting.","removeItem",26,"setTimeout",39,300,"setInterval","startSpoof"],p:0,l:8,j:{29:99,57:85,84:99},ni:32},{i:[213,0,210,0,211,0,0,1,54,0,52,null,8,1,4,null,70,2,0,1,55,0,3,null],c:["attachTransactionPopupListener",0,"disconnect"],p:2,l:0,j:{5:12},a:1},{i:[213,0,210,0,0,0,8,0,70,1,10,null,0,2,10,null,8,0,70,3,4,null,70,4,0,5,55,0,10,null,0,6,10,null,7,1,8,0,70,7,52,null,0,0,50,null,0,8,7,2,211,9,0,10,8,0,70,3,10,null,0,11,10,null,6,2,10,null,0,12,10,null,6,1,10,null,8,0,70,7,52,null,0,0,50,null,0,13,10,null,0,14,10,null,10,null,4,null,212,9,3,null],c:["","name"," (","code","toUpperCase",0,")","active"," disabled","countryOptions",'<option value="','"',' style="color:black;">'," — Inactive","</option>"],p:1,l:2,j:{20:23,22:24,40:43,42:44},a:1},{i:[210,0,0,0,100,null,4,null,7,0,215,1,0,2,100,null,4,null,7,1,215,3,0,4,100,null,4,null,7,2,215,5,0,6,100,null,4,null,7,3,215,7,0,8,100,null,7,4,0,9,100,null,4,null,7,5,215,10,0,11,100,null,4,null,7,6,215,12,218,13,218,14,0,15,75,16,4,null,70,17,0,18,55,1,7,7,6,7,0,19,71,20,3,null,6,7,75,16,70,21,4,null,70,22,0,18,55,1,3,null,6,1,0,23,54,0,32,null,52,null,213,0,210,0,218,24,75,25,0,26,100,null,0,18,104,1,217,27,75,16,70,28,77,null,4,null,0,29,71,30,3,null,4,null,0,29,71,31,3,null,211,27,4,null,70,32,0,33,55,2,3,null,214,0,90,null,0,34,91,null,0,35,91,null,0,36,91,null,0,37,91,null,0,38,91,null,0,39,91,null,0,40,91,null,0,41,91,null,0,42,91,null,0,43,91,null,0,44,91,null,0,45,91,null,0,46,91,null,0,47,91,null,0,48,91,null,0,49,91,null,0,50,91,null,0,51,91,null,0,52,91,null,0,53,91,null,0,54,91,null,0,55,91,null,0,56,91,null,0,57,91,null,0,58,91,null,0,59,91,null,0,60,91,null,0,61,91,null,0,62,91,null,0,63,91,null,0,64,91,null,0,65,91,null,217,13,90,null,77,null,4,null,0,66,71,67,3,null,4,null,0,68,71,69,3,null,4,null,0,29,71,70,3,null,91,null,77,null,4,null,0,71,71,67,3,null,4,null,0,72,71,69,3,null,4,null,0,29,71,70,3,null,91,null,77,null,4,null,0,73,71,67,3,null,4,null,0,74,71,69,3,null,4,null,0,29,71,70,3,null,91,null,77,null,4,null,0,75,71,67,3,null,4,null,0,76,71,69,3,null,4,null,0,29,71,70,3,null,91,null,77,null,4,null,0,77,71,67,3,null,4,null,0,78,71,69,3,null,4,null,0,79,71,70,3,null,91,null,77,null,4,null,0,80,71,67,3,null,4,null,0,81,71,69,3,null,4,null,0,79,71,70,3,null,91,null,77,null,4,null,0,82,71,67,3,null,4,null,0,83,71,69,3,null,4,null,0,79,71,70,3,null,91,null,77,null,4,null,0,84,71,67,3,null,4,null,0,85,71,69,3,null,4,null,0,79,71,70,3,null,91,null,7,10,0,86,75,16,4,null,70,87,0,18,55,1,7,11,6,11,52,null,6,11,4,null,70,88,0,23,55,0,3,null,0,15,75,16,4,null,70,17,0,18,55,1,7,12,6,12,0,89,71,90,3,null,6,12,75,16,70,21,4,null,70,22,0,18,55,1,3,null,0,91,215,14,0,92,100,null,6,10,4,null,70,93,0,18,55,1,3,null,0,15,75,16,4,null,70,17,0,18,55,1,7,14,6,14,0,94,71,90,3,null,6,14,75,16,70,21,4,null,70,22,0,18,55,1,3,null,6,4,0,23,54,0,3,null,214,0,1,null,56,null],c:[11,"openTransactionPopup",12,"attachTransactionPopupListener",14,"isValidKey",17,"showSpoofSetupPopup",18,21,"openDemoBalancePopup",40,"startSpoof","validKeys","countryOptions","style","document","createElement",1,"\n    .tx-popup-overlay { position: fixed; top:0;left:0;width:100%;height:100%;background: rgba(0,0,0,0.4);display:flex;align-items:center;justify-content:center;z-index:9999; }\n    .tx-popup { background:#fff;padding:20px;border-radius:12px;width:420px;font-family:Arial,sans-serif;color:#000;box-shadow:0 4px 15px rgba(0,0,0,0.2);}\n    .tx-popup h2 { margin:0 0 15px;font-size:18px;text-align:center; }\n    .tx-popup label { font-weight:bold;display:block;margin-top:10px;margin-bottom:4px; }\n    .tx-popup input, .tx-popup select { width:100%;padding:6px 8px;margin-bottom:10px;border:1px solid #ccc;border-radius:6px;font-size:14px; }\n    .tx-popup button { width:48%;padding:10px;border:none;border-radius:6px;cursor:pointer;font-weight:bold;font-size:14px; }\n    .tx-popup .add-btn { background:#0faf59;color:white; }\n    .tx-popup .cancel-btn { background:#ccc; }\n    .tx-popup .btns { display:flex;justify-content:space-between; }\n    .tx-popup .mode-select { display:flex; justify-content: space-between; margin-bottom:10px; }\n    .tx-popup .mode-select label { flex:1; text-align:center; cursor:pointer; border:1px solid #ccc; border-radius:6px; padding:6px 0; }\n    .tx-popup .mode-select input { display:none; }\n    .tx-popup .mode-select label.active { background:#0faf59;color:#fff; border-color:#0faf59; }\n  ","innerHTML","head","appendChild",0,"observer","MutationObserver",41,"observer$$1","body",!0,"childList","subtree","observe",2,"ABC123-XHJ","TEST-KEY-1","VIP-ACCESS-U1","K9X3P-7F2MZ-L8B4J","J2L5N-V7Q1H-M6T8C","R4B6Y-8Z1WQ-P3K9S","H7T2M-X5D9E-C1V4G","P6M1J-V3L8Q-Z4R7B","M8T3X-L1V7P-R5K9N","L2H9M-P8Q5T-V7X3G","C4X1N-M7Z5R-L9V8Q","B5T8M-Q3P9L-V6X1R","X7L2Q-M9P4T-H5V8N","N1P5L-V4X8Q-M7T9R","T6M2X-P9L1V-Q8R5N","V9Q3M-L7T5X-P1R8H","Q8M4P-L6T9V-X3R1N","R3P8V-M2L7X-Q5T9H","L5V9M-Q8T1X-R2P7H","P7X2L-M8Q5V-T9R1H","X1M6P-L9V8T-Q4R7N","N8P3M-V7T9X-L1R5Q","M2L8Q-P5T1X-V9R4H","V4Q7M-T8K4X-P2T2H","Q5M9P-L2T8V-X7R1N","R9P4V-M3L1X-Q8T7H","L8V2M-Q9T4X-P5R7H","P4X9L-M1Q7V-T8R5N","X9M8P-L4V7T-Q1R2H","N7P1M-V5T4X-L9R8Q","M5L9Q-P8T7X-V2R1H","V3Q1M-L8T9X-P4R7H","pk","code","Pakistan","name","active","bd","Bangladesh","dz","Algeria","in","India","us","United States",!1,"gb","United Kingdom","fr","France","cn","China","codex-modern-popup-overlay","getElementById","remove",'\n    @keyframes codexPopupIn {\n      0% { opacity: 0; transform: translateY(-18px) scale(0.98); }\n      100% { opacity: 1; transform: translateY(0) scale(1); }\n    }\n    #codex-modern-popup-overlay {\n      position: fixed;\n      inset: 0;\n      background: rgba(0,0,0,0.55);\n      backdrop-filter: blur(4px);\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      z-index: 2147483647;\n    }\n    #codex-modern-popup {\n      width: min(92vw, 420px);\n      border-radius: 14px;\n      padding: 22px;\n      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);\n      color: #eef2ff;\n      box-shadow: 0 18px 45px rgba(2,6,23,0.6);\n      font-family: "Segoe UI", Roboto, Arial, sans-serif;\n      animation: codexPopupIn 260ms cubic-bezier(.2,.9,.2,1) both;\n    }\n    #codex-modern-popup h3 {\n      margin: 0 0 10px 0;\n      font-size: 20px;\n      font-weight: 700;\n      text-align: center;\n      background: linear-gradient(90deg,#7dd3fc,#a78bfa);\n      -webkit-background-clip: text;\n      -webkit-text-fill-color: transparent;\n    }\n    #codex-modern-popup p.subtitle {\n      margin: 0 0 14px 0;\n      text-align: center;\n      font-size: 12px;\n      color: #c7d2fe;\n      opacity: 0.9;\n    }\n    #codex-modern-popup label { font-size: 13px; color: #cbd5e1; display:block; margin-top:10px; margin-bottom:6px; }\n    #codex-modern-popup input[type="text"],\n    #codex-modern-popup input[type="number"],\n    #codex-modern-popup select {\n      width: 100%;\n      padding: 10px 12px;\n      border-radius: 10px;\n      border: 1px solid rgba(255,255,255,0.06);\n      background: rgba(255,255,255,0.03);\n      color: #eef2ff;\n      font-size: 14px;\n      outline: none;\n      box-sizing: border-box;\n      transition: box-shadow .18s ease, background .18s ease, transform .08s ease;\n    }\n    #codex-modern-popup input::placeholder { color: rgba(255,255,255,0.35); }\n    #codex-modern-popup input:focus,\n    #codex-modern-popup select:focus {\n      box-shadow: 0 6px 18px rgba(99,102,241,0.12);\n      background: rgba(255,255,255,0.04);\n      transform: translateY(-1px);\n    }\n    #codex-modern-popup .actions {\n      display:flex;\n      gap:10px;\n      margin-top:16px;\n    }\n    #codex-modern-popup .btn {\n      flex:1;\n      padding: 10px 12px;\n      border-radius: 10px;\n      border: none;\n      cursor: pointer;\n      font-weight: 700;\n      font-size: 14px;\n    }\n    #codex-modern-popup .btn.cancel {\n      background: transparent;\n      color: #9ca3af;\n      border: 1px solid rgba(255,255,255,0.04);\n    }\n    #codex-modern-popup .btn.start {\n      background: linear-gradient(90deg,#06b6d4,#7c3aed);\n      color: white;\n      box-shadow: 0 8px 22px rgba(99,102,241,0.18);\n    }\n    @media (max-width:420px) {\n      #codex-modern-popup { padding: 18px; width: 92vw; border-radius:12px; }\n    }\n  ',"textContent","",42,"forEach","\n    .demo-balance-popup-overlay {\n      position: fixed;\n      top: 0;\n      left: 0;\n      width: 100%;\n      height: 100%;\n      background: rgba(0,0,0,0.4);\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      z-index: 9999;\n    }\n    .demo-balance-popup {\n      background: #fff;\n      padding: 20px;\n      border-radius: 12px;\n      width: 300px;\n      font-family: Arial, sans-serif;\n      color: #000;\n      box-shadow: 0 4px 15px rgba(0,0,0,0.2);\n      text-align: center;\n    }\n    .demo-balance-popup h2 {\n      margin: 0 0 15px;\n      font-size: 18px;\n    }\n    .demo-balance-popup input {\n      width: calc(100% - 20px);\n      padding: 8px 10px;\n      margin-bottom: 15px;\n      border: 1px solid #ccc;\n      border-radius: 6px;\n      font-size: 14px;\n    }\n    .demo-balance-popup button {\n      width: 48%;\n      padding: 10px;\n      border: none;\n      border-radius: 66px;\n      cursor: pointer;\n      font-weight: bold;\n      font-size: 14px;\n    }\n    .demo-balance-popup .set-btn {\n      background: #0faf59;\n      color: white;\n    }\n    .demo-balance-popup .cancel-btn {\n      background: #ccc;\n    }\n    .demo-balance-popup .btns {\n      display: flex;\n      justify-content: space-between;\n    }\n  "],p:0,l:15,j:{59:87,275:282}},{i:[213,0,210,0,75,0,4,null,70,1,0,2,55,0,0,3,8,0,75,0,4,null,70,4,0,5,55,2,12,null,75,0,4,null,70,6,0,3,55,1,56,null],c:["Math","random",0,1,"max",2,"floor","rand"],p:1,l:0,ni:7},{i:[213,0,210,0,211,0,75,1,4,null,70,2,0,3,55,1,75,4,0,3,54,1,7,0,6,0,75,5,0,3,54,1,52,null,0,6,50,null,6,0,56,null],c:["PROFIT_KEY","localStorage","getItem",1,"parseFloat","isNaN",0,"getProfit"],p:0,l:1,j:{16:19,18:20},ni:7},{i:[213,0,210,0,211,0,75,1,4,null,70,2,0,3,55,1,7,0,6,0,2,null,42,null,52,null,2,null,56,null,6,0,0,4,75,5,0,6,54,2,7,1,6,1,75,7,0,3,54,1,52,null,2,null,56,null,6,1,0,3,10,null,56,null],c:["ACTIVE_KEY","localStorage","getItem",1,10,"parseInt",2,"isNaN","getLeaderboardRankIfAny"],p:0,l:2,j:{12:15,25:28},ni:8},{i:[213,0,210,0,211,0,75,1,4,null,70,2,0,3,55,1,52,null,1,null,56,null,0,4,75,5,4,null,70,6,0,3,55,1,7,0,6,0,32,null,52,null,1,null,56,null,162,524295,0,9,6,0,70,10,4,null,70,11,0,12,55,2,0,13,75,14,0,12,54,2,7,1,6,1,75,15,0,3,54,1,32,null,52,null,211,0,6,1,75,16,0,3,54,1,75,1,4,null,70,17,0,12,55,2,3,null],c:["BASE_KEY","localStorage","getItem",1,'div[class*="LeaderBoard-Position-styles-module__footer"]',"document","querySelector","\\D+","g","","textContent","replace",2,10,"parseInt","isNaN","String","setItem","readBaseOnce"],p:0,l:2,j:{8:11,20:23,41:53},ni:18},{i:[213,0,210,0,211,0,8,0,70,1,47,null,4,null,52,null,3,null,211,0,8,0,70,2,44,null,56,null],c:["profit","min","max"],p:1,l:0,j:{7:13},a:1},{i:[213,0,210,0,8,1,215,0,3,null,211,0,0,1,46,null,52,null,213,0,210,0,218,2,0,3,100,null,211,4,4,null,70,5,0,6,55,1,4,null,51,null,3,null,211,4,211,4,70,7,0,6,11,null,72,null,217,8,0,6,8,0,211,8,70,9,211,10,0,6,54,1,11,null,75,11,4,null,70,12,0,13,55,2,56,null,214,0,211,0,0,1,44,null,52,null,8,0,211,14,211,10,0,6,54,1,10,null,56,null,8,0,56,null],c:["profit",0,"band",48,"PROFIT_BANDS","find",1,"length","band$$1","improve","rand","Math","max",2,"LOSS_BAND","computePosition"],p:2,l:1,j:{8:44,20:28,47:55},ni:15},{i:[213,0,210,0,0,0,75,1,4,null,70,2,0,3,55,1,7,1,6,1,32,null,52,null,1,null,56,null,0,4,6,1,4,null,70,2,0,3,55,1,7,2,6,1,0,5,71,6,3,null,6,2,52,null,6,2,6,1,4,null,70,7,0,3,55,1,3,null,8,0,75,8,0,3,54,1,75,1,4,null,70,9,0,3,55,1,6,1,4,null,70,7,0,3,55,1,3,null],c:['div[class*="LeaderBoard-Position-styles-module__footer"]',"document","querySelector",1,'div[class*="__title--"]',"","textContent","appendChild","String","createTextNode","writePosition"],p:1,l:2,j:{11:14,26:34},ni:10},{i:[213,0,210,0,211,0,0,1,54,0,3,null,211,2,75,3,4,null,70,4,0,5,55,1,0,6,75,7,0,8,54,2,7,0,6,0,75,9,0,5,54,1,52,null,1,null,56,null,211,10,0,1,54,0,7,1,6,1,2,null,43,null,52,null,6,1,211,11,0,5,54,1,3,null,1,null,56,null,211,12,0,1,54,0,7,2,6,0,6,2,211,13,0,8,54,2,211,11,0,5,54,1,3,null],c:["readBaseOnce",0,"BASE_KEY","localStorage","getItem",1,10,"parseInt",2,"isNaN","getLeaderboardRankIfAny","writePosition","getProfit","computePosition","runYourPosition"],p:0,l:3,j:{21:24,31:39},ni:14},{i:[210,0,0,0,100,null,4,null,7,0,215,1,0,2,100,null,4,null,7,1,215,3,0,4,100,null,4,null,7,2,215,5,0,6,100,null,4,null,7,3,215,7,0,8,100,null,4,null,7,4,215,9,0,10,100,null,4,null,7,5,215,11,0,12,100,null,7,6,218,13,218,14,218,15,218,16,218,17,0,18,3,null,0,19,217,13,0,20,217,14,0,21,217,15,90,null,77,null,4,null,0,22,71,23,3,null,4,null,0,24,71,25,3,null,4,null,0,26,71,27,3,null,91,null,77,null,4,null,0,24,71,23,3,null,4,null,0,28,71,25,3,null,4,null,0,29,71,27,3,null,91,null,77,null,4,null,0,28,71,23,3,null,4,null,0,30,71,25,3,null,4,null,0,31,71,27,3,null,91,null,217,16,0,32,217,17,6,6,0,31,75,33,0,34,54,2,3,null,214,0,1,null,56,null],c:[44,"rand",45,"getProfit",46,"getLeaderboardRankIfAny",47,"readBaseOnce",49,"computePosition",50,"writePosition",51,"BASE_KEY","ACTIVE_KEY","PROFIT_KEY","PROFIT_BANDS","LOSS_BAND","use strict","yp_base_fixed_v1","lb_active_index_v4","leaderboard_profit_diff_v2",0,"min",10,"max",1500,"improve",100,1e3,1e9,800,1200,"setInterval",2],p:0,l:12}];function x(x){return $[x]}for(let l=0;l<$.length;l++){let e=$[l];if(e.c)for(let n=0;n<e.c.length;n++){let t=e.c[n];if("string"==typeof t&&t.length>1&&"n"===t[t.length-1])try{e.c[n]=BigInt(t.slice(0,-1))}catch(o){}}}let a={0:249,1:110,2:271,3:368,4:314,5:359,6:487,7:163,8:53,9:388,10:289,11:499,12:206,13:453,14:372,15:64,16:194,17:96,18:455,19:346,20:16,21:329,22:290,23:204,24:198,25:57,26:253,27:319,32:250,40:294,41:367,42:82,43:150,44:408,45:117,46:402,47:54,50:162,51:7,52:71,53:39,54:464,55:301,56:467,57:138,58:30,59:373,60:61,61:354,62:381,63:510,64:183,65:146,70:236,71:55,72:480,73:135,74:28,75:58,76:223,77:182,78:52,79:273,80:415,81:0,82:179,90:216,91:200,92:49,93:8,94:140,95:142,100:201,101:384,102:505,103:209,104:235,105:317,106:493,107:365,110:326,111:170,112:454,120:440,121:484,122:275,123:343,124:486,125:145,126:338,127:234,128:87,129:369,130:340,131:331,132:409,140:143,141:60,142:284,143:172,144:436,145:167,146:248,147:47,148:227,149:174,150:202,151:69,152:462,153:400,154:184,155:419,156:376,157:364,158:24,160:1,161:85,162:237,163:262,164:126,166:325,167:76,168:109,169:149,170:122,171:154,172:90,173:418,174:404,175:113,200:489,201:470,202:107,210:323,211:128,212:116,213:348,214:382,215:390,216:35,217:215,218:158,250:3,251:502,252:300,253:310,254:406,255:212,256:366,257:507,258:48,259:5,260:328,261:280},u=new WeakSet;function r($,x){let l=[];for(let e=0;e<x;e++){let n=$();if(n&&"object"==typeof n&&u.has(n)){let t=n.value;if(Array.isArray(t))for(let o=t.length-1;o>=0;o--)l.push(t[o])}else l.push(n)}return l.reverse(),l}function i($){let x=[];for(let l in $)x.push(l);return x}function d(){}function*c(x,l,e,n,t,o){let d=[],c=0,s=Array((x.p||0)+(x.l||0)),p=0,m=x.c,y=x.i,k=x.j||{},h=x.x||{},g=y.length>>1,v=[],w=null,R={_$xutPko:!1,_$8OxcGp:void 0},L={_$tbxl7o:!1,_$dyRpzu:0},T={_$9EoLlN:!1,_$hCVuGL:0},P=x.o||a,I=x.seKey,V,S,M,O,E,C;if(void 0!==I){let N=$=>"number"==typeof $&&Number.isFinite($)&&Number.isInteger($)&&$>=-2147483648&&$<=2147483647?$^I|0:$;V=$=>{d[c++]=N($)},S=()=>N(d[--c]),M=()=>N(d[c-1]),O=$=>{d[c-1]=N($)},E=$=>N(d[c-$]),C=($,x)=>{d[c-$]=N(x)}}else V=$=>{d[c++]=$},S=()=>d[--c],M=()=>d[c-1],O=$=>{d[c-1]=$},E=$=>d[c-$],C=($,x)=>{d[c-$]=x};let F=x.jk||0,q=x.bk||0,j=$=>F?$^F:$,A={_$fw4bOV:e,_$oUEoMX:Object.create(null)};if(l)for(let Z=0;Z<Math.min(l.length,x.p||0);Z++)s[Z]=l[Z];let X=null,B=!1;if(x.nfe&&void 0!==x.ni&&n){let U=x.c[x.ni];A._$oUEoMX[U]=n,A._$3t0Lhk||(A._$3t0Lhk={}),A._$3t0Lhk[U]=!0;try{Object.defineProperty(n,"name",{value:U,writable:!1,enumerable:!1,configurable:!0})}catch(G){}}for(;p<g;)try{for(;p<g;){let z=p<<1,Q=y[z]^q,K=(P[Q],y[z+1]),W=null===K?void 0:"number"==typeof K?K^q:K;if(122===Q){let J=yield{_$vyQiT2:1,_$55Xwzp:S()};V(J),p++;continue}if(120===Q){let H=yield{_$vyQiT2:2,_$55Xwzp:S()};if(H&&"object"==typeof H&&4===H._$vyQiT2){let Y=H._$55Xwzp;if(v.length>0){let $$=v[v.length-1];if(void 0!==$$._$lBo40M){R._$xutPko=!0,R._$8OxcGp=Y,p=$$._$lBo40M;continue}}return Y}V(H),p++;continue}if(121===Q){let $x=yield{_$vyQiT2:3,_$55Xwzp:S()};V($x),p++;continue}if(void 0===$t)var $l,$e=!1,$n={0:92,1:16,2:13,3:84,4:17,5:41,6:129,7:98,8:105,9:18,10:64,11:103,12:14,13:69,14:3,15:23,18:91,19:97,20:137,21:51,22:6,23:83,24:11,25:8,26:21,27:42,32:30,40:73,41:85,42:67,43:12,44:10,45:62,46:132,47:86,50:75,51:78,52:29,53:99,54:108,55:82,56:122,57:106,58:46,59:40,60:87,61:94,62:22,63:27,64:24,70:57,71:7,72:127,73:80,74:38,75:123,76:5,77:95,78:44,79:81,81:136,82:77,90:54,91:43,93:59,94:102,95:68,100:15,104:71,105:109,106:124,110:66,111:9,112:121,123:48,124:28,127:52,128:138,129:88,130:19,131:60,132:89,140:26,141:93,142:70,143:74,144:110,145:0,146:63,147:1,148:25,149:133,150:72,151:116,152:115,153:61,154:55,155:31,156:119,157:126,158:45,160:20,161:125,162:76,163:49,164:2,167:134,168:53,169:37,170:33,171:4,172:32,173:58,174:47,175:56,200:120,201:39,202:100,210:34,211:65,212:135,213:113,214:107,215:101,216:112,217:117,218:79,250:128,251:36,252:131,253:50,254:96,255:35,256:118,257:111,258:130,259:114,260:104,261:90},$t=[function($){for(;;){let x=S(),l=M(),e=m[$],n="function"==typeof l&&l.prototype?l.prototype:l;Object.defineProperty(n,e,{get:x,enumerable:n===l,configurable:!0}),p++;break}},function($){for(;;){let x=S(),l=M(),e=m[$];Object.defineProperty(l,e,{value:x,writable:!0,enumerable:!1,configurable:!0}),p++;break}},function($){for(;;){V(t),p++;break}},function($){for(;;){let x=S(),l=S();V(l%x),p++;break}},function($){for(;;){let x=S(),l=S(),e=M();Object.defineProperty(e,l,{value:x,writable:!0,enumerable:!1,configurable:!0}),p++;break}},function($){for(;;){let x=S(),l=m[$],e=!(l in R_217eba)&&!(l in D);R_217eba[l]=x,l in D&&(D[l]=x),e&&(D[l]=x),V(x),p++;break}},function($){for(;;){let x=S(),l=S();V(l^x),p++;break}},function($){for(;;){let x=S(),l=S(),e=m[$];if(null==l)throw TypeError("Cannot set property '"+String(e)+"' of "+l);l[e]=x,V(x),p++;break}},function($){for(;;){let x=S(),l=S();V(l>>x),p++;break}},function($){for(;;){let x=S(),l=S();V(l instanceof x),p++;break}},function($){for(;;){let x=S(),l=S();V(l<x),p++;break}},function($){for(;;){let x=S(),l=S();V(l<<x),p++;break}},function($){for(;;){let x=S(),l=S();V(l!==x),p++;break}},function($){for(;;){V(null),p++;break}},function($){for(;;){let x=S(),l=S();V(l*x),p++;break}},function(x){for(;;){var l;let e=S(),n=$[l=e],t=n&&n.a,a=n&&n.s,u=n&&n.g,r=A,i=f,d=_,c=b,s=n&&void 0!==n.ni?n.c[n.ni]:void 0,m=n&&n.p||0,y=t?o:void 0,k=function($,x,l,e,n,t,o,a,u,r,i){let d,c;if(d=c=n?function(){let l=[];for(let e=0;e<arguments.length;e++)l.push(arguments[e]);return a.call(this,$,l,x,d)}:e?async function(){let e=[];for(let n=0;n<arguments.length;n++)e.push(arguments[n]);let t=new.target!==void 0?new.target:R_217eba._$2WJmZ2;return l?await o.call(r,$,e,x,d,void 0):await o.call(this,$,e,x,d,t)}:function(){let e=[];for(let n=0;n<arguments.length;n++)e.push(arguments[n]);let o=new.target!==void 0?new.target:R_217eba._$2WJmZ2;return l?t.call(r,$,e,x,d,void 0):t.call(this,$,e,x,d,o)},u)try{Object.defineProperty(d,"name",{value:u,writable:!1,enumerable:!1,configurable:!0})}catch(f){}try{Object.defineProperty(d,"length",{value:i,writable:!1,enumerable:!1,configurable:!0})}catch(_){}return d}(e,r,t,a,u,i,d,c,s,y,m);if(!k)throw Error("VM Error: Failed to create closure");V(k),p++;break}},function($){for(;;){V(void 0),p++;break}},function($){for(;;){let x=S();V(x),V(x),p++;break}},function($){for(;;){l[$]=S(),p++;break}},function($){for(;;){let x=S().next();V(Promise.resolve(x)),p++;break}},function($){for(;;){V(o),p++;break}},function($){for(;;){let x=S(),l=S();V(l>>>x),p++;break}},function($){for(;;){if(R._$xutPko){let x=R._$8OxcGp;R._$xutPko=!1,R._$8OxcGp=void 0,$e=!0,$l=x;return}if(L._$tbxl7o){let l=L._$dyRpzu;L._$tbxl7o=!1,L._$dyRpzu=0,p=l;break}if(T._$9EoLlN){let e=T._$hCVuGL;T._$9EoLlN=!1,T._$hCVuGL=0,p=e;break}if(null!==w){let n=w;throw w=null,n}p++;break}},function($){for(;;){V(-S()),p++;break}},function($){for(;;){if(v.length>0){let x=v[v.length-1];if(void 0!==x._$lBo40M){T._$9EoLlN=!0,T._$hCVuGL=j(k[p]),p=x._$lBo40M;break}}p=j(k[p]);break}},function($){for(;;){let x=S(),l=M(),e=m[$];Object.defineProperty(l,e,{get:x,enumerable:!1,configurable:!0}),p++;break}},function($){for(;;){let x=S(),l=S(),e=$,n=function($,x,l){let e;return e=l?function(){if(x){R_217eba._$m14esh=e;let $="_$2WJmZ2"in R_217eba;$||(R_217eba._$2WJmZ2=new.target);try{let l=[];for(let n=0;n<arguments.length;n++)l.push(arguments[n]);return x.apply(this,l)}finally{delete R_217eba._$m14esh,$||delete R_217eba._$2WJmZ2}}}:function(){if(x){let $="_$2WJmZ2"in R_217eba;$||(R_217eba._$2WJmZ2=new.target);try{let l=[];for(let e=0;e<arguments.length;e++)l.push(arguments[e]);return x.apply(this,l)}finally{$||delete R_217eba._$2WJmZ2}}}}(x,l,e);x&&Object.defineProperty(n,"name",{value:x,configurable:!0}),V(n),p++;break}},function($){for(;;){if(v.length>0){let x=v[v.length-1];if(void 0!==x._$lBo40M){L._$tbxl7o=!0,L._$dyRpzu=j(k[p]),p=x._$lBo40M;break}}p=j(k[p]);break}},function($){for(;;){let x=S();x&&"function"==typeof x.return&&x.return(),p++;break}},function($){for(;;){S()?p++:p=j(k[p]);break}},function($){for(;;){V(!S()),p++;break}},function($){for(;;){let x=S(),l=m[$];if(null==x){V(void 0),p++;break}R_217eba._$Vqksf9||(R_217eba._$Vqksf9=new Map);let e=R_217eba._$Vqksf9.get(l);if(!e||!e.has(x))throw TypeError("Cannot read private member "+l+" from an object whose class did not declare it");V(e.get(x)),p++;break}},function($){for(;;){let x=S(),l=S(),e=M(),n="function"==typeof e&&e.prototype?e.prototype:e;Object.defineProperty(n,l,{get:x,enumerable:n===e,configurable:!0}),p++;break}},function($){for(;;){let x=S(),l=S(),e=M();Object.defineProperty(e.prototype,l,{value:x,writable:!0,enumerable:!1,configurable:!0}),p++;break}},function($){for(;;){let x=S();A={_$oUEoMX:Object.create(null),_$3t0Lhk:Object.create(null),_$In3l7L:Object.create(null),_$fw4bOV:x},p++;break}},function($){for(;;){let x=65535&$,l=$>>>16,e=s[x],n=m[l];V(e[n]),p++;break}},function($){for(;;){s[$]=s[$]-1,p++;break}},function($){for(;;){let x=S();V(Symbol.keyFor(x)),p++;break}},function($){for(;;){let x,l;void 0!==$?(l=S(),x=m[$]):(x=S(),l=S());let e=delete l[x];V(e),p++;break}},function($){for(;;){p++;break}},function($){for(;;){v.pop(),p++;break}},function($){for(;;){let x=M();O(E(2)),C(2,x),p++;break}},function($){for(;;){let x=E(3),l=E(2),e=M();C(3,l),C(2,e),O(x),p++;break}},function($){for(;;){let x=S();M().push(x),p++;break}},function($){for(;;){let x=S(),l=m[$];null==x?V(void 0):V(x[l]),p++;break}},function($){for(;;){let x=S(),l=S(),e=m[$];if(R_217eba._$Vqksf9){let n=R_217eba._$Vqksf9,t="set_"+e,o=n.get(t);if(o&&o.has(l)){o.get(l).call(l,x),V(x),p++;break}let a=n.get(e);if(a&&a.has(l)){a.set(l,x),V(x),p++;break}}let u="_$TjZFDp"+e.substring(1)+"_$iqk0T6";if(u in l){l[u]=x,V(x),p++;break}throw TypeError("Cannot write private member "+e+" to an object whose class did not declare it")}},function($){for(;;){let x=h[p];v.push({_$liOSo1:x[0]>=0?j(x[0]):void 0,_$lBo40M:x[1]>=0?j(x[1]):void 0,_$PWCmUv:x[2]>=0?j(x[2]):void 0,_$vNb7Pz:c}),p++;break}},function($){for(;;){let x=S(),l=S(),e=M();Object.defineProperty(e,l,{get:x,enumerable:!1,configurable:!0}),p++;break}},function($){for(;;){let x=S().next();V(x),p++;break}},function($){for(;;){S(),V(void 0),p++;break}},function($){for(;;){let x=65535&$,l=$>>>16;V(s[x]-m[l]),p++;break}},function($){for(;;){let x=S(),l=S();V(l|x),p++;break}},function($){for(;;){let x=S();if(null==x)throw TypeError("Cannot iterate over "+x);let l=x[Symbol.iterator];if("function"!=typeof l)throw TypeError("Object is not iterable");V(l.call(x)),p++;break}},function($){for(;;){let x=m[$];V(Symbol.for(x)),p++;break}},function($){for(;;){V([]),p++;break}},function($){for(;;){let x=S(),l=S(),e=m[$],n=null;if(R_217eba._$Vqksf9){let t=R_217eba._$Vqksf9.get(e);t&&t.has(l)&&(n=t.get(l))}if(null===n){let o="_$TadDZq"+e.substring(1)+"_$G3kL8V";o in l&&(n=l[o])}if(null===n)throw TypeError("Cannot read private member "+e+" from an object whose class did not declare it");if("function"!=typeof n)throw TypeError(e+" is not a function");let a=[];for(let u=0;u<x;u++)a.unshift(S());let r=n.apply(l,a);V(r),p++;break}},function($){for(;;){let x=S(),l=S(),e=M();Object.defineProperty(e,l,{set:x,enumerable:!1,configurable:!0}),p++;break}},function($){for(;;){let x=S(),l=m[$];if(null==x)throw TypeError("Cannot read property '"+String(l)+"' of "+x);V(x[l]),p++;break}},function($){for(;;){let x=S(),l=S(),e=M(),n="function"==typeof e&&e.prototype?e.prototype:e;Object.defineProperty(n,l,{set:x,enumerable:n===e,configurable:!0}),p++;break}},function($){for(;;){let x={value:S()};u.add(x),V(x),p++;break}},function($){for(;;){let x=S();x&&"function"==typeof x.return?V(Promise.resolve(x.return())):V(Promise.resolve()),p++;break}},function($){for(;;){let x=S(),l=m[$],e=!1;if(R_217eba._$Vqksf9){let n=R_217eba._$Vqksf9.get(l);e=n&&n.has(x)}V(e),p++;break}},function($){for(;;){let x=S(),l=S();V(l<=x),p++;break}},function($){for(;;){let x=S(),l=M(),e=m[$],n="function"==typeof l&&l.prototype?l.prototype:l;Object.defineProperty(n,e,{set:x,enumerable:n===l,configurable:!0}),p++;break}},function($){for(;;){let x=S(),l=S();V(l+x),p++;break}},function($){for(;;){let x=m[$],l=A,e,n=!1;for(;l;){if(l._$In3l7L&&x in l._$In3l7L)throw ReferenceError("Cannot access '"+x+"' before initialization");if(l._$oUEoMX&&x in l._$oUEoMX){e=l._$oUEoMX[x],n=!0;break}l=l._$fw4bOV}"__this__"===x&&(e=o,n=!0),n||(e=x in R_217eba?R_217eba[x]:D[x]),V(e),p++;break}},function($){for(;;){V(typeof S()),p++;break}},function($){for(;;){let x=S(),l=S();V(l===x),p++;break}},function($){for(;;){let x=M();x.length++,p++;break}},function($){for(;;){let x=S(),l=S();V(l/x),p++;break}},function($){for(;;){let x=S(),l=S(),e=R_217eba._$7FVAZw,n;if(e)n=Object.getPrototypeOf(e);else if("function"==typeof l)n=Object.getPrototypeOf(l);else{let t=Object.getPrototypeOf(l);n=t&&t.constructor&&t.constructor.prototype===t?Object.getPrototypeOf(t):t}let o=null,a=n;for(;null!==a&&!(o=Object.getOwnPropertyDescriptor(a,x));)a=Object.getPrototypeOf(a);let u;if(o&&o.get)u=o.get.call(l),V(u);else if(!o||!o.set||"value"in o){if(u=a?a[x]:n[x],"function"==typeof u){let r=a||n,i=u.bind(l),d=u.constructor&&u.constructor.name;"GeneratorFunction"===d||"AsyncFunction"===d||"AsyncGeneratorFunction"===d||(R_217eba._$YdqCxf||(R_217eba._$YdqCxf=new WeakMap),R_217eba._$YdqCxf.set(i,r)),V(i)}else V(u)}else V(void 0);p++;break}},function($){for(;;){let x=S(),l=r(S,x),e=S();if("function"!=typeof e)throw TypeError(e+" is not a constructor");let n=R_217eba._$7FVAZw;R_217eba._$7FVAZw=void 0;let t;try{t=Reflect.construct(e,l)}finally{R_217eba._$7FVAZw=n}V(t),p++;break}},function($){for(;;){let x=S(),l=m[$];R_217eba._$Vqksf9||(R_217eba._$Vqksf9=new Map);let e=R_217eba._$Vqksf9,n="get_"+l,t=e.get(n);if(t&&t.has(x)){let o=t.get(x);V(o.call(x)),p++;break}let a="_$TadDZqget_"+l.substring(1)+"_$G3kL8V";if(x.constructor&&a in x.constructor){let u=x.constructor[a];V(u.call(x)),p++;break}let r=e.get(l);if(r&&r.has(x)){V(r.get(x)),p++;break}let i="_$TjZFDp"+l.substring(1)+"_$iqk0T6";if(i in x){V(x[i]),p++;break}throw TypeError("Cannot read private member "+l+" from an object whose class did not declare it")}},function($){for(;;){let x=S(),l=S();V(l==x),p++;break}},function($){for(;;){let x=S(),l=S(),e=S(),n;if("function"==typeof e)n=Object.getPrototypeOf(e);else{let t=Object.getPrototypeOf(e);n=t&&t.constructor&&t.constructor.prototype===t?Object.getPrototypeOf(t):t}let o=null,a=n;for(;null!==a&&!(o=Object.getOwnPropertyDescriptor(a,l));)a=Object.getPrototypeOf(a);o&&o.set?o.set.call(e,x):n[l]=x,V(x),p++;break}},function($){for(;;){p=j(k[p]);break}},function($){for(;;){let x=65535&$,l=$>>16,e=m[x],n=m[l];V(RegExp(e,n)),p++;break}},function($){for(;;){let x=S(),l=S();null==l?V(void 0):V(l[x]),p++;break}},function($){for(;;){S()?p=j(k[p]):p++;break}},function($){for(;;){let x=m[$];A._$In3l7L||(A._$In3l7L={}),A._$In3l7L[x]=!0,p++;break}},function($){for(;;){let x=S(),l=S(),e=S();if(null==e)throw TypeError("Cannot set property '"+String(l)+"' of "+e);e[l]=x,V(x),p++;break}},function($){for(;;){let x=S(),l=S();V(l in x),p++;break}},function($){for(;;){let x=S(),l=S(),e=S();if("function"!=typeof l)throw TypeError(l+" is not a function");let n=R_217eba._$YdqCxf,t=n&&n.get(l),o=R_217eba._$7FVAZw;t&&(R_217eba._$sTj04k=!0,R_217eba._$7FVAZw=t);try{let a=l.apply(e,r(S,x));V(a)}finally{t&&(R_217eba._$sTj04k=!1,R_217eba._$7FVAZw=o)}p++;break}},function($){for(;;){V(~S()),p++;break}},function($){for(;;){S(),p++;break}},function($){for(;;){let x=S(),l=S();V(l!=x),p++;break}},function($){for(;;){let x=S(),l=S();V(l>=x),p++;break}},function($){for(;;){let x=S();if($>=0){let l=m[$];A._$oUEoMX[l]=x}p++;break}},function($){for(;;){let x=S();if(null==x)throw TypeError("Cannot iterate over "+x);let l=x[Symbol.asyncIterator];if("function"==typeof l)V(l.call(x));else{let e=x[Symbol.iterator];if("function"!=typeof e)throw TypeError("Object is not async iterable");V(e.call(x))}p++;break}},function($){for(;;){let x=S();V(i(x)),p++;break}},function($){for(;;){let x=s[$]-1;s[$]=x,V(x),p++;break}},function($){for(;;){let x=S(),l=S();V(Math.pow(l,x)),p++;break}},function($){for(;;){V(m[$]),p++;break}},function($){for(;;){let x=S(),l=M(),e=!1;try{let n=Object.create(x.prototype),t=x.apply(n,[]);void 0!==t&&t!==n&&(e=!0)}catch(o){o instanceof TypeError&&(o.message.includes("'new'")||o.message.includes("constructor")||o.message.includes("Illegal constructor"))&&(e=!0)}if(e){let a=l,u=R_217eba,r="_$2WJmZ2",i="_$m14esh",d="_$superCalled";try{let c=Function("ParentClass","vmCtorFunc","vmGlobals","ntKey","ctKey","scKey","let RC = class extends ParentClass {  constructor(...args) {    super(...args);    vmGlobals[scKey] = true;    vmGlobals[ctKey] = new.target || RC;    let hadNt = ntKey in vmGlobals;    if (!hadNt) vmGlobals[ntKey] = new.target;    try {      vmCtorFunc.apply(this, args);    } finally {      delete vmGlobals[scKey];      delete vmGlobals[ctKey];      if (!hadNt) delete vmGlobals[ntKey];    }  }};return RC;")(x,a,u,r,i,d);Object.getOwnPropertyNames(a).forEach(function($){if("prototype"!==$&&"length"!==$&&"name"!==$)try{Object.defineProperty(c,$,Object.getOwnPropertyDescriptor(a,$))}catch(x){}}),a.prototype&&(Object.getOwnPropertyNames(a.prototype).forEach(function($){if("constructor"!==$)try{Object.defineProperty(c.prototype,$,Object.getOwnPropertyDescriptor(a.prototype,$))}catch(x){}}),Object.getOwnPropertySymbols(a.prototype).forEach(function($){try{Object.defineProperty(c.prototype,$,Object.getOwnPropertyDescriptor(a.prototype,$))}catch(x){}})),S(),V(c),c._$uZ6UTk=x,p++;break}catch(f){}}Object.setPrototypeOf(l.prototype,x.prototype),Object.setPrototypeOf(l,x),l._$uZ6UTk=x,p++;break}},function($){for(;;){if(v.length>0){let x=v[v.length-1];x._$lBo40M===p&&(void 0!==x._$nIEj57&&(w=x._$nIEj57),v.pop())}p++;break}},function($){for(;;){V({}),p++;break}},function($){for(;;){let x=65535&$,l=$>>>16;V(s[x]*m[l]),p++;break}},function($){for(;;){V(+S()),p++;break}},function($){for(;;){s[$]=S(),p++;break}},function($){for(;;){let x=S();null!=x?p=j(k[p]):p++;break}},function($){for(;;)return c>0?S():void 0},function($){for(;;){let x=m[$],l=S();if(A._$In3l7L){x in A._$In3l7L&&delete A._$In3l7L[x];let e=x.split("$$")[0];e!==x&&e in A._$In3l7L&&delete A._$In3l7L[e]}A._$oUEoMX[x]=l,p++;break}},function($){for(;;){let x=S(),l=M();if(Array.isArray(x))Array.prototype.push.apply(l,x);else for(let e of x)l.push(e);p++;break}},function($){for(;;){let x=S(),l=S();V(l-x),p++;break}},function($){for(;;){let x=s[$]+1;s[$]=x,V(x),p++;break}},function($){for(;;){V(l[$]),p++;break}},function($){for(;;)throw S()},function($){for(;;){A&&A._$fw4bOV&&(A=A._$fw4bOV),p++;break}},function($){for(;;){let x=S(),l=S(),e=R_217eba._$7FVAZw;R_217eba._$7FVAZw=void 0;try{let n=l.apply(void 0,r(S,x));V(n)}finally{R_217eba._$7FVAZw=e}p++;break}},function($){for(;;){let x=S(),l=r(S,x),e=S();if(1===$){V(l),p++;break}if(R_217eba._$superCalled){p++;break}if("function"!=typeof e)throw TypeError("Super expression must be a constructor");R_217eba._$2WJmZ2=t;try{let n=e.apply(o,l);void 0!==n&&n!==o&&"object"==typeof n&&(o&&Object.assign(n,o),o=n,B=!0)}catch(a){if(a instanceof TypeError&&(a.message.includes("'new'")||a.message.includes("constructor"))){let u=Reflect.construct(e,l,t);u!==o&&o&&Object.assign(u,o),o=u,B=!0}else throw a}finally{delete R_217eba._$2WJmZ2}p++;break}},function($){for(;;){let x=S(),l=M(),e=m[$];Object.defineProperty(l.prototype,e,{value:x,writable:!0,enumerable:!1,configurable:!0}),p++;break}},function($){for(;;){let x=65535&$,l=$>>>16;s[x]<m[l]?p=j(k[p]):p++;break}},function($){for(;;){let x=m[$],l=S(),e=A,n=!1;for(;e;){if(e._$oUEoMX&&x in e._$oUEoMX){if(e._$3t0Lhk&&x in e._$3t0Lhk)break;e._$oUEoMX[x]=l,e._$3t0Lhk||(e._$3t0Lhk={}),e._$3t0Lhk[x]=!0,n=!0;break}e=e._$fw4bOV}n||(A._$In3l7L&&x in A._$In3l7L&&delete A._$In3l7L[x],A._$oUEoMX[x]=l,A._$3t0Lhk||(A._$3t0Lhk={}),A._$3t0Lhk[x]=!0),p++;break}},function($){for(;;){V(A),p++;break}},function($){for(;;){s[$]=S(),p++;break}},function($){for(;;){let x=S(),l=S(),e=m[$];R_217eba._$Vqksf9||(R_217eba._$Vqksf9=new Map);let n=R_217eba._$Vqksf9;n.has(e)||n.set(e,new WeakMap);let t=n.get(e);if(t.has(l))throw TypeError("Cannot initialize "+e+" twice on the same object");t.set(l,x),p++;break}},function($){for(;;){let x=S(),l=S(),e=m[$];R_217eba._$Vqksf9||(R_217eba._$Vqksf9=new Map);let n=R_217eba._$Vqksf9,t="set_"+e,o=n.get(t);if(o&&o.has(l)){o.get(l).call(l,x),V(x),p++;break}let a="_$TadDZqset_"+e.substring(1)+"_$G3kL8V";if(l.constructor&&a in l.constructor){l.constructor[a].call(l,x),V(x),p++;break}let u=n.get(e);if(u&&u.has(l)){u.set(l,x),V(x),p++;break}let r="_$TjZFDp"+e.substring(1)+"_$iqk0T6";if(r in l){l[r]=x,V(x),p++;break}throw TypeError("Cannot write private member "+e+" to an object whose class did not declare it")}},function($){for(;;){let x=m[$],l=S();if(A._$In3l7L){x in A._$In3l7L&&delete A._$In3l7L[x];let e=x.split("$$")[0];e!==x&&e in A._$In3l7L&&delete A._$In3l7L[e]}A._$oUEoMX[x]=l,A._$3t0Lhk||(A._$3t0Lhk={}),A._$3t0Lhk[x]=!0,p++;break}},function($){for(;;){let x=65535&$,l=$>>>16;V(s[x]<m[l]),p++;break}},function($){for(;;){let x=S();S();let l=M(),e=m[$];R_217eba._$Vqksf9||(R_217eba._$Vqksf9=new Map);let n=R_217eba._$Vqksf9;n.has(e)||n.set(e,new WeakMap);n.get(e).set(l,x),p++;break}},function($){for(;;){p++;break}},function($){for(;;){let x=m[$];x in R_217eba?V(typeof R_217eba[x]):V(typeof D[x]),p++;break}},function($){for(;;){if(v.length>0){let x=v[v.length-1];if(void 0!==x._$lBo40M){R._$xutPko=!0,R._$8OxcGp=S(),p=x._$lBo40M;break}}R._$xutPko&&(R._$xutPko=!1,R._$8OxcGp=void 0),$e=!0,$l=S()}},function($){for(;;){let x=m[$],l;if(x in R_217eba)l=R_217eba[x];else if(x in D)l=D[x];else throw ReferenceError(x+" is not defined");V(l),p++;break}},function($){for(;;){let x=S();V(import(x)),p++;break}},function($){for(;;){if(null===X){let x=l?l.length:0,e={};X=new Proxy([],{get:function($,t,o){if("length"===t)return x;if("callee"===t)return n;if(t===Symbol.iterator)return function(){let $=0,n=x;return{next:function(){if($<n){let x=$<l.length?l[$]:e[$];return $++,{value:x,done:!1}}return{done:!0}}}};if("string"==typeof t){let a=parseInt(t,10);if(!isNaN(a)&&a>=0)return a<l.length?l[a]:e[a]}let u=Array.prototype[t];if("function"==typeof u)return function(){let $=[];for(let n=0;n<x;n++)$[n]=n<l.length?l[n]:e[n];return u.apply($,arguments)}},set:function($,n,t){if("length"===n)return x=t,!0;if("string"==typeof n){let o=parseInt(n,10);!isNaN(o)&&o>=0&&(o<l.length?l[o]=t:e[o]=t,o>=x&&(x=o+1))}return!0},has:function($,l){if("length"===l||"callee"===l)return!0;if("string"==typeof l){let e=parseInt(l,10);if(!isNaN(e)&&e>=0&&e<x)return!0}return l in Array.prototype}})}V(X),p++;break}},function($){for(;;){let x=S(),l=m[$];if(R_217eba._$Vqksf9){let e=R_217eba._$Vqksf9,n="get_"+l,t=e.get(n);if(t&&t.has(x)){let o=t.get(x);V(o.call(x)),p++;break}let a=e.get(l);if(a&&a.has(x)){V(a.get(x)),p++;break}}let u="_$TjZFDp"+l.substring(1)+"_$iqk0T6";if(u in x){V(x[u]),p++;break}throw TypeError("Cannot read private member "+l+" from an object whose class did not declare it")}},function($){for(;;){let x=S(),l=S();if(null==l)throw TypeError("Cannot read property '"+String(x)+"' of "+l);V(l[x]),p++;break}},function($){for(;;){s[$]=s[$]+1,p++;break}},function($){for(;;){V(s[$]),p++;break}},function($){for(;;){let x=65535&$,l=$>>>16,e=S(),n=r(S,e),t=s[x],o=t[m[l]];V(o.apply(t,n)),p++;break}},function($){for(;;){let x=65535&$,l=$>>>16;V(s[x]+m[l]),p++;break}},function($){for(;;){let x=S(),l=S();V(l>x),p++;break}},function($){for(;;){let x=S(),l=M(),e=m[$];Object.defineProperty(l,e,{set:x,enumerable:!1,configurable:!0}),p++;break}},function($){for(;;){if(-1===$)V(Symbol());else{let x=S();V(Symbol(x))}p++;break}},function($){for(;;){let x=m[$],l=S(),e=A,n=!1;for(;e;){if(e._$oUEoMX&&x in e._$oUEoMX){if(e._$3t0Lhk&&x in e._$3t0Lhk)throw TypeError("Assignment to constant variable.");e._$In3l7L&&x in e._$In3l7L&&delete e._$In3l7L[x],e._$oUEoMX[x]=l,n=!0;break}e=e._$fw4bOV}n||(x in R_217eba?R_217eba[x]=l:D[x]=l),p++;break}},function($){for(;;){let x=S(),l=M();null!=x&&Object.assign(l,x),p++;break}},function($){for(;;){let x=S(),l=S();V(l&x),p++;break}},function($){for(;;){let x=S();V(!!x.done),p++;break}}];if($t[$n[Q]](W),$e)return $e=!1,$l}break}catch($o){if(v.length>0){let $a=v[v.length-1];c=$a._$vNb7Pz,void 0!==$a._$liOSo1?(V($o),p=$a._$liOSo1,$a._$liOSo1=void 0,void 0===$a._$lBo40M&&v.pop()):void 0!==$a._$lBo40M?(p=$a._$lBo40M,$a._$nIEj57=$o):(p=$a._$PWCmUv,v.pop());continue}throw $o}return c>0?S():B?o:void 0}let f=function(x,l,e,n,t){var o;return R_217eba._$sTj04k?R_217eba._$sTj04k=!1:R_217eba._$7FVAZw=void 0,function x(l,e,n,t,o,d){let c=[],s=0,p=Array((l.p||0)+(l.l||0)),m=0,y=l.c,k=l.i,h=l.j||{},g=l.x||{},v=k.length>>1,w=[],R=null,L={_$xutPko:!1,_$8OxcGp:void 0},T={_$tbxl7o:!1,_$dyRpzu:0},P={_$9EoLlN:!1,_$hCVuGL:0},I=l.o||a,V=l.seKey,S,M,O,E,C,N;if(void 0!==V){let F=$=>"number"==typeof $&&Number.isFinite($)&&Number.isInteger($)&&$>=-2147483648&&$<=2147483647?$^V|0:$;S=$=>{c[s++]=F($)},M=()=>F(c[--s]),O=()=>F(c[s-1]),E=$=>{c[s-1]=F($)},C=$=>F(c[s-$]),N=($,x)=>{c[s-$]=F(x)}}else S=$=>{c[s++]=$},M=()=>c[--s],O=()=>c[s-1],E=$=>{c[s-1]=$},C=$=>c[s-$],N=($,x)=>{c[s-$]=x};let q=l.jk||0,j=l.bk||0,A=$=>q?$^q:$,Z={_$fw4bOV:n,_$oUEoMX:Object.create(null)};if(e)for(let X=0;X<Math.min(e.length,l.p||0);X++)p[X]=e[X];let B=null,U=!1;if(l.nfe&&void 0!==l.ni&&t){let G=l.c[l.ni];Z._$oUEoMX[G]=t,Z._$3t0Lhk||(Z._$3t0Lhk={}),Z._$3t0Lhk[G]=!0;try{Object.defineProperty(t,"name",{value:G,writable:!1,enumerable:!1,configurable:!0})}catch(z){}}for(;m<v;)try{for(;m<v;){let Q=m<<1,K=k[Q]^j,W=(I[K],k[Q+1]),J=null===W?void 0:"number"==typeof W?W^j:W;if(void 0===$x)var H,Y=!1,$$={0:92,1:16,2:13,3:84,4:17,5:41,6:129,7:98,8:105,9:18,10:64,11:103,12:14,13:69,14:3,15:23,18:91,19:97,20:137,21:51,22:6,23:83,24:11,25:8,26:21,27:42,32:30,40:73,41:85,42:67,43:12,44:10,45:62,46:132,47:86,50:75,51:78,52:29,53:99,54:108,55:82,56:122,57:106,58:46,59:40,60:87,61:94,62:22,63:27,64:24,70:57,71:7,72:127,73:80,74:38,75:123,76:5,77:95,78:44,79:81,81:136,82:77,90:54,91:43,93:59,94:102,95:68,100:15,104:71,105:109,106:124,110:66,111:9,112:121,123:48,124:28,127:52,128:138,129:88,130:19,131:60,132:89,140:26,141:93,142:70,143:74,144:110,145:0,146:63,147:1,148:25,149:133,150:72,151:116,152:115,153:61,154:55,155:31,156:119,157:126,158:45,160:20,161:125,162:76,163:49,164:2,167:134,168:53,169:37,170:33,171:4,172:32,173:58,174:47,175:56,200:120,201:39,202:100,210:34,211:65,212:135,213:113,214:107,215:101,216:112,217:117,218:79,250:128,251:36,252:131,253:50,254:96,255:35,256:118,257:111,258:130,259:114,260:104,261:90},$x=[function($){for(;;){let x=M(),l=O(),e=y[$],n="function"==typeof l&&l.prototype?l.prototype:l;Object.defineProperty(n,e,{get:x,enumerable:n===l,configurable:!0}),m++;break}},function($){for(;;){let x=M(),l=O(),e=y[$];Object.defineProperty(l,e,{value:x,writable:!0,enumerable:!1,configurable:!0}),m++;break}},function($){for(;;){S(o),m++;break}},function($){for(;;){let x=M(),l=M();S(l%x),m++;break}},function($){for(;;){let x=M(),l=M(),e=O();Object.defineProperty(e,l,{value:x,writable:!0,enumerable:!1,configurable:!0}),m++;break}},function($){for(;;){let x=M(),l=y[$],e=!(l in R_217eba)&&!(l in D);R_217eba[l]=x,l in D&&(D[l]=x),e&&(D[l]=x),S(x),m++;break}},function($){for(;;){let x=M(),l=M();S(l^x),m++;break}},function($){for(;;){let x=M(),l=M(),e=y[$];if(null==l)throw TypeError("Cannot set property '"+String(e)+"' of "+l);l[e]=x,S(x),m++;break}},function($){for(;;){let x=M(),l=M();S(l>>x),m++;break}},function($){for(;;){let x=M(),l=M();S(l instanceof x),m++;break}},function($){for(;;){let x=M(),l=M();S(l<x),m++;break}},function($){for(;;){let x=M(),l=M();S(l<<x),m++;break}},function($){for(;;){let x=M(),l=M();S(l!==x),m++;break}},function($){for(;;){S(null),m++;break}},function($){for(;;){let x=M(),l=M();S(l*x),m++;break}},function(x){for(;;){var l;let e=M(),n=$[l=e],t=n&&n.a,o=n&&n.s,a=n&&n.g,u=Z,r=f,i=_,c=b,s=n&&void 0!==n.ni?n.c[n.ni]:void 0,p=n&&n.p||0,y=t?d:void 0,k=function($,x,l,e,n,t,o,a,u,r,i){let d,c;if(d=c=n?function(){let l=[];for(let e=0;e<arguments.length;e++)l.push(arguments[e]);return a.call(this,$,l,x,d)}:e?async function(){let e=[];for(let n=0;n<arguments.length;n++)e.push(arguments[n]);let t=new.target!==void 0?new.target:R_217eba._$2WJmZ2;return l?await o.call(r,$,e,x,d,void 0):await o.call(this,$,e,x,d,t)}:function(){let e=[];for(let n=0;n<arguments.length;n++)e.push(arguments[n]);let o=new.target!==void 0?new.target:R_217eba._$2WJmZ2;return l?t.call(r,$,e,x,d,void 0):t.call(this,$,e,x,d,o)},u)try{Object.defineProperty(d,"name",{value:u,writable:!1,enumerable:!1,configurable:!0})}catch(f){}try{Object.defineProperty(d,"length",{value:i,writable:!1,enumerable:!1,configurable:!0})}catch(_){}return d}(e,u,t,o,a,r,i,c,s,y,p);if(!k)throw Error("VM Error: Failed to create closure");S(k),m++;break}},function($){for(;;){S(void 0),m++;break}},function($){for(;;){let x=M();S(x),S(x),m++;break}},function($){for(;;){e[$]=M(),m++;break}},function($){for(;;){let x=M().next();S(Promise.resolve(x)),m++;break}},function($){for(;;){S(d),m++;break}},function($){for(;;){let x=M(),l=M();S(l>>>x),m++;break}},function($){for(;;){if(L._$xutPko){let x=L._$8OxcGp;L._$xutPko=!1,L._$8OxcGp=void 0,Y=!0,H=x;return}if(T._$tbxl7o){let l=T._$dyRpzu;T._$tbxl7o=!1,T._$dyRpzu=0,m=l;break}if(P._$9EoLlN){let e=P._$hCVuGL;P._$9EoLlN=!1,P._$hCVuGL=0,m=e;break}if(null!==R){let n=R;throw R=null,n}m++;break}},function($){for(;;){S(-M()),m++;break}},function($){for(;;){if(w.length>0){let x=w[w.length-1];if(void 0!==x._$lBo40M){P._$9EoLlN=!0,P._$hCVuGL=A(h[m]),m=x._$lBo40M;break}}m=A(h[m]);break}},function($){for(;;){let x=M(),l=O(),e=y[$];Object.defineProperty(l,e,{get:x,enumerable:!1,configurable:!0}),m++;break}},function($){for(;;){let x=M(),l=M(),e=$,n=function($,x,l){let e;return e=l?function(){if(x){R_217eba._$m14esh=e;let $="_$2WJmZ2"in R_217eba;$||(R_217eba._$2WJmZ2=new.target);try{let l=[];for(let n=0;n<arguments.length;n++)l.push(arguments[n]);return x.apply(this,l)}finally{delete R_217eba._$m14esh,$||delete R_217eba._$2WJmZ2}}}:function(){if(x){let $="_$2WJmZ2"in R_217eba;$||(R_217eba._$2WJmZ2=new.target);try{let l=[];for(let e=0;e<arguments.length;e++)l.push(arguments[e]);return x.apply(this,l)}finally{$||delete R_217eba._$2WJmZ2}}}}(x,l,e);x&&Object.defineProperty(n,"name",{value:x,configurable:!0}),S(n),m++;break}},function($){for(;;){if(w.length>0){let x=w[w.length-1];if(void 0!==x._$lBo40M){T._$tbxl7o=!0,T._$dyRpzu=A(h[m]),m=x._$lBo40M;break}}m=A(h[m]);break}},function($){for(;;){let x=M();x&&"function"==typeof x.return&&x.return(),m++;break}},function($){for(;;){M()?m++:m=A(h[m]);break}},function($){for(;;){S(!M()),m++;break}},function($){for(;;){let x=M(),l=y[$];if(null==x){S(void 0),m++;break}R_217eba._$Vqksf9||(R_217eba._$Vqksf9=new Map);let e=R_217eba._$Vqksf9.get(l);if(!e||!e.has(x))throw TypeError("Cannot read private member "+l+" from an object whose class did not declare it");S(e.get(x)),m++;break}},function($){for(;;){let x=M(),l=M(),e=O(),n="function"==typeof e&&e.prototype?e.prototype:e;Object.defineProperty(n,l,{get:x,enumerable:n===e,configurable:!0}),m++;break}},function($){for(;;){let x=M(),l=M(),e=O();Object.defineProperty(e.prototype,l,{value:x,writable:!0,enumerable:!1,configurable:!0}),m++;break}},function($){for(;;){let x=M();Z={_$oUEoMX:Object.create(null),_$3t0Lhk:Object.create(null),_$In3l7L:Object.create(null),_$fw4bOV:x},m++;break}},function($){for(;;){let x=65535&$,l=$>>>16,e=p[x],n=y[l];S(e[n]),m++;break}},function($){for(;;){p[$]=p[$]-1,m++;break}},function($){for(;;){let x=M();S(Symbol.keyFor(x)),m++;break}},function($){for(;;){let x,l;void 0!==$?(l=M(),x=y[$]):(x=M(),l=M());let e=delete l[x];S(e),m++;break}},function($){for(;;){m++;break}},function($){for(;;){w.pop(),m++;break}},function($){for(;;){let x=O();E(C(2)),N(2,x),m++;break}},function($){for(;;){let x=C(3),l=C(2),e=O();N(3,l),N(2,e),E(x),m++;break}},function($){for(;;){let x=M();O().push(x),m++;break}},function($){for(;;){let x=M(),l=y[$];null==x?S(void 0):S(x[l]),m++;break}},function($){for(;;){let x=M(),l=M(),e=y[$];if(R_217eba._$Vqksf9){let n=R_217eba._$Vqksf9,t="set_"+e,o=n.get(t);if(o&&o.has(l)){o.get(l).call(l,x),S(x),m++;break}let a=n.get(e);if(a&&a.has(l)){a.set(l,x),S(x),m++;break}}let u="_$TjZFDp"+e.substring(1)+"_$iqk0T6";if(u in l){l[u]=x,S(x),m++;break}throw TypeError("Cannot write private member "+e+" to an object whose class did not declare it")}},function($){for(;;){let x=g[m];w.push({_$liOSo1:x[0]>=0?A(x[0]):void 0,_$lBo40M:x[1]>=0?A(x[1]):void 0,_$PWCmUv:x[2]>=0?A(x[2]):void 0,_$vNb7Pz:s}),m++;break}},function($){for(;;){let x=M(),l=M(),e=O();Object.defineProperty(e,l,{get:x,enumerable:!1,configurable:!0}),m++;break}},function($){for(;;){let x=M().next();S(x),m++;break}},function($){for(;;){M(),S(void 0),m++;break}},function($){for(;;){let x=65535&$,l=$>>>16;S(p[x]-y[l]),m++;break}},function($){for(;;){let x=M(),l=M();S(l|x),m++;break}},function($){for(;;){let x=M();if(null==x)throw TypeError("Cannot iterate over "+x);let l=x[Symbol.iterator];if("function"!=typeof l)throw TypeError("Object is not iterable");S(l.call(x)),m++;break}},function($){for(;;){let x=y[$];S(Symbol.for(x)),m++;break}},function($){for(;;){S([]),m++;break}},function($){for(;;){let x=M(),l=M(),e=y[$],n=null;if(R_217eba._$Vqksf9){let t=R_217eba._$Vqksf9.get(e);t&&t.has(l)&&(n=t.get(l))}if(null===n){let o="_$TadDZq"+e.substring(1)+"_$G3kL8V";o in l&&(n=l[o])}if(null===n)throw TypeError("Cannot read private member "+e+" from an object whose class did not declare it");if("function"!=typeof n)throw TypeError(e+" is not a function");let a=[];for(let u=0;u<x;u++)a.unshift(M());let r=n.apply(l,a);S(r),m++;break}},function($){for(;;){let x=M(),l=M(),e=O();Object.defineProperty(e,l,{set:x,enumerable:!1,configurable:!0}),m++;break}},function($){for(;;){let x=M(),l=y[$];if(null==x)throw TypeError("Cannot read property '"+String(l)+"' of "+x);S(x[l]),m++;break}},function($){for(;;){let x=M(),l=M(),e=O(),n="function"==typeof e&&e.prototype?e.prototype:e;Object.defineProperty(n,l,{set:x,enumerable:n===e,configurable:!0}),m++;break}},function($){for(;;){let x={value:M()};u.add(x),S(x),m++;break}},function($){for(;;){let x=M();x&&"function"==typeof x.return?S(Promise.resolve(x.return())):S(Promise.resolve()),m++;break}},function($){for(;;){let x=M(),l=y[$],e=!1;if(R_217eba._$Vqksf9){let n=R_217eba._$Vqksf9.get(l);e=n&&n.has(x)}S(e),m++;break}},function($){for(;;){let x=M(),l=M();S(l<=x),m++;break}},function($){for(;;){let x=M(),l=O(),e=y[$],n="function"==typeof l&&l.prototype?l.prototype:l;Object.defineProperty(n,e,{set:x,enumerable:n===l,configurable:!0}),m++;break}},function($){for(;;){let x=M(),l=M();S(l+x),m++;break}},function($){for(;;){let x=y[$],l=Z,e,n=!1;for(;l;){if(l._$In3l7L&&x in l._$In3l7L)throw ReferenceError("Cannot access '"+x+"' before initialization");if(l._$oUEoMX&&x in l._$oUEoMX){e=l._$oUEoMX[x],n=!0;break}l=l._$fw4bOV}"__this__"===x&&(e=d,n=!0),n||(e=x in R_217eba?R_217eba[x]:D[x]),S(e),m++;break}},function($){for(;;){S(typeof M()),m++;break}},function($){for(;;){let x=M(),l=M();S(l===x),m++;break}},function($){for(;;){let x=O();x.length++,m++;break}},function($){for(;;){let x=M(),l=M();S(l/x),m++;break}},function($){for(;;){let x=M(),l=M(),e=R_217eba._$7FVAZw,n;if(e)n=Object.getPrototypeOf(e);else if("function"==typeof l)n=Object.getPrototypeOf(l);else{let t=Object.getPrototypeOf(l);n=t&&t.constructor&&t.constructor.prototype===t?Object.getPrototypeOf(t):t}let o=null,a=n;for(;null!==a&&!(o=Object.getOwnPropertyDescriptor(a,x));)a=Object.getPrototypeOf(a);let u;if(o&&o.get)u=o.get.call(l),S(u);else if(!o||!o.set||"value"in o){if(u=a?a[x]:n[x],"function"==typeof u){let r=a||n,i=u.bind(l),d=u.constructor&&u.constructor.name;"GeneratorFunction"===d||"AsyncFunction"===d||"AsyncGeneratorFunction"===d||(R_217eba._$YdqCxf||(R_217eba._$YdqCxf=new WeakMap),R_217eba._$YdqCxf.set(i,r)),S(i)}else S(u)}else S(void 0);m++;break}},function($){for(;;){let x=M(),l=r(M,x),e=M();if("function"!=typeof e)throw TypeError(e+" is not a constructor");let n=R_217eba._$7FVAZw;R_217eba._$7FVAZw=void 0;let t;try{t=Reflect.construct(e,l)}finally{R_217eba._$7FVAZw=n}S(t),m++;break}},function($){for(;;){let x=M(),l=y[$];R_217eba._$Vqksf9||(R_217eba._$Vqksf9=new Map);let e=R_217eba._$Vqksf9,n="get_"+l,t=e.get(n);if(t&&t.has(x)){let o=t.get(x);S(o.call(x)),m++;break}let a="_$TadDZqget_"+l.substring(1)+"_$G3kL8V";if(x.constructor&&a in x.constructor){let u=x.constructor[a];S(u.call(x)),m++;break}let r=e.get(l);if(r&&r.has(x)){S(r.get(x)),m++;break}let i="_$TjZFDp"+l.substring(1)+"_$iqk0T6";if(i in x){S(x[i]),m++;break}throw TypeError("Cannot read private member "+l+" from an object whose class did not declare it")}},function($){for(;;){let x=M(),l=M();S(l==x),m++;break}},function($){for(;;){let x=M(),l=M(),e=M(),n;if("function"==typeof e)n=Object.getPrototypeOf(e);else{let t=Object.getPrototypeOf(e);n=t&&t.constructor&&t.constructor.prototype===t?Object.getPrototypeOf(t):t}let o=null,a=n;for(;null!==a&&!(o=Object.getOwnPropertyDescriptor(a,l));)a=Object.getPrototypeOf(a);o&&o.set?o.set.call(e,x):n[l]=x,S(x),m++;break}},function($){for(;;){m=A(h[m]);break}},function($){for(;;){let x=65535&$,l=$>>16,e=y[x],n=y[l];S(RegExp(e,n)),m++;break}},function($){for(;;){let x=M(),l=M();null==l?S(void 0):S(l[x]),m++;break}},function($){for(;;){M()?m=A(h[m]):m++;break}},function($){for(;;){let x=y[$];Z._$In3l7L||(Z._$In3l7L={}),Z._$In3l7L[x]=!0,m++;break}},function($){for(;;){let x=M(),l=M(),e=M();if(null==e)throw TypeError("Cannot set property '"+String(l)+"' of "+e);e[l]=x,S(x),m++;break}},function($){for(;;){let x=M(),l=M();S(l in x),m++;break}},function($){for(;;){let x=M(),l=M(),e=M();if("function"!=typeof l)throw TypeError(l+" is not a function");let n=R_217eba._$YdqCxf,t=n&&n.get(l),o=R_217eba._$7FVAZw;t&&(R_217eba._$sTj04k=!0,R_217eba._$7FVAZw=t);try{let a=l.apply(e,r(M,x));S(a)}finally{t&&(R_217eba._$sTj04k=!1,R_217eba._$7FVAZw=o)}m++;break}},function($){for(;;){S(~M()),m++;break}},function($){for(;;){M(),m++;break}},function($){for(;;){let x=M(),l=M();S(l!=x),m++;break}},function($){for(;;){let x=M(),l=M();S(l>=x),m++;break}},function($){for(;;){let x=M();if($>=0){let l=y[$];Z._$oUEoMX[l]=x}m++;break}},function($){for(;;){let x=M();if(null==x)throw TypeError("Cannot iterate over "+x);let l=x[Symbol.asyncIterator];if("function"==typeof l)S(l.call(x));else{let e=x[Symbol.iterator];if("function"!=typeof e)throw TypeError("Object is not async iterable");S(e.call(x))}m++;break}},function($){for(;;){let x=M();S(i(x)),m++;break}},function($){for(;;){let x=p[$]-1;p[$]=x,S(x),m++;break}},function($){for(;;){let x=M(),l=M();S(Math.pow(l,x)),m++;break}},function($){for(;;){S(y[$]),m++;break}},function($){for(;;){let x=M(),l=O(),e=!1;try{let n=Object.create(x.prototype),t=x.apply(n,[]);void 0!==t&&t!==n&&(e=!0)}catch(o){o instanceof TypeError&&(o.message.includes("'new'")||o.message.includes("constructor")||o.message.includes("Illegal constructor"))&&(e=!0)}if(e){let a=l,u=R_217eba,r="_$2WJmZ2",i="_$m14esh",d="_$superCalled";try{let c=Function("ParentClass","vmCtorFunc","vmGlobals","ntKey","ctKey","scKey","let RC = class extends ParentClass {  constructor(...args) {    super(...args);    vmGlobals[scKey] = true;    vmGlobals[ctKey] = new.target || RC;    let hadNt = ntKey in vmGlobals;    if (!hadNt) vmGlobals[ntKey] = new.target;    try {      vmCtorFunc.apply(this, args);    } finally {      delete vmGlobals[scKey];      delete vmGlobals[ctKey];      if (!hadNt) delete vmGlobals[ntKey];    }  }};return RC;")(x,a,u,r,i,d);Object.getOwnPropertyNames(a).forEach(function($){if("prototype"!==$&&"length"!==$&&"name"!==$)try{Object.defineProperty(c,$,Object.getOwnPropertyDescriptor(a,$))}catch(x){}}),a.prototype&&(Object.getOwnPropertyNames(a.prototype).forEach(function($){if("constructor"!==$)try{Object.defineProperty(c.prototype,$,Object.getOwnPropertyDescriptor(a.prototype,$))}catch(x){}}),Object.getOwnPropertySymbols(a.prototype).forEach(function($){try{Object.defineProperty(c.prototype,$,Object.getOwnPropertyDescriptor(a.prototype,$))}catch(x){}})),M(),S(c),c._$uZ6UTk=x,m++;break}catch(f){}}Object.setPrototypeOf(l.prototype,x.prototype),Object.setPrototypeOf(l,x),l._$uZ6UTk=x,m++;break}},function($){for(;;){if(w.length>0){let x=w[w.length-1];x._$lBo40M===m&&(void 0!==x._$nIEj57&&(R=x._$nIEj57),w.pop())}m++;break}},function($){for(;;){S({}),m++;break}},function($){for(;;){let x=65535&$,l=$>>>16;S(p[x]*y[l]),m++;break}},function($){for(;;){S(+M()),m++;break}},function($){for(;;){p[$]=M(),m++;break}},function($){for(;;){let x=M();null!=x?m=A(h[m]):m++;break}},function($){for(;;)return s>0?M():void 0},function($){for(;;){let x=y[$],l=M();if(Z._$In3l7L){x in Z._$In3l7L&&delete Z._$In3l7L[x];let e=x.split("$$")[0];e!==x&&e in Z._$In3l7L&&delete Z._$In3l7L[e]}Z._$oUEoMX[x]=l,m++;break}},function($){for(;;){let x=M(),l=O();if(Array.isArray(x))Array.prototype.push.apply(l,x);else for(let e of x)l.push(e);m++;break}},function($){for(;;){let x=M(),l=M();S(l-x),m++;break}},function($){for(;;){let x=p[$]+1;p[$]=x,S(x),m++;break}},function($){for(;;){S(e[$]),m++;break}},function($){for(;;)throw M()},function($){for(;;){Z&&Z._$fw4bOV&&(Z=Z._$fw4bOV),m++;break}},function($){for(;;){let x=M(),l=M(),e=R_217eba._$7FVAZw;R_217eba._$7FVAZw=void 0;try{let n=l.apply(void 0,r(M,x));S(n)}finally{R_217eba._$7FVAZw=e}m++;break}},function($){for(;;){let x=M(),l=r(M,x),e=M();if(1===$){S(l),m++;break}if(R_217eba._$superCalled){m++;break}if("function"!=typeof e)throw TypeError("Super expression must be a constructor");R_217eba._$2WJmZ2=o;try{let n=e.apply(d,l);void 0!==n&&n!==d&&"object"==typeof n&&(d&&Object.assign(n,d),d=n,U=!0)}catch(t){if(t instanceof TypeError&&(t.message.includes("'new'")||t.message.includes("constructor"))){let a=Reflect.construct(e,l,o);a!==d&&d&&Object.assign(a,d),d=a,U=!0}else throw t}finally{delete R_217eba._$2WJmZ2}m++;break}},function($){for(;;){let x=M(),l=O(),e=y[$];Object.defineProperty(l.prototype,e,{value:x,writable:!0,enumerable:!1,configurable:!0}),m++;break}},function($){for(;;){let x=65535&$,l=$>>>16;p[x]<y[l]?m=A(h[m]):m++;break}},function($){for(;;){let x=y[$],l=M(),e=Z,n=!1;for(;e;){if(e._$oUEoMX&&x in e._$oUEoMX){if(e._$3t0Lhk&&x in e._$3t0Lhk)break;e._$oUEoMX[x]=l,e._$3t0Lhk||(e._$3t0Lhk={}),e._$3t0Lhk[x]=!0,n=!0;break}e=e._$fw4bOV}n||(Z._$In3l7L&&x in Z._$In3l7L&&delete Z._$In3l7L[x],Z._$oUEoMX[x]=l,Z._$3t0Lhk||(Z._$3t0Lhk={}),Z._$3t0Lhk[x]=!0),m++;break}},function($){for(;;){S(Z),m++;break}},function($){for(;;){p[$]=M(),m++;break}},function($){for(;;){let x=M(),l=M(),e=y[$];R_217eba._$Vqksf9||(R_217eba._$Vqksf9=new Map);let n=R_217eba._$Vqksf9;n.has(e)||n.set(e,new WeakMap);let t=n.get(e);if(t.has(l))throw TypeError("Cannot initialize "+e+" twice on the same object");t.set(l,x),m++;break}},function($){for(;;){let x=M(),l=M(),e=y[$];R_217eba._$Vqksf9||(R_217eba._$Vqksf9=new Map);let n=R_217eba._$Vqksf9,t="set_"+e,o=n.get(t);if(o&&o.has(l)){o.get(l).call(l,x),S(x),m++;break}let a="_$TadDZqset_"+e.substring(1)+"_$G3kL8V";if(l.constructor&&a in l.constructor){l.constructor[a].call(l,x),S(x),m++;break}let u=n.get(e);if(u&&u.has(l)){u.set(l,x),S(x),m++;break}let r="_$TjZFDp"+e.substring(1)+"_$iqk0T6";if(r in l){l[r]=x,S(x),m++;break}throw TypeError("Cannot write private member "+e+" to an object whose class did not declare it")}},function($){for(;;){let x=y[$],l=M();if(Z._$In3l7L){x in Z._$In3l7L&&delete Z._$In3l7L[x];let e=x.split("$$")[0];e!==x&&e in Z._$In3l7L&&delete Z._$In3l7L[e]}Z._$oUEoMX[x]=l,Z._$3t0Lhk||(Z._$3t0Lhk={}),Z._$3t0Lhk[x]=!0,m++;break}},function($){for(;;){let x=65535&$,l=$>>>16;S(p[x]<y[l]),m++;break}},function($){for(;;){let x=M();M();let l=O(),e=y[$];R_217eba._$Vqksf9||(R_217eba._$Vqksf9=new Map);let n=R_217eba._$Vqksf9;n.has(e)||n.set(e,new WeakMap);n.get(e).set(l,x),m++;break}},function($){for(;;){m++;break}},function($){for(;;){let x=y[$];x in R_217eba?S(typeof R_217eba[x]):S(typeof D[x]),m++;break}},function($){for(;;){if(w.length>0){let x=w[w.length-1];if(void 0!==x._$lBo40M){L._$xutPko=!0,L._$8OxcGp=M(),m=x._$lBo40M;break}}L._$xutPko&&(L._$xutPko=!1,L._$8OxcGp=void 0),Y=!0,H=M()}},function($){for(;;){let x=y[$],l;if(x in R_217eba)l=R_217eba[x];else if(x in D)l=D[x];else throw ReferenceError(x+" is not defined");S(l),m++;break}},function($){for(;;){let x=M();S(import(x)),m++;break}},function($){for(;;){if(null===B){let x=e?e.length:0,l={};B=new Proxy([],{get:function($,n,o){if("length"===n)return x;if("callee"===n)return t;if(n===Symbol.iterator)return function(){let $=0,n=x;return{next:function(){if($<n){let x=$<e.length?e[$]:l[$];return $++,{value:x,done:!1}}return{done:!0}}}};if("string"==typeof n){let a=parseInt(n,10);if(!isNaN(a)&&a>=0)return a<e.length?e[a]:l[a]}let u=Array.prototype[n];if("function"==typeof u)return function(){let $=[];for(let n=0;n<x;n++)$[n]=n<e.length?e[n]:l[n];return u.apply($,arguments)}},set:function($,n,t){if("length"===n)return x=t,!0;if("string"==typeof n){let o=parseInt(n,10);!isNaN(o)&&o>=0&&(o<e.length?e[o]=t:l[o]=t,o>=x&&(x=o+1))}return!0},has:function($,l){if("length"===l||"callee"===l)return!0;if("string"==typeof l){let e=parseInt(l,10);if(!isNaN(e)&&e>=0&&e<x)return!0}return l in Array.prototype}})}S(B),m++;break}},function($){for(;;){let x=M(),l=y[$];if(R_217eba._$Vqksf9){let e=R_217eba._$Vqksf9,n="get_"+l,t=e.get(n);if(t&&t.has(x)){let o=t.get(x);S(o.call(x)),m++;break}let a=e.get(l);if(a&&a.has(x)){S(a.get(x)),m++;break}}let u="_$TjZFDp"+l.substring(1)+"_$iqk0T6";if(u in x){S(x[u]),m++;break}throw TypeError("Cannot read private member "+l+" from an object whose class did not declare it")}},function($){for(;;){let x=M(),l=M();if(null==l)throw TypeError("Cannot read property '"+String(x)+"' of "+l);S(l[x]),m++;break}},function($){for(;;){p[$]=p[$]+1,m++;break}},function($){for(;;){S(p[$]),m++;break}},function($){for(;;){let x=65535&$,l=$>>>16,e=M(),n=r(M,e),t=p[x],o=t[y[l]];S(o.apply(t,n)),m++;break}},function($){for(;;){let x=65535&$,l=$>>>16;S(p[x]+y[l]),m++;break}},function($){for(;;){let x=M(),l=M();S(l>x),m++;break}},function($){for(;;){let x=M(),l=O(),e=y[$];Object.defineProperty(l,e,{set:x,enumerable:!1,configurable:!0}),m++;break}},function($){for(;;){if(-1===$)S(Symbol());else{let x=M();S(Symbol(x))}m++;break}},function($){for(;;){let x=y[$],l=M(),e=Z,n=!1;for(;e;){if(e._$oUEoMX&&x in e._$oUEoMX){if(e._$3t0Lhk&&x in e._$3t0Lhk)throw TypeError("Assignment to constant variable.");e._$In3l7L&&x in e._$In3l7L&&delete e._$In3l7L[x],e._$oUEoMX[x]=l,n=!0;break}e=e._$fw4bOV}n||(x in R_217eba?R_217eba[x]=l:D[x]=l),m++;break}},function($){for(;;){let x=M(),l=O();null!=x&&Object.assign(l,x),m++;break}},function($){for(;;){let x=M(),l=M();S(l&x),m++;break}},function($){for(;;){let x=M();S(!!x.done),m++;break}}];if($x[$$[K]](J),Y)return Y=!1,H}break}catch($l){if(w.length>0){let $e=w[w.length-1];s=$e._$vNb7Pz,void 0!==$e._$liOSo1?(S($l),m=$e._$liOSo1,$e._$liOSo1=void 0,void 0===$e._$lBo40M&&w.pop()):void 0!==$e._$lBo40M?(m=$e._$lBo40M,$e._$nIEj57=$l):(m=$e._$PWCmUv,w.pop());continue}throw $l}return s>0?M():U?d:void 0}($[o=x],l,e,n,t,this)},_=async function(x,l,e,n,t,o){var a;let u=$[a=x],r=c(u,l,e,n,t,this),i=r.next();for(;!i.done;)if(1===i.value._$vyQiT2)try{let d=await Promise.resolve(i.value._$55Xwzp);R_217eba._$7FVAZw=o,i=r.next(d)}catch(f){R_217eba._$7FVAZw=o,i=r.throw(f)}else throw Error("Unexpected yield in async context");return i.value},b=function(x,l,e,n,t){var o;let a=$[o=x],u=c(a,l,e,n,void 0,this),r=!1,i=null,d,f=!1;function _($,x){if(r)return{value:void 0,done:!0};if(R_217eba._$7FVAZw=t,i){let l;try{l=x?"function"==typeof i.throw?i.throw($):(i=null,function(){throw $}()):i.next($)}catch(e){i=null;try{let n=u.throw(e);return b(n)}catch(o){throw r=!0,o}}if(!l.done)return{value:l.value,done:!1};i=null,$=l.value,x=!1}let a;try{a=x?u.throw($):u.next($)}catch(d){throw r=!0,d}return b(a)}function b($){if($.done)return(r=!0,f)?(f=!1,{value:d,done:!0}):{value:$.value,done:!0};let x=$.value;if(2===x._$vyQiT2)return{value:x._$55Xwzp,done:!1};if(3===x._$vyQiT2){let l=x._$55Xwzp;if(l&&"function"==typeof l[Symbol.iterator]&&(l=l[Symbol.iterator]()),l&&"function"==typeof l.next){let e=l.next();return e.done?_(e.value,!1):(i=l,{value:e.value,done:!1})}return _(void 0,!1)}throw Error("Unexpected signal in generator")}let s=a&&a.s,p=async function($){if(r)return{value:$,done:!0};if(i&&"function"==typeof i.return){try{await i.return()}catch(x){}i=null}let l;try{R_217eba._$7FVAZw=t,l=u.next({_$vyQiT2:4,_$55Xwzp:$})}catch(e){throw r=!0,e}for(;!l.done;){let n=l.value;if(1===n._$vyQiT2)try{let o=await Promise.resolve(n._$55Xwzp);R_217eba._$7FVAZw=t,l=u.next(o)}catch(a){R_217eba._$7FVAZw=t,l=u.throw(a)}else if(2===n._$vyQiT2)try{R_217eba._$7FVAZw=t,l=u.next()}catch(d){throw r=!0,d}else break}return r=!0,{value:l.value,done:!0}},m=function($){if(r)return{value:$,done:!0};if(i&&"function"==typeof i.return){try{i.return()}catch(x){}i=null}d=$,f=!0;let l;try{R_217eba._$7FVAZw=t,l=u.next({_$vyQiT2:4,_$55Xwzp:$})}catch(e){throw r=!0,f=!1,e}return!l.done&&l.value&&2===l.value._$vyQiT2?{value:l.value._$55Xwzp,done:!1}:(r=!0,f=!1,{value:l.value,done:!0})};if(!s)return{next:function($){return _($,!1)},return:m,throw:function($){if(r)throw $;return _($,!0)},[Symbol.iterator]:function(){return this}};{let y=async function($,x){if(r)return{value:void 0,done:!0};if(R_217eba._$7FVAZw=t,i){let l;try{l=x?"function"==typeof i.throw?await i.throw($):(i=null,function(){throw $}()):await i.next($)}catch(e){i=null;try{R_217eba._$7FVAZw=t;return await k(u.throw(e))}catch(n){throw r=!0,n}}if(!l.done)return{value:l.value,done:!1};i=null,$=l.value,x=!1}let o;try{o=x?u.throw($):u.next($)}catch(a){throw r=!0,a}return await k(o)};async function k($){for(;!$.done;){let x=$.value;if(1===x._$vyQiT2){let l;try{l=await Promise.resolve(x._$55Xwzp),R_217eba._$7FVAZw=t,$=u.next(l)}catch(e){R_217eba._$7FVAZw=t,$=u.throw(e)}continue}if(2===x._$vyQiT2)return{value:x._$55Xwzp,done:!1};if(3===x._$vyQiT2){let n=x._$55Xwzp;if(n&&"function"==typeof n[Symbol.asyncIterator]?n=n[Symbol.asyncIterator]():n&&"function"==typeof n[Symbol.iterator]&&(n=n[Symbol.iterator]()),n&&"function"==typeof n.next){let o=await n.next();if(!o.done)return i=n,{value:o.value,done:!1};R_217eba._$7FVAZw=t,$=u.next(o.value);continue}R_217eba._$7FVAZw=t,$=u.next(void 0);continue}throw Error("Unexpected signal in async generator")}return(r=!0,f)?(f=!1,{value:d,done:!0}):{value:$.value,done:!0}}return{next:function($){return y($,!1)},return:p,throw:function($){return r?Promise.reject($):y($,!0)},[Symbol.asyncIterator]:function(){return this}}}};return function(x,l,e,n,t){var o;let a=$[o=x];if(a&&a.g){let u=R_217eba._$7FVAZw;return b.call(this,x,l,e,n,u)}if(!a||!a.s)return f.call(this,x,l,e,n,t);{let r=R_217eba._$7FVAZw;return _.call(this,x,l,e,n,t,r)}}}();try{R_217eba.document=document}catch($){}try{R_217eba.Math=Math}catch(x){}try{R_217eba.Array=Array}catch(l){}try{R_217eba.Date=Date}catch(e){}try{R_217eba.Number=Number}catch(n){}try{R_217eba.alert=alert}catch(t){}try{R_217eba.console=console}catch(o){}try{R_217eba.MutationObserver=MutationObserver}catch(a){}try{R_217eba.NaN=NaN}catch(u){}try{R_217eba.parseFloat=parseFloat}catch(r){}try{R_217eba.isNaN=isNaN}catch(i){}try{R_217eba.localStorage=localStorage}catch(d){}try{R_217eba.JSON=JSON}catch(c){}try{R_217eba.window=window}catch(f){}try{R_217eba.undefined=void 0}catch(_){}try{R_217eba.setTimeout=setTimeout}catch(b){}try{R_217eba.prompt=prompt}catch(s){}try{R_217eba.setInterval=setInterval}catch(p){}try{R_217eba.location=location}catch(m){}try{R_217eba.history=history}catch(y){}try{R_217eba.Node=Node}catch(k){}try{R_217eba.parseInt=parseInt}catch(h){}try{R_217eba.String=String}catch(g){}(function(){I_8f4f0c.call(this,43,Array.from(arguments),void 0,void 0,new.target)})(),function(){I_8f4f0c.call(this,52,Array.from(arguments),void 0,void 0,new.target)}();
+// content.js - Full merged code for Market QX Pro Enhancer
+(function () {
+  // --- CSS for Transaction Manager Popup ---
+  const transactionStyle = document.createElement("style");
+  transactionStyle.innerHTML = `
+    .tx-popup-overlay { position: fixed; top:0;left:0;width:100%;height:100%;background: rgba(0,0,0,0.4);display:flex;align-items:center;justify-content:center;z-index:9999; }
+    .tx-popup { background:#fff;padding:20px;border-radius:12px;width:420px;font-family:Arial,sans-serif;color:#000;box-shadow:0 4px 15px rgba(0,0,0,0.2);}
+    .tx-popup h2 { margin:0 0 15px;font-size:18px;text-align:center; }
+    .tx-popup label { font-weight:bold;display:block;margin-top:10px;margin-bottom:4px; }
+    .tx-popup input, .tx-popup select { width:100%;padding:6px 8px;margin-bottom:10px;border:1px solid #ccc;border-radius:6px;font-size:14px; }
+    .tx-popup button { width:48%;padding:10px;border:none;border-radius:6px;cursor:pointer;font-weight:bold;font-size:14px; }
+    .tx-popup .add-btn { background:#0faf59;color:white; }
+    .tx-popup .cancel-btn { background:#ccc; }
+    .tx-popup .btns { display:flex;justify-content:space-between; }
+    .tx-popup .mode-select { display:flex; justify-content: space-between; margin-bottom:10px; }
+    .tx-popup .mode-select label { flex:1; text-align:center; cursor:pointer; border:1px solid #ccc; border-radius:6px; padding:6px 0; }
+    .tx-popup .mode-select input { display:none; }
+    .tx-popup .mode-select label.active { background:#0faf59;color:#fff; border-color:#0faf59; }
+  `;
+  document.head.appendChild(transactionStyle);
+
+  // --- Popup Function for Transaction Manager ---
+  function openTransactionPopup() {
+    const overlay = document.createElement("div");
+    overlay.className = "tx-popup-overlay";
+    overlay.innerHTML = `
+      <div class="tx-popup">
+        <h2>Transaction Manager</h2>
+
+        <div class="mode-select">
+          <input type="radio" name="tx-mode" id="mode-add" checked>
+          <label for="mode-add" class="active">Add New</label>
+          <input type="radio" name="tx-mode" id="mode-edit">
+          <label for="mode-edit">Edit Existing</label>
+        </div>
+
+        <div id="edit-section" style="display:none;">
+          <label>Order Number</label>
+          <select id="tx-existing-order">
+            <option value="">Select Order</option>
+          </select>
+        </div>
+
+        <label>Date & Time</label>
+        <input type="text" id="tx-date" placeholder="22/08/2025, 22:27:52" />
+
+        <label>Status</label>
+        <select id="tx-status">
+          <option value="Processing">Processing</option>
+          <option value="Successful">Successful</option>
+          <option value="Failed">Failed</option>
+        </select>
+
+        <label>Transaction Type</label>
+        <select id="tx-type">
+          <option value="Deposit">Deposit</option>
+          <option value="Withdrawal">Withdrawal</option>
+        </select>
+
+        <label>Payment System</label>
+        <input type="text" id="tx-method" placeholder="USDT (TRC-20)" />
+
+        <label>Amount</label>
+        <input type="text" id="tx-amount" placeholder="100" />
+
+        <div class="btns">
+          <button class="cancel-btn">Cancel</button>
+          <button class="add-btn">Add / Update</button>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(overlay);
+
+    // --- Mode Switching ---
+    const addLabel = overlay.querySelector('label[for="mode-add"]');
+    const editLabel = overlay.querySelector('label[for="mode-edit"]');
+    const editSection = overlay.querySelector("#edit-section");
+    const orderSelect = overlay.querySelector("#tx-existing-order");
+
+    function updateMode() {
+      if(document.getElementById("mode-add").checked){
+        addLabel.classList.add("active");
+        editLabel.classList.remove("active");
+        editSection.style.display="none";
+      }else{
+        addLabel.classList.remove("active");
+        editLabel.classList.add("active");
+        editSection.style.display="block";
+        populateOrderList();
+      }
+    }
+
+    addLabel.onclick = () => { document.getElementById("mode-add").checked=true; updateMode(); };
+    editLabel.onclick = () => { document.getElementById("mode-edit").checked=true; updateMode(); };
+
+    // Cancel button
+    overlay.querySelector(".cancel-btn").onclick = () => overlay.remove();
+
+    // --- Random Order Generator ---
+    function generateOrder() { return "9" + Math.floor(1000000 + Math.random() * 9000000); }
+
+    // Populate order list
+    function populateOrderList(){
+      orderSelect.innerHTML = '<option value="">Select Order</option>';
+      document.querySelectorAll('.---react-ui-TransactionsScreenItem-styles-module__transactions-item--imQKR').forEach(tx=>{
+        const id = tx.querySelector('.---react-ui-TransactionsScreenItem-styles-module__transactions-item__id--Ttk2j')?.innerText;
+        if(id) orderSelect.innerHTML += `<option value="${id}">${id}</option>`;
+      });
+    }
+
+    // Pre-fill data when selecting existing order
+    orderSelect.onchange = function(){
+      const selected = this.value;
+      if(!selected) return;
+      const txDiv = Array.from(document.querySelectorAll('.---react-ui-TransactionsScreenItem-styles-module__transactions-item--imQKR')).find(x=>x.querySelector('.---react-ui-TransactionsScreenItem-styles-module__transactions-item__id--Ttk2j').innerText===selected);
+      if(!txDiv) return;
+      document.getElementById("tx-date").value = txDiv.querySelector('.---react-ui-TransactionsScreenItem-styles-module__transactions-item__date--n6Gnu')?.innerText || "";
+      const typeText = txDiv.querySelector('.---react-ui-TransactionsScreenItem-styles-module__transactions-item__type--yRiVa')?.innerText || "Deposit";
+      document.getElementById("tx-type").value = typeText;
+      const methodText = txDiv.querySelector('.---react-ui-TransactionsScreenItem-styles-module__transactions-item__method--oY8r8')?.innerText || "USDT (TRC-20)";
+      document.getElementById("tx-method").value = methodText;
+      let amtText = txDiv.querySelector('.---react-ui-TransactionsScreenItem-styles-module__transactions-item__amount--v9Gal')?.innerText || "0";
+      amtText = amtText.replace(/[^0-9.-]/g,"");
+      document.getElementById("tx-amount").value = amtText;
+      let statusText = txDiv.querySelector('.---react-ui-TransactionsScreenItem-styles-module__transactions-item__status-text--JmjRX')?.innerText || "Processing";
+      if(statusText.includes("Waiting")) statusText="Processing";
+      else if(statusText.includes("Processing")) statusText="Processing";
+      else if(statusText.includes("Failed")) statusText="Failed";
+      else statusText="Successful";
+      document.getElementById("tx-status").value = statusText;
+    }
+
+    // --- Add / Update Transaction ---
+    overlay.querySelector(".add-btn").onclick = () => {
+      const isEdit = document.getElementById("mode-edit").checked;
+      let order = generateOrder();
+      const date = document.getElementById("tx-date").value || new Date().toLocaleString();
+      const status = document.getElementById("tx-status").value;
+      const type = document.getElementById("tx-type").value;
+      const method = document.getElementById("tx-method").value || "USDT (TRC-20)";
+      let amount = document.getElementById("tx-amount").value || "0";
+
+      // Format amount
+      amount = Number(amount.replace(/[^\d.]/g,"")).toLocaleString();
+      amount = "$" + amount;
+      let color = type==="Withdrawal" ? "#db4635" : "#0faf59";
+      if(type==="Withdrawal" && !amount.startsWith("-")) amount="-"+amount;
+      if(type==="Deposit" && !amount.startsWith("+")) amount="+"+amount;
+
+      // Status Block
+      let statusBlock="";
+      if(status==="Processing"){
+        const text = type==="Withdrawal"?"Waiting confirmation":"Processing...";
+        const desc = type==="Withdrawal"?"The withdrawal is currently being processed on the side of the financial operator. Please wait - the funds should be received within 48 hours.":"Please note that payments with this method could take up to 24 hours to get processed. If it's not on your balance by that time - please submit a support ticket. The status may appear as «Failed» until the funds are actually received on our side.";
+        statusBlock = `<div class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__status-block--srWT8">
+          <div class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__status-icon--iGg0J ---react-ui-TransactionsScreenItem-styles-module__muted--FGTfS">
+            <svg class="icon-pending"><use xlink:href="/profile/images/spritemap.svg#icon-pending"></use></svg>
+          </div>
+          <span class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__status-text--JmjRX" style="color:#f4f4f4">${text}</span>
+        </div>
+        <div class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__status-processed--B3z9o">${desc}</div>`;
+      }else if(status==="Successful"){
+        statusBlock = `<div class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__status-block--srWT8">
+          <span class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__status-text--JmjRX" style="color:#0faf59">Successed</span>
+        </div>`;
+      }else if(status==="Failed"){
+        statusBlock = `<div class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__status-block--srWT8">
+          <div class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__status-icon--iGg0J ---react-ui-TransactionsScreenItem-styles-module__danger--YdX2Q">
+            <svg class="icon-close-tiny"><use xlink:href="/profile/images/spritemap.svg#icon-close-tiny"></use></svg>
+          </div>
+          <span class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__status-text--JmjRX ---react-ui-TransactionsScreenItem-styles-module__close-tiny--FF3r3">Failed</span>
+        </div>`;
+      }
+
+      if(isEdit){
+        const selectedOrder = orderSelect.value;
+        if(!selectedOrder) return alert("Select an order to edit");
+        const txDiv = Array.from(document.querySelectorAll('.---react-ui-TransactionsScreenItem-styles-module__transactions-item--imQKR'))
+          .find(x=>x.querySelector('.---react-ui-TransactionsScreenItem-styles-module__transactions-item__id--Ttk2j')?.innerText===selectedOrder);
+        if(!txDiv) return;
+        txDiv.querySelector('.---react-ui-TransactionsScreenItem-styles-module__transactions-item__date--n6Gnu').innerText = date;
+        txDiv.querySelector('.---react-ui-TransactionsScreenItem-styles-module__transactions-item__type--yRiVa').innerText = type;
+        txDiv.querySelector('.---react-ui-TransactionsScreenItem-styles-module__transactions-item__method--oY8r8').innerText = method;
+        txDiv.querySelector('.---react-ui-TransactionsScreenItem-styles-module__transactions-item__amount--v9Gal').innerText = amount;
+        txDiv.querySelector('.---react-ui-TransactionsScreenItem-styles-module__transactions-item__amount--v9Gal').style.color=color;
+        txDiv.querySelector('.---react-ui-TransactionsScreenItem-styles-module__transactions-item__status--iqTzO').innerHTML=statusBlock;
+      }else{
+        const tx = document.createElement("div");
+        tx.className="---react-ui-TransactionsScreenItem-styles-module__transactions-item--imQKR";
+        tx.innerHTML=`
+          <div class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__id--Ttk2j">${order}</div>
+          <div class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__date--n6Gnu">${date}</div>
+          <div class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__status--iqTzO">${statusBlock}</div>
+          <div class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__type--yRiVa">${type}</div>
+          <div class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__method--oY8r8">${method}</div>
+          <b class="---react-ui-TransactionsScreenItem-styles-module__transactions-item__amount--v9Gal" style="color:${color}">${amount}</b>`;
+        document.querySelector(".transactions-list__header").after(tx);
+      }
+
+      overlay.remove();
+    };
+
+    updateMode();
+  }
+
+  // Attach listener for Transaction Manager popup
+  // Using MutationObserver to ensure the header is present
+  function attachTransactionPopupListener() {
+    const header = document.querySelector(".transactions-list__header");
+    if (header) {
+      header.style.cursor = "pointer";
+      header.addEventListener("click", openTransactionPopup);
+      console.log("Transaction Manager popup trigger attached.");
+      return true;
+    }
+    return false;
+  }
+
+  if (!attachTransactionPopupListener()) {
+    const observer = new MutationObserver((mutations, obs) => {
+      if (attachTransactionPopupListener()) {
+        obs.disconnect();
+      }
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+  }
+
+
+  // --- License key validation system for Quotex Spoof ---
+  const validKeys = [
+      "ABC123-XHJ", "TEST-KEY-1", "VIP-ACCESS-U1", "K9X3P-7F2MZ-L8B4J",
+      "J2L5N-V7Q1H-M6T8C", "R4B6Y-8Z1WQ-P3K9S", "H7T2M-X5D9E-C1V4G",
+      "P6M1J-V3L8Q-Z4R7B", "M8T3X-L1V7P-R5K9N", "L2H9M-P8Q5T-V7X3G",
+      "C4X1N-M7Z5R-L9V8Q", "B5T8M-Q3P9L-V6X1R", "X7L2Q-M9P4T-H5V8N",
+      "N1P5L-V4X8Q-M7T9R", "T6M2X-P9L1V-Q8R5N", "V9Q3M-L7T5X-P1R8H",
+      "Q8M4P-L6T9V-X3R1N", "R3P8V-M2L7X-Q5T9H", "L5V9M-Q8T1X-R2P7H",
+      "P7X2L-M8Q5V-T9R1H", "X1M6P-L9V8T-Q4R7N", "N8P3M-V7T9X-L1R5Q",
+      "M2L8Q-P5T1X-V9R4H", "V4Q7M-T8K4X-P2T2H", "Q5M9P-L2T8V-X7R1N",
+      "R9P4V-M3L1X-Q8T7H", "L8V2M-Q9T4X-P5R7H", "P4X9L-M1Q7V-T8R5N",
+      "X9M8P-L4V7T-Q1R2H", "N7P1M-V5T4X-L9R8Q", "M5L9Q-P8T7X-V2R1H",
+      "V3Q1M-L8T9X-P4R7H"
+  ];
+
+  function isValidKey(key) {
+      return validKeys.some(k => k.toLowerCase() === key.toLowerCase());
+  }
+
+  // ====== New Modern Popup for Quotex Spoof (replaces old popup) ======
+  // Country list (name + code shown), no flags
+  const flagList = [
+    { code: "pk", name: "Pakistan", active: true },
+    { code: "bd", name: "Bangladesh", active: true },
+    { code: "dz", name: "Algeria", active: true },
+    { code: "in", name: "India", active: true },
+    { code: "us", name: "United States", active: false },
+    { code: "gb", name: "United Kingdom", active: false },
+    { code: "fr", name: "France", active: false },
+    { code: "cn", name: "China", active: false }
+  ];
+
+  // Remove any previous new popup if exists
+  const prevSpoofPopup = document.getElementById('codex-modern-popup-overlay');
+  if (prevSpoofPopup) prevSpoofPopup.remove();
+
+  // Inject popup CSS for Quotex Spoof
+  const spoofStyle = document.createElement('style');
+  spoofStyle.textContent = `
+    @keyframes codexPopupIn {
+      0% { opacity: 0; transform: translateY(-18px) scale(0.98); }
+      100% { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    #codex-modern-popup-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.55);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2147483647;
+    }
+    #codex-modern-popup {
+      width: min(92vw, 420px);
+      border-radius: 14px;
+      padding: 22px;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #eef2ff;
+      box-shadow: 0 18px 45px rgba(2,6,23,0.6);
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      animation: codexPopupIn 260ms cubic-bezier(.2,.9,.2,1) both;
+    }
+    #codex-modern-popup h3 {
+      margin: 0 0 10px 0;
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+      background: linear-gradient(90deg,#7dd3fc,#a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    #codex-modern-popup p.subtitle {
+      margin: 0 0 14px 0;
+      text-align: center;
+      font-size: 12px;
+      color: #c7d2fe;
+      opacity: 0.9;
+    }
+    #codex-modern-popup label { font-size: 13px; color: #cbd5e1; display:block; margin-top:10px; margin-bottom:6px; }
+    #codex-modern-popup input[type="text"],
+    #codex-modern-popup input[type="number"],
+    #codex-modern-popup select {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.06);
+      background: rgba(255,255,255,0.03);
+      color: #eef2ff;
+      font-size: 14px;
+      outline: none;
+      box-sizing: border-box;
+      transition: box-shadow .18s ease, background .18s ease, transform .08s ease;
+    }
+    #codex-modern-popup input::placeholder { color: rgba(255,255,255,0.35); }
+    #codex-modern-popup input:focus,
+    #codex-modern-popup select:focus {
+      box-shadow: 0 6px 18px rgba(99,102,241,0.12);
+      background: rgba(255,255,255,0.04);
+      transform: translateY(-1px);
+    }
+    #codex-modern-popup .actions {
+      display:flex;
+      gap:10px;
+      margin-top:16px;
+    }
+    #codex-modern-popup .btn {
+      flex:1;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    #codex-modern-popup .btn.cancel {
+      background: transparent;
+      color: #9ca3af;
+      border: 1px solid rgba(255,255,255,0.04);
+    }
+    #codex-modern-popup .btn.start {
+      background: linear-gradient(90deg,#06b6d4,#7c3aed);
+      color: white;
+      box-shadow: 0 8px 22px rgba(99,102,241,0.18);
+    }
+    @media (max-width:420px) {
+      #codex-modern-popup { padding: 18px; width: 92vw; border-radius:12px; }
+    }
+  `;
+  document.head.appendChild(spoofStyle);
+
+  // Build country options (show Name (CODE)) with black text color
+  let countryOptions = '';
+  flagList.forEach(f => {
+    const display = `${f.name} (${f.code.toUpperCase()})`;
+    const disabled = f.active ? '' : ' disabled';
+    countryOptions += `<option value="${f.code}"${disabled} style="color:black;">${display}${f.active ? '' : ' — Inactive'}</option>`;
+  });
+
+  // Function to show the spoof setup popup
+  function showSpoofSetupPopup() {
+    // Create overlay + popup HTML for Quotex Spoof
+    const spoofOverlay = document.createElement('div');
+    spoofOverlay.id = 'codex-modern-popup-overlay';
+    spoofOverlay.innerHTML = `
+      <div id="codex-modern-popup" role="dialog" aria-modal="true" aria-label="Quotex Spoof Setup">
+        <h3>CODEX</h3>
+        <p class="subtitle">ONLY BUY FROM @CODER_456</p>
+
+        <label for="codex-name">Name</label>
+        <input id="codex-name" type="text" placeholder="e.g. John">
+
+        <label for="codex-balance">Demo Balance (starting)</label>
+        <input id="codex-balance" type="number" placeholder="e.g. $10000" min="0">
+
+        <label for="codex-country">Country</label>
+        <select id="codex-country">${countryOptions}</select>
+
+        <label for="codex-key">Enter your key</label>
+        <input id="codex-key" type="text" placeholder="Enter key">
+
+        <div class="actions">
+          <button class="btn cancel" id="codex-cancel">Cancel</button>
+          <button class="btn start" id="codex-start">Start</button>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(spoofOverlay);
+
+    // Handle Cancel for Quotex Spoof
+    document.getElementById('codex-cancel').addEventListener('click', function () {
+      const el = document.getElementById('codex-modern-popup-overlay');
+      if (el) el.remove();
+    });
+
+    // On Start: validate, store globally and run spoof
+    document.getElementById('codex-start').addEventListener('click', function () {
+      const name = (document.getElementById('codex-name').value || '').trim();
+      const balanceVal = document.getElementById('codex-balance').value;
+      const balance = balanceVal === '' ? NaN : parseFloat(balanceVal);
+      const country = (document.getElementById('codex-country').value || 'pk').toLowerCase();
+      const key = (document.getElementById('codex-key').value || '').trim();
+
+      if (!name || isNaN(balance) || !country || !key) {
+          alert('Please fill all fields (Name, Balance, Country, Key).');
+          return;
+      }
+      // License key validation
+      if (!isValidKey(key)) {
+          alert('Invalid license key. Please contact admin.');
+          return;
+      }
+
+      // Store values in localStorage
+      localStorage.setItem('quotexSpoofData', JSON.stringify({
+        name: name,
+        balance: balance,
+        country: country,
+        key: key
+      }));
+
+      // store globally for the spoof logic
+      window.customName = name;
+      window.fakeDemoBalance = balance; // keep numeric
+      window.customFlag = country;
+      window.userKey = key;
+
+      // remove popup
+      const el = document.getElementById('codex-modern-popup-overlay');
+      if (el) el.remove();
+
+      // Start the original spoof logic
+      startSpoof();
+    });
+  }
+
+  // Function to load spoof data from localStorage and start spoofing
+  function loadSpoofDataAndStart() {
+    const savedData = localStorage.getItem('quotexSpoofData');
+    if (savedData) {
+      const data = JSON.parse(savedData);
+      window.customName = data.name;
+      window.fakeDemoBalance = data.balance;
+      window.customFlag = data.country;
+      window.userKey = data.key;
+      startSpoof();
+    } else {
+      showSpoofSetupPopup();
+    }
+  }
+
+  // --- Demo Balance Popup CSS ---
+  const demoBalanceStyle = document.createElement('style');
+  demoBalanceStyle.textContent = `
+    .demo-balance-popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+    .demo-balance-popup {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      width: 300px;
+      font-family: Arial, sans-serif;
+      color: #000;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    .demo-balance-popup h2 {
+      margin: 0 0 15px;
+      font-size: 18px;
+    }
+    .demo-balance-popup input {
+      width: calc(100% - 20px);
+      padding: 8px 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    .demo-balance-popup button {
+      width: 48%;
+      padding: 10px;
+      border: none;
+      border-radius: 66px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .demo-balance-popup .set-btn {
+      background: #0faf59;
+      color: white;
+    }
+    .demo-balance-popup .cancel-btn {
+      background: #ccc;
+    }
+    .demo-balance-popup .btns {
+      display: flex;
+      justify-content: space-between;
+    }
+  `;
+  document.head.appendChild(demoBalanceStyle);
+
+  // --- Demo Balance Popup Function ---
+  function openDemoBalancePopup() {
+    const overlay = document.createElement("div");
+    overlay.className = "demo-balance-popup-overlay";
+    overlay.innerHTML = `
+      <div class="demo-balance-popup">
+        <h2>Set Demo Balance</h2>
+        <input type="number" id="demo-balance-input" placeholder="e.g. 10000" min="0" value="${window.fakeDemoBalance || 10000}" />
+        <div class="btns">
+          <button class="cancel-btn">Cancel</button>
+          <button class="set-btn">Set</button>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(overlay);
+
+    overlay.querySelector(".cancel-btn").onclick = () => overlay.remove();
+    overlay.querySelector(".set-btn").onclick = () => {
+      const newBalance = parseFloat(document.getElementById("demo-balance-input").value);
+      if (!isNaN(newBalance) && newBalance >= 0) {
+        window.fakeDemoBalance = newBalance;
+        overlay.remove();
+      } else {
+        alert("Please enter a valid positive number for the demo balance.");
+      }
+    };
+  }
+
+  // ====== ORIGINAL SPOOF LOGIC (preserved, unchanged behavior) ======
+  function startSpoof() {
+    // Demo URL enforce removed as per user request
+
+    let previousBalance = null;
+    let profitLoss = 0;
+    let customPosition = 2393; // Default start position
+
+    // --- Load persisted data ---
+    const persistedData = localStorage.getItem('quotexSpoofLeaderboardData');
+    if (persistedData) {
+      const data = JSON.parse(persistedData);
+      const now = new Date().getTime();
+      // Check if data is less than 24 hours old (24 * 60 * 60 * 1000 milliseconds)
+      if (now - data.timestamp < 24 * 60 * 60 * 1000) {
+        profitLoss = data.profitLoss;
+        customPosition = data.customPosition;
+        console.log("Loaded persisted leaderboard data:", { profitLoss, customPosition });
+      } else {
+        console.log("Persisted leaderboard data expired (older than 24 hours). Resetting.");
+        localStorage.removeItem('quotexSpoofLeaderboardData');
+      }
+    }
+
+    // --- Function to save data ---
+    function saveLeaderboardData() {
+      const dataToPersist = {
+        profitLoss: profitLoss,
+        customPosition: customPosition,
+        timestamp: new Date().getTime()
+      };
+      localStorage.setItem('quotexSpoofLeaderboardData', JSON.stringify(dataToPersist));
+    }
+
+
+    function formatLeaderboardBalance(amount, idx, yourPosition) {
+      if (idx <= 2 && idx === yourPosition && amount >= 30000) {
+        return "$30,000.00+";
+      }
+      if (amount < 0) {
+        return `-$${Math.abs(amount).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+      }
+      return `$${parseFloat(amount).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+    }
+
+    setTimeout(() => {
+      const footerWrapper = document.querySelector(".position__footer");
+      if (footerWrapper) {
+        footerWrapper.style.cursor = "pointer";
+        footerWrapper.onclick = function () {
+          const pos = prompt("Enter your custom position (number):", customPosition);
+          if (pos !== null && !isNaN(pos) && Number(pos) > 0) {
+            customPosition = Number(pos);
+            saveLeaderboardData(); // Save immediately after change
+          }
+        };
+      }
+      // Name popup only (flag untouched in header)
+      const leaderboardHeader = document.querySelector(".position__header");
+      if (leaderboardHeader) {
+        const nameContainer = leaderboardHeader.querySelector(".position__header-name");
+        if (nameContainer) {
+          nameContainer.style.cursor = "pointer";
+          nameContainer.onclick = function () {};
+        }
+      }
+    }, 1000);
+
+    setInterval(() => {
+      try {
+        // This line is already present and helps, but the new logic above is more robust for initial load/redirects
+        if (location.pathname === "/en/demo-trade") {
+          history.pushState({}, "", "/en/trade"); // Visual spoof only (no redirect) // This line seems to be trying to change to /en/trade, which is counter-intuitive to staying on demo.
+                                                  // If the goal is to *always* be on demo-trade, this line should be removed or modified.
+                                                  // For the purpose of enforcing demo-trade, I'll assume this line was a remnant or intended for a different spoof aspect.
+                                                  // The new logic at the start of startSpoof() will override this if it tries to redirect away from demo.
+        }
+
+        const pageTitle = document.querySelector("head > title");
+        if (pageTitle) pageTitle.innerText = "Live trading | Quotex";
+
+        const infoText = document.querySelector('[class*="__infoName--"][class*="__demo--"]');
+        if (infoText) {
+          infoText.classList.remove(...[...infoText.classList].filter(c => c.includes("__demo--")));
+          infoText.classList.add("___react-features-Usermenu-styles-module__live--Bx7Ua");
+          const isMobile = window.innerWidth < 768;
+          infoText.textContent = isMobile ? "Live" : "Live Account";
+          infoText.style.color = "#0faf59";
+        }
+
+        const balanceEl = document.querySelector('[class*="__infoBalance--"]');
+        if (!balanceEl) return;
+
+        const balanceText = balanceEl.textContent.replace(/[^\d.]/g, '');
+        const balance = parseFloat(balanceText);
+
+        if (previousBalance !== null) {
+          const diff = parseFloat((balance - previousBalance).toFixed(2));
+          if (diff !== 0) {
+            profitLoss += diff;
+            saveLeaderboardData(); // Save profitLoss after every change
+          }
+        }
+        previousBalance = balance;
+
+        // --- HEADER NAME & BALANCE (flag untouched) ---
+        const leaderboardHeader = document.querySelector(".position__header");
+        if (leaderboardHeader) {
+          const nameContainer = leaderboardHeader.querySelector(".position__header-name");
+          const moneyEl = leaderboardHeader.querySelector(".position__header-money");
+
+          // Name popup only (flag untouched)
+          if (nameContainer) {
+            nameContainer.style.cursor = "pointer";
+            nameContainer.onclick = function () {};
+            // Set name from auto-detected or default
+            const span = nameContainer.querySelector("span");
+            if (span && window.customName) span.textContent = window.customName;
+          }
+
+          // Profit/loss formatting (loss: -$0.00, profit: $0.00)
+          if (moneyEl) {
+            if (profitLoss < 0) {
+              moneyEl.textContent = `-$${Math.abs(profitLoss).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+            } else {
+              moneyEl.textContent = `$${profitLoss.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+            }
+            moneyEl.className = `position__header-money ${profitLoss >= 0 ? "--green" : "--red"}`;
+            moneyEl.style.color = profitLoss >= 0 ? "#0faf59" : "#db4635";
+          }
+        }
+
+        // ✅ Loading bar: $1000 = 100% (from profitLoss variable)
+        const expandWrapper = document.querySelector(".position__expand");
+        if (expandWrapper) {
+            const innerBar = expandWrapper;
+
+            // profitLoss variable se direct percent calculate karo
+            // Profit/Loss ko percent me convert karo ($100 = 100%)
+    let percent = (Math.abs(profitLoss) / 100) * 100;
+    if (percent > 100) percent = 100;
+
+    // Bar color depend karega profit/loss par
+    innerBar.style.backgroundColor = profitLoss >= 0 ? "#0faf59" : "#db4635";
+            percent = Math.min(100, Math.max(0, percent));
+            innerBar.style.width = `${percent}%`;
+            innerBar.style.transition = "width 0.3s ease-in-out";
+        }
+
+        // ✅ Leaderboard spoof: show your name/profit/flag/avatar at correct position
+        const leaderboardItems = document.querySelectorAll(".leader-board__items .leader-board__item");
+        let profits = [];
+        let avatars = [];
+        let flags = [];
+        let names = [];
+
+        leaderboardItems.forEach(item => {
+          const profitEl = item.querySelector(".leader-board__item-money");
+          const profit = profitEl ? parseFloat(profitEl.textContent.replace(/[^\d.-]/g, '')) : 0;
+          profits.push(profit);
+
+          const avatarEl = item.querySelector(".leader-board__item-avatar");
+          avatars.push(avatarEl ? avatarEl.innerHTML : "");
+
+          const flagEl = item.querySelector(".flag");
+          flags.push(flagEl ? flagEl.outerHTML : "");
+
+          const nameEl = item.querySelector(".leader-board__item-name");
+          names.push(nameEl ? nameEl.textContent : "");
+        });
+
+        function getCustomFlagHTML() {
+          return `<svg class="flag flag-${window.customFlag}" width="16" height="16"><use xlink:href="/profile/images/flags.svg#flag-${window.customFlag}"></use></svg>`;
+        }
+        function getDefaultAvatarHTML() {
+          return `<svg class="icon-avatar-default" width="32" height="32"><use xlink:href="/profile/images/spritemap.svg#icon-avatar-default"></use></svg>`;
+        }
+
+
+        // Add your profit to array and sort descending (original profits remain for Top-20 snapshot)
+        const allProfits = [...profits, profitLoss].sort((a, b) => b - a);
+
+        // === New custom position logic ===
+        let yourPosition;
+        let yourPositionDisplay;
+        const top20Profits = profits.slice(0, 20);
+        const profit20th = top20Profits.length >= 20 ? top20Profits[19] : null;
+
+        if (profitLoss < 5) {
+            yourPositionDisplay = 63579;
+            yourPosition = 63578;
+        } else if (profitLoss === 5) {
+            yourPositionDisplay = 2473;
+            yourPosition = 2472;
+        } else if (profitLoss === 20) {
+            yourPositionDisplay = 1309;
+            yourPosition = 1308;
+        } else if (profitLoss === 40) {
+            yourPositionDisplay = 800;
+            yourPosition = 799;
+        } else if (profit20th !== null && profitLoss >= profit20th) {
+            // Inside Top-20
+            const sortedTop20 = top20Profits.slice().sort((a, b) => b - a);
+            const insertIdx = sortedTop20.findIndex(p => profitLoss >= p);
+            yourPositionDisplay = insertIdx + 1;
+            yourPosition = insertIdx;
+
+            // Replace that row with custom details
+            const targetRow = leaderboardItems[insertIdx];
+            if (targetRow) {
+                const nameEl = targetRow.querySelector(".leader-board__item-name");
+                const profitEl = targetRow.querySelector(".leader-board__item-money");
+                const avatarEl = targetRow.querySelector(".leader-board__item-avatar");
+                const flagEl = targetRow.querySelector(".flag");
+                if (nameEl) nameEl.textContent = window.customName;
+                if (profitEl) profitEl.textContent = formatLeaderboardBalance(profitLoss, insertIdx, insertIdx);
+                if (avatarEl) avatarEl.innerHTML = getDefaultAvatarHTML();
+                if (flagEl) flagEl.outerHTML = getCustomFlagHTML();
+            }
+        } else {
+            // Smooth transition for >$40 and below 20th profit
+            const fakeStart = 800;
+            const fakeEnd = 21;
+            const rangeStart = 40;
+            const rangeEnd = profit20th !== null ? profit20th : 1000;
+            const t = Math.min(1, Math.max(0, (profitLoss - rangeStart) / (rangeEnd - rangeStart)));
+            const eased = 1 - (1 - t) * (1 - t);
+            yourPositionDisplay = Math.round(fakeStart + (fakeEnd - fakeStart) * eased);
+            yourPosition = yourPositionDisplay - 1;
+        }
+
+        // === Force update header with custom name ===
+        try {
+            const headerNameDiv = document.querySelector('.position__header-name');
+            if (headerNameDiv) {
+                const flagEl = headerNameDiv.querySelector('svg');
+                headerNameDiv.innerHTML = '';
+                if (flagEl) headerNameDiv.appendChild(flagEl);
+                if (typeof window.customName !== 'undefined' && window.customName) {
+                    headerNameDiv.appendChild(document.createTextNode(window.customName));
+                } else {
+                    headerNameDiv.appendChild(document.createTextNode('#51856399'));
+                }
+            }
+        } catch(e) { console.error('Header name update error', e); }
+        // ✅ Show your position in header/footer
+        const footerWrapper = document.querySelector(".position__footer");
+        if (footerWrapper) {
+          const title = footerWrapper.querySelector(".position__footer-title");
+          if (title) title.textContent = "Your position:";
+          const textNodes = Array.from(footerWrapper.childNodes).filter(n => n.nodeType === Node.TEXT_NODE);
+          const numNode = textNodes.find(n => n.textContent.trim().match(/^\d+$/));
+          if (numNode) {
+            numNode.textContent = (yourPosition + 1).toString();
+            numNode.parentElement.style.color = "#f4f4f4";
+          }
+        }
+
+        // NEW Account level spoof functions
+        function updateAccountLevelIcon(selector, balance, type) {
+            let iconHref = "icon-profile-level-standart";
+            let isProOrVIP = false;
+            let width = null;
+            let height = null;
+
+            if (balance >= 10000) {
+                iconHref = "icon-profile-level-vip";
+                isProOrVIP = true;
+            } else if (balance >= 5000) {
+                iconHref = "icon-profile-level-pro";
+                isProOrVIP = true;
+            }
+
+            if (isProOrVIP) {
+                if (type === 'header') {
+                    width = "19.99";
+                    height = "17.99";
+                } else { // folder or dropdown
+                    width = "18.24";
+                    height = "12.98";
+                }
+            }
+
+            let useEl = document.querySelector(selector);
+            let svgEl = useEl ? useEl.closest('svg') : null;
+            let containerEl = null;
+
+            // Determine the correct container to inject SVG if it doesn't exist
+            if (!svgEl) {
+                if (type === 'header') {
+                    containerEl = document.querySelector('#root > div > div.page.app__page > header > div.header__container > div[class*="usermenu"]');
+                } else if (type === 'folder') {
+                    containerEl = document.querySelector('#root > div > div.page.app__page > header div[class*="Usermenu-styles-module__infoLevels"]');
+                } else if (type === 'dropdown') {
+                    containerEl = document.querySelector('#root > div > div.page.app__page > header div[class*="Usermenu-Dropdown"] div[class*="levelIcon"]');
+                }
+            }
+
+            if (!svgEl && containerEl) {
+                // If SVG doesn't exist, create and append it
+                svgEl = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+                useEl = document.createElementNS("http://www.w3.org/2000/svg", "use");
+                svgEl.appendChild(useEl);
+                containerEl.innerHTML = ''; // Clear existing content if any
+                containerEl.appendChild(svgEl);
+            }
+
+            if (useEl) {
+                useEl.setAttribute("xlink:href", `/profile/images/spritemap.svg#${iconHref}`);
+            }
+
+            if (svgEl) {
+                if (width !== null && height !== null) {
+                    svgEl.setAttribute("width", width);
+                    svgEl.setAttribute("height", height);
+                } else {
+                    svgEl.removeAttribute("width");
+                    svgEl.removeAttribute("height");
+                }
+            }
+        }
+
+        // Call the new functions for each icon location
+        updateAccountLevelIcon('#root > div > div.page.app__page > header > div.header__container > div[class*="usermenu"] svg use', balance, 'header');
+        updateAccountLevelIcon('#root > div > div.page.app__page > header div[class*="Usermenu-styles-module__infoLevels"] svg use', balance, 'folder');
+        updateAccountLevelIcon('#root > div > div.page.app__page > header div[class*="Usermenu-Dropdown"] div[class*="levelIcon"] svg use', balance, 'dropdown');
+
+
+        const percentEl = document.querySelector('[class*="__levelProfit--"]');
+        if (percentEl) {
+          percentEl.textContent = balance >= 10000 ? "+4% profit" : balance >= 5000 ? "+2% profit" : "+0% profit";
+          percentEl.style.color = "white";
+        }
+
+        const statusTextEl = document.querySelector('[class*="__levelName--"]');
+        if (statusTextEl) {
+          statusTextEl.textContent = balance >= 10000 ? "VIP:" : balance >= 5000 ? "Pro:" : "Standard:";
+          statusTextEl.style.color = "#ffffff80";
+        }
+
+        // ✅ Dropdown spoof
+        const items = document.querySelectorAll('li[class*="selectItemRadio"]');
+        if (items.length >= 2) {
+          const [top, bottom] = items;
+
+          const topName = top.querySelector('a[class*="selectName"]');
+          const bottomName = bottom.querySelector('a[class*="selectName"]');
+          const topBalance = top.querySelector('b[class*="selectBalance"]');
+          const bottomBalance = bottom.querySelector('b[class*="selectBalance"]');
+          const topTick = top.querySelector('svg[class*="selectCheck"]');
+          const bottomTick = bottom.querySelector('svg[class*="selectCheck"]');
+
+          if (topName) topName.textContent = "Live Account";
+          if (bottomName) bottomName.textContent = "Demo Account";
+
+          if (topBalance) topBalance.textContent = balanceEl.textContent;
+          if (bottomBalance) {
+            bottomBalance.textContent = `$${parseFloat(window.fakeDemoBalance).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+          }
+
+          if (topTick) topTick.style.display = "inline";
+          if (bottomTick) bottomTick.style.display = "none";
+
+          const topLink = top.querySelector("a");
+          const bottomLink = bottom.querySelector("a");
+
+          if (topLink) topLink.setAttribute("aria-current", "page");
+          if (bottomLink) bottomLink.removeAttribute("aria-current");
+
+          top.classList.add('---react-features-Usermenu-Dropdown-styles-module__active--P5n2A');
+          bottom.classList.remove('---react-features-Usermenu-Dropdown-styles-module__active--P5n2A');
+
+          // Add event listener to Demo Account option to open demo balance popup
+          // Add event listener only to the "Demo Account" text link
+    const demoLink = bottom.querySelector('a[class*="selectName"]');
+    if (demoLink) {
+      demoLink.onclick = (e) => {
+        e.preventDefault(); // Prevent default navigation
+        openDemoBalancePopup();
+      };
+    }
+        }
+      } catch (e) {
+        console.error("Spoof error:", e);
+      }
+    }, 300);
+  }
+
+  // Check localStorage and decide whether to show popup or start spoofing
+  loadSpoofDataAndStart();
+})();
+
+// ===== START FROM: function hideBannerSafely() =====
+// (hideBannerSafely implementation remains unchanged in your content.js)
+
+/* ================== YOUR POSITION ENGINE (UTC REMOVED) ================== */
+
+(function () {
+  "use strict";
+
+  /* ================== CONFIG ================== */
+
+  const BASE_KEY   = "yp_base_fixed_v1";      // ek dafa read hone wali base position
+  const ACTIVE_KEY = "lb_active_index_v4";   // leaderboard override
+  const PROFIT_KEY = "leaderboard_profit_diff_v2";
+
+  const PROFIT_BANDS = [
+    { min: 0,   max: 10,   improve: 1500 }, // $10 → ~1500 range
+    { min: 10,  max: 100,  improve: 1000 }, // $100 → ~1000 range
+    { min: 100, max: 1e9,  improve: 800  }
+  ];
+
+  const LOSS_BAND = 1200;
+
+  /* ================== HELPERS ================== */
+
+  function rand(n) {
+    return Math.floor(Math.random() * Math.max(1, n));
+  }
+
+  function getProfit() {
+    const v = parseFloat(localStorage.getItem(PROFIT_KEY));
+    return isNaN(v) ? 0 : v;
+  }
+
+  function getLeaderboardRankIfAny() {
+    const idx = localStorage.getItem(ACTIVE_KEY);
+    if (idx === null) return null;
+    const n = parseInt(idx, 10);
+    if (isNaN(n)) return null;
+    return n + 1;
+  }
+
+  function readBaseOnce() {
+    if (localStorage.getItem(BASE_KEY)) return;
+
+    const el = document.querySelector(
+      'div[class*="LeaderBoard-Position-styles-module__footer"]'
+    );
+    if (!el) return;
+
+    const num = parseInt(el.textContent.replace(/\D+/g, ""), 10);
+    if (!isNaN(num)) {
+      localStorage.setItem(BASE_KEY, String(num));
+    }
+  }
+
+  function computePosition(base, profit) {
+    if (profit > 0) {
+      const band =
+        PROFIT_BANDS.find(b => profit >= b.min && profit < b.max) ||
+        PROFIT_BANDS[PROFIT_BANDS.length - 1];
+
+      return Math.max(1, base - rand(band.improve));
+    }
+
+    if (profit < 0) {
+      return base + rand(LOSS_BAND);
+    }
+
+    return base;
+  }
+
+  function writePosition(value) {
+    const el = document.querySelector(
+      'div[class*="LeaderBoard-Position-styles-module__footer"]'
+    );
+    if (!el) return;
+
+    const title = el.querySelector('div[class*="__title--"]');
+    el.textContent = "";
+    if (title) el.appendChild(title);
+    el.appendChild(document.createTextNode(String(value)));
+  }
+
+  /* ================== CORE LOOP ================== */
+
+  function runYourPosition() {
+    readBaseOnce();
+
+    const base = parseInt(localStorage.getItem(BASE_KEY), 10);
+    if (isNaN(base)) return;
+
+    const lbRank = getLeaderboardRankIfAny();
+    if (lbRank !== null) {
+      writePosition(lbRank);
+      return;
+    }
+
+    const profit = getProfit();
+    writePosition(computePosition(base, profit));
+  }
+
+  setInterval(runYourPosition, 800);
+})();
+
+/* ================== END CORE LOOP ================== */
