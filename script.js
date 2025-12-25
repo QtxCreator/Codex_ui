@@ -1961,4 +1961,5 @@ row.block.insertAdjacentHTML("beforeend", DEFAULT_AVATAR_HTML);
   }
 
   setInterval(runYourPosition, 800);
+
 })();
