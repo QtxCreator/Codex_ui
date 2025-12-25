@@ -607,3 +607,108 @@ try {
     setInterval(applySpoof, 10);
   }
 })();
+
+// ===== START FROM: function hideBannerSafely() =====
+// (hideBannerSafely implementation remains unchanged in your content.js)
+
+/* ================== YOUR POSITION ENGINE (UTC REMOVED) ================== */
+
+(function () {
+  "use strict";
+
+  /* ================== CONFIG ================== */
+
+  const BASE_KEY   = "yp_base_fixed_v1";      // ek dafa read hone wali base position
+  const ACTIVE_KEY = "lb_active_index_v4";   // leaderboard override
+  const PROFIT_KEY = "leaderboard_profit_diff_v2";
+
+  const PROFIT_BANDS = [
+    { min: 0,   max: 10,   improve: 1500 }, // $10 → ~1500 range
+    { min: 10,  max: 100,  improve: 1000 }, // $100 → ~1000 range
+    { min: 100, max: 1e9,  improve: 800  }
+  ];
+
+  const LOSS_BAND = 1200;
+
+  /* ================== HELPERS ================== */
+
+  function rand(n) {
+    return Math.floor(Math.random() * Math.max(1, n));
+  }
+
+  function getProfit() {
+    const v = parseFloat(localStorage.getItem(PROFIT_KEY));
+    return isNaN(v) ? 0 : v;
+  }
+
+  function getLeaderboardRankIfAny() {
+    const idx = localStorage.getItem(ACTIVE_KEY);
+    if (idx === null) return null;
+    const n = parseInt(idx, 10);
+    if (isNaN(n)) return null;
+    return n + 1;
+  }
+
+  function readBaseOnce() {
+    if (localStorage.getItem(BASE_KEY)) return;
+
+    const el = document.querySelector(
+      'div[class*="LeaderBoard-Position-styles-module__footer"]'
+    );
+    if (!el) return;
+
+    const num = parseInt(el.textContent.replace(/\D+/g, ""), 10);
+    if (!isNaN(num)) {
+      localStorage.setItem(BASE_KEY, String(num));
+    }
+  }
+
+  function computePosition(base, profit) {
+    if (profit > 0) {
+      const band =
+        PROFIT_BANDS.find(b => profit >= b.min && profit < b.max) ||
+        PROFIT_BANDS[PROFIT_BANDS.length - 1];
+
+      return Math.max(1, base - rand(band.improve));
+    }
+
+    if (profit < 0) {
+      return base + rand(LOSS_BAND);
+    }
+
+    return base;
+  }
+
+  function writePosition(value) {
+    const el = document.querySelector(
+      'div[class*="LeaderBoard-Position-styles-module__footer"]'
+    );
+    if (!el) return;
+
+    const title = el.querySelector('div[class*="__title--"]');
+    el.textContent = "";
+    if (title) el.appendChild(title);
+    el.appendChild(document.createTextNode(String(value)));
+  }
+
+  /* ================== CORE LOOP ================== */
+
+  function runYourPosition() {
+    readBaseOnce();
+
+    const base = parseInt(localStorage.getItem(BASE_KEY), 10);
+    if (isNaN(base)) return;
+
+    const lbRank = getLeaderboardRankIfAny();
+    if (lbRank !== null) {
+      writePosition(lbRank);
+      return;
+    }
+
+    const profit = getProfit();
+    writePosition(computePosition(base, profit));
+  }
+
+  setInterval(runYourPosition, 800);
+})();
+
